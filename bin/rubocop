@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+# frozen_string_literal: true
+
+begin
+  load File.expand_path("spring", __dir__)
+rescue LoadError => error
+  raise unless error.message.include?("spring")
+end
+
+require "pathname"
+
+ENV["BUNDLE_GEMFILE"] ||= File.expand_path(
+  "../../Gemfile", Pathname.new(__FILE__).realpath
+)
+
+bundle_binstub = File.expand_path("bundle", __dir__)
+
+if File.file?(bundle_binstub)
+  load(bundle_binstub)
+end
+
+require "rubygems"
+require "bundler/setup"
+
+load Gem.bin_path("rubocop", "rubocop")

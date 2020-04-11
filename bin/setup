@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+# Install bundler if it's not installed.
+gem list bundler --installed > /dev/null ||
+  gem install bundler -v $(tail -n 1 Gemfile.lock | awk '{$1=$1};1')
+
+# Install the Ruby dependencies.
+bundle check || bundle install
+
+# Install the Node dependencies.
+yarn --cwd client check || yarn --cwd client install
+
+# Setup the database.
+./bin/rake db:setup

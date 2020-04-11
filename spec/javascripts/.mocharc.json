@@ -1,0 +1,9 @@
+{
+  "recursive": true,
+  "reporter": "dot",
+  "require": [
+    "@babel/register",
+    "mocha-yaml-loader",
+    "spec/javascripts/helpers.js"
+  ]
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US" class="text-gray-900 antialiased">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title><%= t("title") %></title>
+
+  <%= stylesheet_pack_tag "application" %>
+</head>
+<body>
+
+<%= yield %>
+
+<script type="text/javascript">
+  window.I18n = {
+    defaultLocale : <%== I18n.default_locale.to_json %>,
+    locale        : <%== I18n.locale.to_json %>
+  };
+</script>
+<%= javascript_pack_tag "application" %>
+
+</body>
+</html>

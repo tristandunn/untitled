@@ -1,0 +1,67 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:12-alpine
+        ports: ["5432:5432"]
+        options: --health-cmd pg_isready --health-interval 10ms --health-retries 10 --health-timeout 1s
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v1
+      - name: Determine the Ruby version
+        id: ruby-version
+        run: echo "::set-output name=version::$(cat .ruby-version)"
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ steps.ruby-version.outputs.version }}
+      - name: Cache the Ruby dependencies
+        uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-bundle-
+      - name: Install the Ruby dependencies
+        run: |
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+      - name: Determine the Node version
+        id: node-version
+        run: echo "::set-output name=version::$(cat package.json | perl -pe '($_)=/"node":\s+"([0-9]+([.][0-9]+)+)"/')"
+      - name: Install Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ steps.node-version.outputs.version }}
+      - name: Find the Yarn cache directory
+        id: yarn-cache
+        run: echo "::set-output name=directory::$(yarn cache dir)"
+      - name: Cache the Node dependencies
+        uses: actions/cache@v1
+        with:
+          path: ${{ steps.yarn-cache.outputs.directory }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install the Node dependencies
+        run: yarn install --pure-lockfile
+      - name: Run the tests and lint the code
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          RAILS_ENV: test
+        run: bin/rails db:setup check
+      - name: Scan for vulnerabilities
+        run: |
+          bundle exec bundler-audit
+          bundle exec brakeman

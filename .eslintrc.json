@@ -1,0 +1,103 @@
+{
+  "env" : {
+    "es6"   : true,
+    "node"  : true,
+    "mocha" : true
+  },
+  "extends" : [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "globals" : {
+    "container" : true,
+    "document"  : true,
+    "expect"    : true,
+    "fetch"     : true,
+    "sinon"     : true,
+    "window"    : true
+  },
+  "parser"        : "babel-eslint",
+  "parserOptions" : {
+    "ecmaFeatures" : {
+      "jsx" : true
+    },
+    "ecmaVersion"  : 6,
+    "sourceType"   : "module"
+  },
+  "plugins" : [
+    "react-hooks"
+  ],
+  "rules"   : {
+    "array-bracket-spacing"       : ["error", "never"],
+    "arrow-body-style"            : ["error", "always"],
+    "arrow-parens"                : ["error", "always"],
+    "arrow-spacing"               : ["error"],
+    "brace-style"                 : ["error"],
+    "callback-return"             : ["error"],
+    "comma-dangle"                : ["error", "never"],
+    "comma-spacing"               : ["error", { "before" : false, "after" : true }],
+    "comma-style"                 : ["error", "last"],
+    "complexity"                  : ["error", 3],
+    "consistent-return"           : ["error"],
+    "constructor-super"           : ["error"],
+    "curly"                       : ["error"],
+    "dot-location"                : ["error", "property"],
+    "dot-notation"                : ["error"],
+    "eqeqeq"                      : ["error", "smart"],
+    "id-length"                   : ["error", { "min" : 1, "max" : 24 }],
+    "indent"                      : ["error", 2, { "VariableDeclarator" : { "var": 2, "let" : 2, "const" : 3 } }],
+    "jsx-quotes"                  : ["error", "prefer-double"],
+    "key-spacing"                 : ["error", {
+                                      "singleLine" : {
+                                        "beforeColon" : false,
+                                        "afterColon"  : true
+                                      },
+                                      "multiLine" : {
+                                        "beforeColon" : true,
+                                        "afterColon"  : true,
+                                        "align"       : "colon"
+                                      }
+                                    }],
+    "linebreak-style"             : ["error", "unix"],
+    "no-caller"                   : ["error"],
+    "no-class-assign"             : ["error"],
+    "no-cond-assign"              : ["error", "always"],
+    "no-confusing-arrow"          : ["error"],
+    "no-const-assign"             : ["error"],
+    "no-constant-condition"       : ["error"],
+    "no-delete-var"               : ["error"],
+    "no-empty"                    : ["error"],
+    "no-eval"                     : ["error"],
+    "no-magic-numbers"            : ["error", { "ignore": [-1, 0, 1, 2], "ignoreArrayIndexes" : true }],
+    "no-multiple-empty-lines"     : ["error", { "max" : 2 }],
+    "no-redeclare"                : ["error"],
+    "no-return-assign"            : ["error", "always"],
+    "no-trailing-spaces"          : ["error"],
+    "no-undef"                    : ["error"],
+    "no-unneeded-ternary"         : ["error"],
+    "no-unreachable"              : ["error"],
+    "no-unused-vars"              : ["error", { "argsIgnorePattern": "^_" }],
+    "no-var"                      : ["error"],
+    "quotes"                      : ["error", "double"],
+    "react-hooks/rules-of-hooks"  : ["error"],
+    "react-hooks/exhaustive-deps" : ["error"],
+    "require-jsdoc"               : ["error", {
+      "require": {
+        "ArrowFunctionExpression" : false,
+        "ClassDeclaration"        : false,
+        "FunctionDeclaration"     : true,
+        "FunctionExpression"      : true,
+        "MethodDefinition"        : true
+      }
+    }],
+    "semi"                        : ["error", "always"],
+    "strict"                      : ["error", "global"],
+    "valid-jsdoc"                 : ["error"],
+    "wrap-iife"                   : ["error", "outside"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

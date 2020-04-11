@@ -1,0 +1,86 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  CacheRootDirectory: "tmp/rubocop_cache"
+  Exclude:
+    - "db/schema.rb"
+    - "node_modules/**/*"
+    - "vendor/**/*"
+  NewCops: enable
+
+Layout/HashAlignment:
+  EnforcedColonStyle: table
+  EnforcedHashRocketStyle: table
+
+Metrics/BlockLength:
+  Exclude:
+    - config/environments/*.rb
+    - config/routes.rb
+    - spec/**/*.rb
+
+Naming/RescuedExceptionsVariableName:
+  Enabled: true
+  PreferredName: error
+
+Rails:
+  Enabled: true
+
+Rails/SkipsModelValidations:
+  Enabled: true
+  ForbiddenMethods:
+    - decrement!
+    - decrement_counter
+    - increment!
+    - increment_counter
+    - toggle!
+    - update_all
+    - update_attribute
+    - update_column
+    - update_columns
+
+RSpec/ExampleLength:
+  Max: 10
+
+RSpec/ImplicitSubject:
+  EnforcedStyle: single_line_only
+
+RSpec/FilePath:
+  Enabled: false
+
+RSpec/MultipleDescribes:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/DocumentationMethod:
+  Enabled: true
+  Exclude:
+    - "db/**/*"
+    - "spec/**/*"
+  RequireForNonPublicMethods: true
+
+Style/ExpandPathArguments:
+  Enabled: true
+  Exclude:
+    - bin/*
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    "%i": "()"
+    "%w": "()"
+
+Style/RaiseArgs:
+  EnforcedStyle: compact
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
