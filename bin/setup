@@ -8,7 +8,7 @@ gem list bundler --installed > /dev/null ||
 bundle check || bundle install
 
 # Install the Node dependencies.
-yarn --cwd client check || yarn --cwd client install
+yarn check || yarn install
 
 # Setup the database.
 ./bin/rake db:setup
