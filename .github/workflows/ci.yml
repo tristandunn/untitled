@@ -60,7 +60,7 @@ jobs:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
           RAILS_ENV: test
-        run: bin/rails db:setup check
+        run: bundle exec rails db:setup check
       - name: Scan for vulnerabilities
         run: |
           bundle exec bundler-audit
