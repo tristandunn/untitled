@@ -10,9 +10,9 @@ gem "i18n-js",         "3.7.1"
 gem "jbuilder",        "2.10.1"
 gem "oj",              "3.10.14"
 gem "pg",              "1.2.3"
-gem "puma",            "5.0.0"
+gem "puma",            "5.0.2"
 gem "rack-timeout",    "0.6.0"
-gem "rails",           "6.0.3.3"
+gem "rails",           "6.0.3.4"
 gem "redis",           "4.2.2", require: %w(redis redis/connection/hiredis)
 gem "sassc-rails",     "2.1.2"
 gem "webpacker",       "5.2.1"
@@ -24,7 +24,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "brakeman",                "4.9.1",   require: false
+  gem "brakeman",                "4.10.0",  require: false
   gem "bundler-audit",           "0.7.0.1", require: false
   gem "listen",                  "3.2.1"
   gem "rubocop",                 "0.92.0", require: false
