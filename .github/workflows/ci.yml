@@ -57,6 +57,7 @@ jobs:
         run: yarn install --pure-lockfile
       - name: Run the tests and lint the code
         env:
+          COVERAGE: true
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
           RAILS_ENV: test
