@@ -195,13 +195,13 @@ GEM
       rspec-mocks (~> 3.9)
       rspec-support (~> 3.9)
     rspec-support (3.9.3)
-    rubocop (0.92.0)
+    rubocop (0.93.0)
       parallel (~> 1.10)
       parser (>= 2.7.1.5)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 1.7)
+      regexp_parser (>= 1.8)
       rexml
-      rubocop-ast (>= 0.5.0)
+      rubocop-ast (>= 0.6.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
     rubocop-ast (0.7.1)
@@ -309,7 +309,7 @@ DEPENDENCIES
   rails-controller-testing (= 1.0.5)
   redis (= 4.2.2)
   rspec-rails (= 4.0.1)
-  rubocop (= 0.92.0)
+  rubocop (= 0.93.0)
   rubocop-performance (= 1.8.1)
   rubocop-rails (= 2.8.1)
   rubocop-rspec (= 1.43.2)
@@ -325,7 +325,7 @@ DEPENDENCIES
   webpacker (= 5.2.1)
 
 RUBY VERSION
-   ruby 2.7.1p83
+   ruby 2.7.2p137
 
 BUNDLED WITH
    2.1.4

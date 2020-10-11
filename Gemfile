@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ruby   "2.7.1"
+ruby   "2.7.2"
 source "https://rubygems.org"
 
 gem "bcrypt",          "3.1.16"
@@ -27,7 +27,7 @@ group :development do
   gem "brakeman",                "4.10.0",  require: false
   gem "bundler-audit",           "0.7.0.1", require: false
   gem "listen",                  "3.2.1"
-  gem "rubocop",                 "0.92.0", require: false
+  gem "rubocop",                 "0.93.0", require: false
   gem "rubocop-performance",     "1.8.1",  require: false
   gem "rubocop-rails",           "2.8.1",  require: false
   gem "rubocop-rspec",           "1.43.2", require: false
