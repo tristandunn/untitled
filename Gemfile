@@ -32,7 +32,6 @@ group :development do
   gem "rubocop-rails",           "2.8.1",  require: false
   gem "rubocop-rspec",           "1.43.2", require: false
   gem "scss_lint",               "0.59.0", require: false
-  gem "simplecov-console",       "0.7.2",  require: false
   gem "spring",                  "2.1.1"
   gem "spring-commands-rspec",   "1.0.4"
   gem "spring-commands-rubocop", "0.2.0"
@@ -47,5 +46,6 @@ group :test do
   gem "rails-controller-testing", "1.0.5"
   gem "selenium-webdriver",       "3.142.7"
   gem "shoulda-matchers",         "4.4.1"
+  gem "simplecov-console",        "0.7.2", require: false
   gem "timecop",                  "0.9.1"
 end
