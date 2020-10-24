@@ -5,7 +5,7 @@ const chai      = require("chai"),
 
 chai.use(sinonChai);
 
-global.window    = (new JSDOM()).window;
+global.window    = (new JSDOM("", { pretendToBeVisual: true })).window;
 global.document  = global.window.document;
 global.expect    = chai.expect;
 global.navigator = { userAgent: "node.js" };

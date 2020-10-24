@@ -1,4 +1,5 @@
 {
+  "exit": true,
   "recursive": true,
   "reporter": "dot",
   "require": [

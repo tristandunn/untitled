@@ -2,8 +2,10 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
   future : {
+    defaultLineHeights           : true,
     purgeLayersByDefault         : true,
-    removeDeprecatedGapUtilities : true // eslint-disable-line id-length
+    removeDeprecatedGapUtilities : true, // eslint-disable-line id-length
+    standardFontWeights          : true
   },
 
   plugins : [

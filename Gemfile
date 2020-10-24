@@ -6,9 +6,9 @@ source "https://rubygems.org"
 gem "bcrypt",          "3.1.16"
 gem "bootsnap",        "1.4.8", require: false
 gem "hiredis",         "0.6.3"
-gem "i18n-js",         "3.7.1"
+gem "i18n-js",         "3.8.0"
 gem "jbuilder",        "2.10.1"
-gem "oj",              "3.10.14"
+gem "oj",              "3.10.15"
 gem "pg",              "1.2.3"
 gem "puma",            "5.0.2"
 gem "rack-timeout",    "0.6.0"
@@ -27,11 +27,11 @@ group :development do
   gem "brakeman",                "4.10.0",  require: false
   gem "bundler-audit",           "0.7.0.1", require: false
   gem "listen",                  "3.2.1"
-  gem "rubocop",                 "0.93.0", require: false
-  gem "rubocop-performance",     "1.8.1",  require: false
-  gem "rubocop-rails",           "2.8.1",  require: false
-  gem "rubocop-rspec",           "1.43.2", require: false
-  gem "scss_lint",               "0.59.0", require: false
+  gem "rubocop",                 "1.0.0",     require: false
+  gem "rubocop-performance",     "1.8.1",     require: false
+  gem "rubocop-rails",           "2.8.1",     require: false
+  gem "rubocop-rspec",           "2.0.0.pre", require: false
+  gem "scss_lint",               "0.59.0",    require: false
   gem "spring",                  "2.1.1"
   gem "spring-commands-rspec",   "1.0.4"
   gem "spring-commands-rubocop", "0.2.0"
@@ -47,5 +47,5 @@ group :test do
   gem "selenium-webdriver",       "3.142.7"
   gem "shoulda-matchers",         "4.4.1"
   gem "simplecov-console",        "0.7.2", require: false
-  gem "timecop",                  "0.9.1"
+  gem "timecop",                  "0.9.2"
 end
