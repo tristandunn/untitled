@@ -31,7 +31,6 @@ group :development do
   gem "rubocop-performance",     "1.8.1",     require: false
   gem "rubocop-rails",           "2.8.1",     require: false
   gem "rubocop-rspec",           "2.0.0.pre", require: false
-  gem "scss_lint",               "0.59.0",    require: false
   gem "spring",                  "2.1.1"
   gem "spring-commands-rspec",   "1.0.4"
   gem "spring-commands-rubocop", "0.2.0"

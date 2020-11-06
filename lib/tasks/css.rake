@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-begin
-  require "scss_lint/rake_task"
-
-  SCSSLint::RakeTask.new("css:lint")
-rescue LoadError # rubocop:disable Lint/SuppressedException
+namespace :css do
+  desc "Run `yarn lint:css`"
+  task :lint do # rubocop:disable Rails/RakeEnvironment
+    system "yarn lint:css"
+  end
 end

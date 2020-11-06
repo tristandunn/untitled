@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "lint": "eslint app config spec/javascripts babel.config.js postcss.config.js --ext js,jsx",
+    "lint:css": "stylelint app/assets/stylesheets/**/*.scss",
     "test": "NODE_ENV=test NODE_PATH=app/assets/javascripts mocha --config spec/javascripts/.mocharc.json spec/javascripts",
     "test:coverage": "NODE_ENV=test NODE_PATH=app/assets/javascripts nyc mocha --config spec/javascripts/.mocharc.json spec/javascripts"
   },
@@ -11,7 +12,7 @@
     "@rails/actioncable": "6.0.3-4",
     "@rails/webpacker": "5.2.1",
     "@tailwindcss/custom-forms": "0.2.1",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "glob-all": "3.2.1",
     "i18n-js": "3.8.0",
     "postcss-node-sass": "2.1.8",
@@ -36,6 +37,8 @@
     "nyc": "15.1.0",
     "sinon": "9.2.1",
     "sinon-chai": "3.5.0",
+    "stylelint": "13.7.2",
+    "stylelint-config-standard": "20.0.0",
     "webpack-dev-server": "3.11.0",
     "yaml-loader": "0.6.0"
   },
