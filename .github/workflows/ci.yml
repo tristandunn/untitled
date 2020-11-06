@@ -73,9 +73,9 @@ jobs:
           RUBOCOP: true
           RUBOCOP_COMMAND_PREFIX: bundle exec
           STYLELINT: true
+      - name: Scan for vulnerabilities
+        run: bundle exec brakeman
       - name: Audit the Bundler dependencies
         uses: andrewmcodes/bundler-audit-action@v0.1.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Scan for vulnerabilities
-        run: bundle exec brakeman
