@@ -4,36 +4,53 @@ A base Rails application to kickstart new projects.
 
 ## Features
 
-* Ruby [tests](spec/) using [RSpec](spec/spec_helper.rb) and [Selenium](spec/support/capybara.rb) with [coverage](spec/spec_helper.rb#L3-L13).
-* JavaScript [tests](spec/javascripts) using [Mocha](spec/javascripts/.mocharc.json) with [coverage](nyc.config.js).
-* [PostCSS](postcss.config.js) with Tailwind CSS [configuration](app/assets/javascripts/tailwind.config.js).
-* Support for [translations](app/assets/javascripts/i18n.js) in JavaScript [code](app/assets/javascripts/application.jsx) and [tests](spec/javascripts/application/index.spec.js).
-* GitHub Workflow [configuration](.github/workflows/ci.yml) for continuous integration and security analysis.
+* [PostCSS](postcss.config.js) with Tailwind CSS
+  [configuration](app/assets/javascripts/tailwind.config.js).
+* JavaScript [tests](spec/javascripts) using
+  [Mocha](spec/javascripts/.mocharc.json) with [coverage](nyc.config.js).
+* Ruby [tests](spec/) using [RSpec](spec/spec_helper.rb) and
+  [Selenium](spec/support/capybara.rb) with
+  [coverage](spec/spec_helper.rb#L3-L13).
+* Support for [translations](app/assets/javascripts/i18n.js) in JavaScript
+  [code](app/assets/javascripts/application.jsx) and
+  [tests](spec/javascripts/application/index.spec.js).
+* [GitHub Actions](.github/workflows/ci.yml) for testing, linting, and security
+  analysis with annotations.
 
 ## Development
 
 Install the dependencies and setup the database.
 
-    bin/setup
+```
+bin/setup
+```
 
 To run the application processes.
 
-    foreman start -f Procfile.dev
+```
+foreman start -f Procfile.dev
+```
 
 If you're making changes, be sure to write and run the tests.
 
-    bundle exec rake ruby:test
-    bundle exec rake javascript:test
+```
+bundle exec rake ruby:test
+bundle exec rake javascript:test
+```
 
 Before pushing changes, check the code.
 
-    bundle exec rake css:lint
-    bundle exec rake ruby:lint
-    bundle exec rake javascript:lint
+```
+bundle exec rake css:lint
+bundle exec rake ruby:lint
+bundle exec rake javascript:lint
+```
 
 Or you can run the tests with coverage and lint with a single command.
 
-    bundle exec rake check
+```
+bundle exec rake check
+```
 
 ## Deployment
 
@@ -41,18 +58,30 @@ Or you can run the tests with coverage and lint with a single command.
 
 Create an application.
 
-    heroku create
+```
+heroku create
+```
 
-Add the Node and Ruby buildpacks.
+Add the Node and Ruby build packs.
 
-    heroku buildpacks:add heroku/nodejs
-    heroku buildpacks:add heroku/ruby
+```
+heroku buildpacks:add heroku/nodejs
+heroku buildpacks:add heroku/ruby
+```
 
 Create production credentials and set the encryption key on Heroku.
 
-    rails credentials:edit --environment production
-    heroku config:set RAILS_MASTER_KEY=$(cat config/credentials/production.key)
+```sh
+rails credentials:edit --environment production
+heroku config:set RAILS_MASTER_KEY=$(cat config/credentials/production.key)
+```
 
 Deploy to Heroku.
 
-    git push heroku master
+```
+git push heroku master
+```
+
+## License
+
+Untitled uses the MIT license. See [LICENSE](LICENSE) for more details.
