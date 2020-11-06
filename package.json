@@ -7,7 +7,7 @@
     "test:coverage": "NODE_ENV=test NODE_PATH=app/assets/javascripts nyc mocha --config spec/javascripts/.mocharc.json spec/javascripts"
   },
   "dependencies": {
-    "@babel/preset-react": "7.12.1",
+    "@babel/preset-react": "7.12.5",
     "@rails/actioncable": "6.0.3-4",
     "@rails/webpacker": "5.2.1",
     "@tailwindcss/custom-forms": "0.2.1",
@@ -27,19 +27,19 @@
     "babel-eslint": "10.1.0",
     "babel-plugin-istanbul": "6.0.0",
     "chai": "4.2.0",
-    "eslint": "7.11.0",
+    "eslint": "7.12.1",
     "eslint-plugin-react": "7.21.5",
     "eslint-plugin-react-hooks": "4.2.0",
     "jsdom": "16.4.0",
-    "mocha": "8.2.0",
+    "mocha": "8.2.1",
     "mocha-yaml-loader": "1.0.3",
     "nyc": "15.1.0",
-    "sinon": "9.2.0",
+    "sinon": "9.2.1",
     "sinon-chai": "3.5.0",
     "webpack-dev-server": "3.11.0",
     "yaml-loader": "0.6.0"
   },
   "engines": {
-    "node": "15.0.1"
+    "node": "15.1.0"
   }
 }
