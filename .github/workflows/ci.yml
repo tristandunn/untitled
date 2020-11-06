@@ -63,7 +63,7 @@ jobs:
           RAILS_ENV: test
         run: bundle exec rails db:setup ruby:test css:lint
       - name: Run the JavaScript tests
-        run: yarn test
+        run: yarn test:coverage
       - name: Lint the code
         uses: wearerequired/lint-action@v1
         with:
