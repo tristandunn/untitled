@@ -1,1 +1,4 @@
 app/assets/javascripts/vendor
+public/packs
+public/packs-test
+vendor/bundle

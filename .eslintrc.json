@@ -33,7 +33,6 @@
     "arrow-parens"                : ["error", "always"],
     "arrow-spacing"               : ["error"],
     "brace-style"                 : ["error"],
-    "callback-return"             : ["error"],
     "comma-dangle"                : ["error", "never"],
     "comma-spacing"               : ["error", { "before" : false, "after" : true }],
     "comma-style"                 : ["error", "last"],

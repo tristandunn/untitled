@@ -55,14 +55,27 @@ jobs:
             ${{ runner.os }}-yarn-
       - name: Install the Node dependencies
         run: yarn install --pure-lockfile
-      - name: Run the tests and lint the code
+      - name: Run the Ruby tests
         env:
           COVERAGE: true
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
           RAILS_ENV: test
-        run: bundle exec rails db:setup check
+        run: bundle exec rails db:setup ruby:test css:lint
+      - name: Run the JavaScript tests
+        run: yarn test
+      - name: Lint the code
+        uses: wearerequired/lint-action@v1
+        with:
+          ESLINT: true
+          ESLINT_EXTENSIONS: js,jsx
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUBOCOP: true
+          RUBOCOP_COMMAND_PREFIX: bundle exec
+          STYLELINT: true
+      - name: Audit the Bundler dependencies
+        uses: andrewmcodes/bundler-audit-action@v0.1.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Scan for vulnerabilities
-        run: |
-          bundle exec bundler-audit
-          bundle exec brakeman
+        run: bundle exec brakeman
