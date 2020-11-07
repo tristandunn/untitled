@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       - name: Determine the Ruby version
         id: ruby-version
         run: echo "::set-output name=version::$(cat .ruby-version)"
@@ -26,7 +26,7 @@ jobs:
         with:
           ruby-version: ${{ steps.ruby-version.outputs.version }}
       - name: Cache the Ruby dependencies
-        uses: actions/cache@v1
+        uses: actions/cache@v2
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
@@ -44,7 +44,7 @@ jobs:
         with:
           node-version: ${{ steps.node-version.outputs.version }}
       - name: Cache the Node dependencies
-        uses: actions/cache@v1
+        uses: actions/cache@v2
         with:
           path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
