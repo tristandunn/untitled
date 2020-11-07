@@ -27,10 +27,10 @@ group :development do
   gem "brakeman",                "4.10.0",  require: false
   gem "bundler-audit",           "0.7.0.1", require: false
   gem "listen",                  "3.2.1"
-  gem "rubocop",                 "1.2.0",     require: false
-  gem "rubocop-performance",     "1.8.1",     require: false
-  gem "rubocop-rails",           "2.8.1",     require: false
-  gem "rubocop-rspec",           "2.0.0.pre", require: false
+  gem "rubocop",                 "1.2.0", require: false
+  gem "rubocop-performance",     "1.8.1", require: false
+  gem "rubocop-rails",           "2.8.1", require: false
+  gem "rubocop-rspec",           "2.0.0", require: false
   gem "spring",                  "2.1.1"
   gem "spring-commands-rspec",   "1.0.4"
   gem "spring-commands-rubocop", "0.2.0"
