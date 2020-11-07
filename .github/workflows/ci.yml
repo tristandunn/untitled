@@ -61,7 +61,7 @@ jobs:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
           RAILS_ENV: test
-        run: bundle exec rails db:setup ruby:test css:lint
+        run: bundle exec rails db:setup ruby:test
       - name: Run the JavaScript tests
         run: yarn test:coverage
       - name: Lint the code
