@@ -43,16 +43,13 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ steps.node-version.outputs.version }}
-      - name: Find the Yarn cache directory
-        id: yarn-cache
-        run: echo "::set-output name=directory::$(yarn cache dir)"
       - name: Cache the Node dependencies
         uses: actions/cache@v1
         with:
-          path: ${{ steps.yarn-cache.outputs.directory }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-yarn-
+            ${{ runner.os }}-node-
       - name: Install the Node dependencies
         run: yarn install --pure-lockfile
       - name: Run the Ruby tests
