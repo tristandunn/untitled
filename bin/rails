@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+
 # frozen_string_literal: true
 
 begin
@@ -6,8 +7,6 @@ begin
 rescue LoadError => error
   raise unless error.message.include?("spring")
 end
-
-# frozen_string_literal: true
 
 APP_PATH = File.expand_path("../config/application", __dir__)
 
