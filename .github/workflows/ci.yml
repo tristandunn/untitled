@@ -40,7 +40,7 @@ jobs:
         id: node-version
         run: echo "::set-output name=version::$(cat package.json | perl -pe '($_)=/"node":\s+"([0-9]+([.][0-9]+)+)"/')"
       - name: Install Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ steps.node-version.outputs.version }}
       - name: Cache the Node dependencies
