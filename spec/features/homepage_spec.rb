@@ -11,7 +11,11 @@ describe "Homepage", type: :feature do
     expect(page).to have_content(I18n.t("title"))
   end
 
-  it "renders the React application", js: true do
-    expect(page).to have_content(I18n.t("description"))
+  it "renders the description" do
+    expect(page).to have_content(I18n.t("pages.index.description"))
+  end
+
+  it "renders the Turbo and Stimulus description", :js do
+    expect(page).to have_content(I18n.t("pages.stimulus.description"))
   end
 end

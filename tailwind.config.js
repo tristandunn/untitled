@@ -15,7 +15,7 @@ module.exports = {
   purge : {
     enabled : process.env.NODE_ENV === "production",
     content : [
-      "./app/javascript/**/*.js",
+      "./app/assets/javascripts/**/*.js",
       "./app/**/*.html.erb"
     ]
   },

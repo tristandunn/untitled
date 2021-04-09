@@ -13,5 +13,5 @@ global.sinon     = sinon.createSandbox();
 
 global.window.I18n = {
   defaultLocale : "en",
-  locale        : "en-US"
+  locale        : "en"
 };

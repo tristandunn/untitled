@@ -6,18 +6,18 @@
   <title><%= t("title") %></title>
 
   <%= stylesheet_pack_tag "application" %>
+
+  <script type="text/javascript">
+    window.I18n = {
+      defaultLocale : <%== I18n.default_locale.to_json %>,
+      locale        : <%== I18n.locale.to_json %>
+    };
+  </script>
+  <%= javascript_pack_tag "application" %>
 </head>
 <body>
 
 <%= yield %>
-
-<script type="text/javascript">
-  window.I18n = {
-    defaultLocale : <%== I18n.default_locale.to_json %>,
-    locale        : <%== I18n.locale.to_json %>
-  };
-</script>
-<%= javascript_pack_tag "application" %>
 
 </body>
 </html>

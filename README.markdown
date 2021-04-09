@@ -12,8 +12,8 @@ A base Rails application to kickstart new projects.
   [Selenium](spec/support/capybara.rb) with
   [coverage](spec/spec_helper.rb#L3-L13).
 * Support for [translations](app/assets/javascripts/i18n.js) in JavaScript
-  [code](app/assets/javascripts/application.jsx) and
-  [tests](spec/javascripts/application/index.spec.js).
+  [code](app/assets/javascripts/controllers/stimulus_controller.js) and
+  [tests](spec/javascripts/application/controllers/stimulus_controller.spec.js).
 * [GitHub Actions](.github/workflows/ci.yml) for testing, linting, and security
   analysis with annotations.
 

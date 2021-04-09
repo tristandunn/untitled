@@ -3,19 +3,20 @@
 ruby   "3.0.1"
 source "https://rubygems.org"
 
-gem "bcrypt",          "3.1.16"
-gem "bootsnap",        "1.7.3", require: false
-gem "hiredis",         "0.6.3"
-gem "i18n-js",         "3.8.2"
-gem "jbuilder",        "2.11.2"
-gem "oj",              "3.11.3"
-gem "pg",              "1.2.3"
-gem "puma",            "5.2.2"
-gem "rack-timeout",    "0.6.0"
-gem "rails",           "6.1.3.1"
-gem "redis",           "4.2.5", require: %w(redis redis/connection/hiredis)
-gem "sassc-rails",     "2.1.2"
-gem "webpacker",       "5.2.1"
+gem "actioncable",  "6.1.3.1", require: "action_cable"
+gem "bcrypt",       "3.1.16"
+gem "bootsnap",     "1.7.3", require: false
+gem "hiredis",      "0.6.3"
+gem "jbuilder",     "2.11.2"
+gem "oj",           "3.11.3"
+gem "pg",           "1.2.3"
+gem "puma",         "5.2.2"
+gem "rack-timeout", "0.6.0"
+gem "rails",        "6.1.3.1"
+gem "redis",        "4.2.5", require: %w(redis redis/connection/hiredis)
+gem "sassc-rails",  "2.1.2"
+gem "turbo-rails",  "0.5.9"
+gem "webpacker",    "5.2.1"
 
 group :development, :test do
   gem "cacheflow",    "0.1.1"

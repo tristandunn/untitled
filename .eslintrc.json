@@ -5,8 +5,7 @@
     "mocha" : true
   },
   "extends" : [
-    "eslint:recommended",
-    "plugin:react/recommended"
+    "eslint:recommended"
   ],
   "globals" : {
     "container" : true,
@@ -24,9 +23,6 @@
     "ecmaVersion"  : 6,
     "sourceType"   : "module"
   },
-  "plugins" : [
-    "react-hooks"
-  ],
   "rules"   : {
     "array-bracket-spacing"       : ["error", "never"],
     "arrow-body-style"            : ["error", "always"],
@@ -75,11 +71,9 @@
     "no-undef"                    : ["error"],
     "no-unneeded-ternary"         : ["error"],
     "no-unreachable"              : ["error"],
-    "no-unused-vars"              : ["error", { "argsIgnorePattern": "^_" }],
+    "no-unused-vars"              : ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
     "no-var"                      : ["error"],
     "quotes"                      : ["error", "double"],
-    "react-hooks/rules-of-hooks"  : ["error"],
-    "react-hooks/exhaustive-deps" : ["error"],
     "require-jsdoc"               : ["error", {
       "require": {
         "ArrowFunctionExpression" : false,
@@ -93,10 +87,5 @@
     "strict"                      : ["error", "global"],
     "valid-jsdoc"                 : ["error"],
     "wrap-iife"                   : ["error", "outside"]
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
   }
 }

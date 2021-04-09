@@ -3,5 +3,7 @@
     <h1 class="text-4xl text-black"><%= t("title") %></h1>
   </header>
 
-  <section id="application"></section>
+  <%= turbo_frame_tag "description", src: pages_turbo_path do %>
+    <%= t(".description") %>
+  <% end %>
 </main>
