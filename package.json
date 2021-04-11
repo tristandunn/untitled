@@ -2,7 +2,7 @@
   "name": "untitled",
   "private": true,
   "scripts": {
-    "lint": "eslint app config spec/javascripts babel.config.js postcss.config.js --ext js,jsx",
+    "lint": "eslint app config spec/javascripts babel.config.js postcss.config.js",
     "lint:css": "stylelint app/assets/stylesheets/**/*.scss",
     "test": "NODE_ENV=test NODE_PATH=app/assets/javascripts mocha --config spec/javascripts/.mocharc.json spec/javascripts",
     "test:coverage": "NODE_ENV=test NODE_PATH=app/assets/javascripts nyc mocha --config spec/javascripts/.mocharc.json spec/javascripts"

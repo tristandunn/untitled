@@ -3,7 +3,6 @@
 ruby   "3.0.1"
 source "https://rubygems.org"
 
-gem "actioncable",  "6.1.3.1", require: "action_cable"
 gem "bcrypt",       "3.1.16"
 gem "bootsnap",     "1.7.3", require: false
 gem "hiredis",      "0.6.3"

@@ -17,9 +17,6 @@
   },
   "parser"        : "babel-eslint",
   "parserOptions" : {
-    "ecmaFeatures" : {
-      "jsx" : true
-    },
     "ecmaVersion"  : 6,
     "sourceType"   : "module"
   },
@@ -41,7 +38,6 @@
     "eqeqeq"                      : ["error", "smart"],
     "id-length"                   : ["error", { "min" : 1, "max" : 24 }],
     "indent"                      : ["error", 2, { "VariableDeclarator" : { "var": 2, "let" : 2, "const" : 3 } }],
-    "jsx-quotes"                  : ["error", "prefer-double"],
     "key-spacing"                 : ["error", {
                                       "singleLine" : {
                                         "beforeColon" : false,
