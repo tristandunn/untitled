@@ -66,7 +66,7 @@ GEM
     ast (2.4.2)
     bcrypt (3.1.16)
     bindex (0.8.1)
-    bootsnap (1.7.3)
+    bootsnap (1.7.4)
       msgpack (~> 1.0)
     brakeman (5.0.0)
     builder (3.2.4)
@@ -132,7 +132,7 @@ GEM
     nokogiri (1.11.3)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
-    oj (3.11.3)
+    oj (3.11.5)
     parallel (1.20.1)
     parser (3.0.1.0)
       ast (~> 2.4.1)
@@ -202,7 +202,7 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.10.2)
-    rubocop (1.12.1)
+    rubocop (1.13.0)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
@@ -213,8 +213,8 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.4.1)
       parser (>= 2.7.1.5)
-    rubocop-performance (1.10.2)
-      rubocop (>= 0.90.0, < 2.0)
+    rubocop-performance (1.11.0)
+      rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
     rubocop-rails (2.9.1)
       activesupport (>= 4.2.0)
@@ -276,7 +276,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webpacker (5.2.1)
+    webpacker (5.3.0)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
@@ -293,7 +293,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt (= 3.1.16)
-  bootsnap (= 1.7.3)
+  bootsnap (= 1.7.4)
   brakeman (= 5.0.0)
   bundler-audit (= 0.8.0)
   cacheflow (= 0.1.1)
@@ -305,7 +305,7 @@ DEPENDENCIES
   hiredis (= 0.6.3)
   jbuilder (= 2.11.2)
   listen (= 3.5.1)
-  oj (= 3.11.3)
+  oj (= 3.11.5)
   pg (= 1.2.3)
   puma (= 5.2.2)
   rack-timeout (= 0.6.0)
@@ -313,8 +313,8 @@ DEPENDENCIES
   rails-controller-testing (= 1.0.5)
   redis (= 4.2.5)
   rspec-rails (= 5.0.1)
-  rubocop (= 1.12.1)
-  rubocop-performance (= 1.10.2)
+  rubocop (= 1.13.0)
+  rubocop-performance (= 1.11.0)
   rubocop-rails (= 2.9.1)
   rubocop-rspec (= 2.2.0)
   sassc-rails (= 2.1.2)
@@ -327,10 +327,10 @@ DEPENDENCIES
   timecop (= 0.9.4)
   turbo-rails (= 0.5.9)
   web-console (= 4.1.0)
-  webpacker (= 5.2.1)
+  webpacker (= 5.3.0)
 
 RUBY VERSION
    ruby 3.0.1p64
 
 BUNDLED WITH
-   2.2.15
+   2.2.16
