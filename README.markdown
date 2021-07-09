@@ -79,7 +79,7 @@ heroku config:set RAILS_MASTER_KEY=$(cat config/credentials/production.key)
 Deploy to Heroku.
 
 ```
-git push heroku master
+git push heroku main
 ```
 
 ## License
