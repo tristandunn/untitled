@@ -4,17 +4,17 @@ ruby   "3.0.2"
 source "https://rubygems.org"
 
 gem "bcrypt",       "3.1.16"
-gem "bootsnap",     "1.7.6", require: false
+gem "bootsnap",     "1.7.7", require: false
 gem "hiredis",      "0.6.3"
 gem "jbuilder",     "2.11.2"
-gem "oj",           "3.12.2"
+gem "oj",           "3.13.1"
 gem "pg",           "1.2.3"
-gem "puma",         "5.3.2"
+gem "puma",         "5.4.0"
 gem "rack-timeout", "0.6.0"
 gem "rails",        "6.1.4"
-gem "redis",        "4.3.1", require: %w(redis redis/connection/hiredis)
+gem "redis",        "4.4.0", require: %w(redis redis/connection/hiredis)
 gem "sassc-rails",  "2.1.2"
-gem "turbo-rails",  "0.6.0"
+gem "turbo-rails",  "0.7.0"
 gem "webpacker",    "5.4.0"
 
 group :development, :test do
