@@ -10,9 +10,9 @@
   "dependencies": {
     "@babel/preset-env": "7.15.0",
     "@csstools/postcss-sass": "4.0.0",
-    "@hotwired/turbo-rails": "7.0.0-rc.1",
+    "@hotwired/turbo-rails": "7.0.0-rc.2",
     "@rails/actioncable": "6.1.4",
-    "@rails/webpacker": "5.4.0",
+    "@rails/webpacker": "5.4.2",
     "@tailwindcss/custom-forms": "0.2.1",
     "glob-all": "3.2.1",
     "i18n-js": "3.8.0",
@@ -25,13 +25,13 @@
     "yaml-loader": "0.6.0"
   },
   "devDependencies": {
-    "@babel/register": "7.14.5",
+    "@babel/register": "7.15.3",
     "babel-eslint": "10.1.0",
     "babel-plugin-istanbul": "6.0.0",
     "chai": "4.3.4",
     "eslint": "7.32.0",
-    "jsdom": "16.7.0",
-    "mocha": "9.0.3",
+    "jsdom": "17.0.0",
+    "mocha": "9.1.1",
     "mocha-yaml-loader": "1.0.3",
     "nyc": "15.1.0",
     "sinon": "11.1.2",
