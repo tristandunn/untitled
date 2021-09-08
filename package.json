@@ -8,9 +8,9 @@
     "test:coverage": "NODE_ENV=test NODE_PATH=app/assets/javascripts nyc mocha --config spec/javascripts/.mocharc.json spec/javascripts"
   },
   "dependencies": {
-    "@babel/preset-env": "7.15.0",
+    "@babel/preset-env": "7.15.4",
     "@csstools/postcss-sass": "4.0.0",
-    "@hotwired/turbo-rails": "7.0.0-rc.2",
+    "@hotwired/turbo-rails": "7.0.0-rc.3",
     "@rails/actioncable": "6.1.4",
     "@rails/webpacker": "5.4.2",
     "@tailwindcss/custom-forms": "0.2.1",

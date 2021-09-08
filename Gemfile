@@ -7,14 +7,14 @@ gem "bcrypt",       "3.1.16"
 gem "bootsnap",     "1.8.1", require: false
 gem "hiredis",      "0.6.3"
 gem "jbuilder",     "2.11.2"
-gem "oj",           "3.13.2"
+gem "oj",           "3.13.4"
 gem "pg",           "1.2.3"
 gem "puma",         "5.4.0"
 gem "rack-timeout", "0.6.0"
 gem "rails",        "6.1.4.1"
 gem "redis",        "4.4.0", require: %w(redis redis/connection/hiredis)
 gem "sassc-rails",  "2.1.2"
-gem "turbo-rails",  "0.7.7"
+gem "turbo-rails",  "0.7.11"
 gem "webpacker",    "5.4.2"
 
 group :development, :test do
@@ -24,8 +24,8 @@ group :development, :test do
 end
 
 group :development do
-  gem "brakeman",                "5.1.1", require: false
-  gem "bundler-audit",           "0.8.0", require: false
+  gem "brakeman",                "5.1.1",   require: false
+  gem "bundler-audit",           "0.9.0.1", require: false
   gem "listen",                  "3.7.0"
   gem "rubocop",                 "1.20.0", require: false
   gem "rubocop-performance",     "1.11.5", require: false
