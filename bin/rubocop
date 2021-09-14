@@ -2,12 +2,6 @@
 
 # frozen_string_literal: true
 
-begin
-  load File.expand_path("spring", __dir__)
-rescue LoadError => error
-  raise unless error.message.include?("spring")
-end
-
 require "pathname"
 
 ENV["BUNDLE_GEMFILE"] ||= File.expand_path(

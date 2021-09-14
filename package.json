@@ -8,11 +8,11 @@
     "test:coverage": "NODE_ENV=test NODE_PATH=app/assets/javascripts nyc mocha --config spec/javascripts/.mocharc.json spec/javascripts"
   },
   "dependencies": {
-    "@babel/preset-env": "7.15.4",
+    "@babel/preset-env": "7.15.6",
     "@csstools/postcss-sass": "4.0.0",
     "@hotwired/turbo-rails": "7.0.0-rc.3",
     "@rails/actioncable": "6.1.4",
-    "@rails/webpacker": "5.4.2",
+    "@rails/webpacker": "5.4.3",
     "@tailwindcss/custom-forms": "0.2.1",
     "glob-all": "3.2.1",
     "i18n-js": "3.8.0",
@@ -41,7 +41,7 @@
     "webpack-dev-server": "3.11.2"
   },
   "engines": {
-    "node": "16.5.0"
+    "node": "16.9.1"
   },
   "resolutions": {
     "node-sass": "6.0.1"

@@ -7,7 +7,7 @@ gem "bcrypt",       "3.1.16"
 gem "bootsnap",     "1.8.1", require: false
 gem "hiredis",      "0.6.3"
 gem "jbuilder",     "2.11.2"
-gem "oj",           "3.13.4"
+gem "oj",           "3.13.6"
 gem "pg",           "1.2.3"
 gem "puma",         "5.4.0"
 gem "rack-timeout", "0.6.0"
@@ -15,7 +15,7 @@ gem "rails",        "6.1.4.1"
 gem "redis",        "4.4.0", require: %w(redis redis/connection/hiredis)
 gem "sassc-rails",  "2.1.2"
 gem "turbo-rails",  "0.7.11"
-gem "webpacker",    "5.4.2"
+gem "webpacker",    "5.4.3"
 
 group :development, :test do
   gem "cacheflow",    "0.1.1"
@@ -27,13 +27,12 @@ group :development do
   gem "brakeman",                "5.1.1",   require: false
   gem "bundler-audit",           "0.9.0.1", require: false
   gem "listen",                  "3.7.0"
-  gem "rubocop",                 "1.20.0", require: false
+  gem "rubocop",                 "1.21.0", require: false
   gem "rubocop-performance",     "1.11.5", require: false
-  gem "rubocop-rails",           "2.11.3", require: false
+  gem "rubocop-rails",           "2.12.2", require: false
   gem "rubocop-rspec",           "2.4.0",  require: false
-  gem "spring",                  "2.1.1"
+  gem "spring",                  "3.0.0"
   gem "spring-commands-rspec",   "1.0.4"
-  gem "spring-commands-rubocop", "0.2.0"
   gem "web-console",             "4.1.0"
 end
 
