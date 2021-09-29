@@ -1,5 +1,5 @@
 import I18n from "../i18n";
-import { Controller } from "stimulus";
+import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
   /**

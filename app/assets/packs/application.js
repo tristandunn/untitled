@@ -1,7 +1,7 @@
 import "../stylesheets/application.scss";
 import "@hotwired/turbo-rails";
-import { Application } from "stimulus";
-import { definitionsFromContext } from "stimulus/webpack-helpers";
+import { Application } from "@hotwired/stimulus";
+import { definitionsFromContext } from "@hotwired/stimulus-webpack-helpers";
 
 const context = require.context("../javascripts/controllers", true, /\.js$/);
 

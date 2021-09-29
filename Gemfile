@@ -4,17 +4,17 @@ ruby   "3.0.2"
 source "https://rubygems.org"
 
 gem "bcrypt",       "3.1.16"
-gem "bootsnap",     "1.8.1", require: false
+gem "bootsnap",     "1.9.1", require: false
 gem "hiredis",      "0.6.3"
 gem "jbuilder",     "2.11.2"
-gem "oj",           "3.13.6"
+gem "oj",           "3.13.8"
 gem "pg",           "1.2.3"
-gem "puma",         "5.4.0"
+gem "puma",         "5.5.0"
 gem "rack-timeout", "0.6.0"
 gem "rails",        "6.1.4.1"
 gem "redis",        "4.4.0", require: %w(redis redis/connection/hiredis)
 gem "sassc-rails",  "2.1.2"
-gem "turbo-rails",  "0.7.11"
+gem "turbo-rails",  "0.8.1"
 gem "webpacker",    "5.4.3"
 
 group :development, :test do
@@ -30,7 +30,7 @@ group :development do
   gem "rubocop",                 "1.21.0", require: false
   gem "rubocop-performance",     "1.11.5", require: false
   gem "rubocop-rails",           "2.12.2", require: false
-  gem "rubocop-rspec",           "2.4.0",  require: false
+  gem "rubocop-rspec",           "2.5.0",  require: false
   gem "spring",                  "3.0.0"
   gem "spring-commands-rspec",   "1.0.4"
   gem "web-console",             "4.1.0"
