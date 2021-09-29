@@ -69,6 +69,13 @@ heroku buildpacks:add heroku/nodejs
 heroku buildpacks:add heroku/ruby
 ```
 
+Add the required Heroku add-ons.
+
+```
+heroku addons:create heroku-postgresql:hobby-dev
+heroku addons:create heroku-redis:hobby-dev
+```
+
 Create production credentials and set the encryption key on Heroku.
 
 ```sh
