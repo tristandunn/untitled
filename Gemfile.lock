@@ -132,7 +132,7 @@ GEM
     nokogiri (1.12.5)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
-    oj (3.13.8)
+    oj (3.13.9)
     parallel (1.21.0)
     parser (3.0.2.0)
       ast (~> 2.4.1)
@@ -202,13 +202,13 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.10.2)
-    rubocop (1.21.0)
+    rubocop (1.22.1)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml
-      rubocop-ast (>= 1.9.1, < 2.0)
+      rubocop-ast (>= 1.12.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.12.0)
@@ -216,7 +216,7 @@ GEM
     rubocop-performance (1.11.5)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
-    rubocop-rails (2.12.2)
+    rubocop-rails (2.12.3)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.7.0, < 2.0)
@@ -302,7 +302,7 @@ DEPENDENCIES
   hiredis (= 0.6.3)
   jbuilder (= 2.11.2)
   listen (= 3.7.0)
-  oj (= 3.13.8)
+  oj (= 3.13.9)
   pg (= 1.2.3)
   puma (= 5.5.0)
   rack-timeout (= 0.6.0)
@@ -310,9 +310,9 @@ DEPENDENCIES
   rails-controller-testing (= 1.0.5)
   redis (= 4.4.0)
   rspec-rails (= 5.0.2)
-  rubocop (= 1.21.0)
+  rubocop (= 1.22.1)
   rubocop-performance (= 1.11.5)
-  rubocop-rails (= 2.12.2)
+  rubocop-rails (= 2.12.3)
   rubocop-rspec (= 2.5.0)
   sassc-rails (= 2.1.2)
   selenium-webdriver (= 3.142.7)
@@ -329,4 +329,4 @@ RUBY VERSION
    ruby 3.0.2p107
 
 BUNDLED WITH
-   2.2.24
+   2.2.25

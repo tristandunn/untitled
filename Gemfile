@@ -7,7 +7,7 @@ gem "bcrypt",       "3.1.16"
 gem "bootsnap",     "1.9.1", require: false
 gem "hiredis",      "0.6.3"
 gem "jbuilder",     "2.11.2"
-gem "oj",           "3.13.8"
+gem "oj",           "3.13.9"
 gem "pg",           "1.2.3"
 gem "puma",         "5.5.0"
 gem "rack-timeout", "0.6.0"
@@ -27,9 +27,9 @@ group :development do
   gem "brakeman",                "5.1.1",   require: false
   gem "bundler-audit",           "0.9.0.1", require: false
   gem "listen",                  "3.7.0"
-  gem "rubocop",                 "1.21.0", require: false
+  gem "rubocop",                 "1.22.1", require: false
   gem "rubocop-performance",     "1.11.5", require: false
-  gem "rubocop-rails",           "2.12.2", require: false
+  gem "rubocop-rails",           "2.12.3", require: false
   gem "rubocop-rspec",           "2.5.0",  require: false
   gem "spring",                  "3.0.0"
   gem "spring-commands-rspec",   "1.0.4"
