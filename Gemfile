@@ -9,12 +9,12 @@ gem "hiredis",      "0.6.3"
 gem "jbuilder",     "2.11.2"
 gem "oj",           "3.13.9"
 gem "pg",           "1.2.3"
-gem "puma",         "5.5.0"
+gem "puma",         "5.5.2"
 gem "rack-timeout", "0.6.0"
 gem "rails",        "6.1.4.1"
-gem "redis",        "4.4.0", require: %w(redis redis/connection/hiredis)
+gem "redis",        "4.5.1", require: %w(redis redis/connection/hiredis)
 gem "sassc-rails",  "2.1.2"
-gem "turbo-rails",  "0.8.1"
+gem "turbo-rails",  "7.1.1"
 gem "webpacker",    "5.4.3"
 
 group :development, :test do
@@ -29,7 +29,7 @@ group :development do
   gem "listen",                  "3.7.0"
   gem "rubocop",                 "1.22.1", require: false
   gem "rubocop-performance",     "1.11.5", require: false
-  gem "rubocop-rails",           "2.12.3", require: false
+  gem "rubocop-rails",           "2.12.4", require: false
   gem "rubocop-rspec",           "2.5.0",  require: false
   gem "spring",                  "3.0.0"
   gem "spring-commands-rspec",   "1.0.4"
@@ -42,7 +42,7 @@ group :test do
   gem "factory_bot_rails",        "6.2.0"
   gem "faker",                    "2.19.0"
   gem "rails-controller-testing", "1.0.5"
-  gem "selenium-webdriver",       "3.142.7"
+  gem "selenium-webdriver",       "4.0.2"
   gem "shoulda-matchers",         "5.0.0"
   gem "simplecov-console",        "0.9.1", require: false
   gem "timecop",                  "0.9.4"
