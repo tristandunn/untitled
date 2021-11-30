@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-ruby   "3.0.2"
+ruby   "3.0.3"
 source "https://rubygems.org"
 
 gem "bcrypt",       "3.1.16"
-gem "bootsnap",     "1.9.1", require: false
+gem "bootsnap",     "1.9.3", require: false
 gem "hiredis",      "0.6.3"
 gem "jbuilder",     "2.11.3"
 gem "oj",           "3.13.9"
@@ -14,7 +14,7 @@ gem "rack-timeout", "0.6.0"
 gem "rails",        "6.1.4.1"
 gem "redis",        "4.5.1", require: %w(redis redis/connection/hiredis)
 gem "sassc-rails",  "2.1.2"
-gem "turbo-rails",  "0.8.3"
+gem "turbo-rails",  "0.9.0"
 gem "webpacker",    "5.4.3"
 
 group :development, :test do
@@ -24,16 +24,13 @@ group :development, :test do
 end
 
 group :development do
-  gem "brakeman",                "5.1.2",   require: false
-  gem "bundler-audit",           "0.9.0.1", require: false
-  gem "listen",                  "3.7.0"
-  gem "rubocop",                 "1.23.0", require: false
-  gem "rubocop-performance",     "1.12.0", require: false
-  gem "rubocop-rails",           "2.12.4", require: false
-  gem "rubocop-rspec",           "2.6.0",  require: false
-  gem "spring",                  "3.0.0"
-  gem "spring-commands-rspec",   "1.0.4"
-  gem "web-console",             "4.2.0"
+  gem "brakeman",            "5.1.2", require: false
+  gem "listen",              "3.7.0"
+  gem "rubocop",             "1.23.0", require: false
+  gem "rubocop-performance", "1.12.0", require: false
+  gem "rubocop-rails",       "2.12.4", require: false
+  gem "rubocop-rspec",       "2.6.0",  require: false
+  gem "web-console",         "4.2.0"
 end
 
 group :test do

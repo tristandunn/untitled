@@ -11,7 +11,6 @@ namespace :check do
     ruby:lint
     javascript:lint
     css:lint
-    bundle:audit
   )
 
   desc "Check the code, with coverage"

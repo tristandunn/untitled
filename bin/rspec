@@ -2,12 +2,6 @@
 
 # frozen_string_literal: true
 
-begin
-  load File.expand_path("../spring", __FILE__)
-rescue LoadError => error
-  raise unless error.message.include?("spring")
-end
-
 require "bundler/setup"
 
 load Gem.bin_path("rspec-core", "rspec")
