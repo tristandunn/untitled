@@ -1,6 +1,4 @@
-!.ruby-version
-!Procfile.dev
-
+/app/assets/builds/*
 /config/credentials/production.key
 /coverage/
 /log/
@@ -8,3 +6,7 @@
 /public/packs-test/
 /public/packs/
 /tmp/
+
+!.ruby-version
+!Procfile.dev
+!/app/assets/builds/.keep

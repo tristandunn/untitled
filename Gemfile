@@ -3,19 +3,20 @@
 ruby   "3.0.3"
 source "https://rubygems.org"
 
-gem "bcrypt",       "3.1.16"
-gem "bootsnap",     "1.9.3", require: false
-gem "hiredis",      "0.6.3"
-gem "jbuilder",     "2.11.3"
-gem "oj",           "3.13.9"
-gem "pg",           "1.2.3"
-gem "puma",         "5.5.2"
-gem "rack-timeout", "0.6.0"
-gem "rails",        "6.1.4.1"
-gem "redis",        "4.5.1", require: %w(redis redis/connection/hiredis)
-gem "sassc-rails",  "2.1.2"
-gem "turbo-rails",  "0.9.0"
-gem "webpacker",    "5.4.3"
+gem "bcrypt",            "3.1.16"
+gem "bootsnap",          "1.9.3", require: false
+gem "hiredis",           "0.6.3"
+gem "jbuilder",          "2.11.4"
+gem "oj",                "3.13.10"
+gem "pg",                "1.2.3"
+gem "puma",              "5.5.2"
+gem "rack-timeout",      "0.6.0"
+gem "rails",             "7.0.0"
+gem "redis",             "4.5.1", require: %w(redis redis/connection/hiredis)
+gem "sprockets-rails",   "3.4.2"
+gem "tailwindcss-rails", "2.0.2"
+gem "turbo-rails",       "1.0.0"
+gem "webpacker",         "5.4.3"
 
 group :development, :test do
   gem "cacheflow",    "0.1.1"
@@ -24,7 +25,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "brakeman",            "5.1.2", require: false
+  gem "brakeman",            "5.2.0", require: false
   gem "listen",              "3.7.0"
   gem "rubocop",             "1.23.0", require: false
   gem "rubocop-performance", "1.12.0", require: false

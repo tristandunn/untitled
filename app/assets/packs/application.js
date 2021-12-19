@@ -1,4 +1,3 @@
-import "../stylesheets/application.scss";
 import "@hotwired/turbo-rails";
 import { Application } from "@hotwired/stimulus";
 import { definitionsFromContext } from "@hotwired/stimulus-webpack-helpers";

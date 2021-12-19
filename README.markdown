@@ -5,7 +5,7 @@ A base Rails application to kickstart new projects.
 ## Features
 
 * [PostCSS](postcss.config.js) with Tailwind CSS
-  [configuration](app/assets/javascripts/tailwind.config.js).
+  [configuration](config/tailwind.config.js).
 * JavaScript [tests](spec/javascripts) using
   [Mocha](spec/javascripts/.mocharc.json) with [coverage](nyc.config.js).
 * Ruby [tests](spec/) using [RSpec](spec/spec_helper.rb) and

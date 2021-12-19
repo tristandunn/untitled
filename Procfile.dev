@@ -1,2 +1,3 @@
 web: bundle exec puma -C config/puma.rb
+css: rails tailwindcss:watch
 assets: bin/webpack-dev-server

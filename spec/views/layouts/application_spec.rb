@@ -4,7 +4,7 @@ require "rails_helper"
 
 describe "layouts/application.html.erb", type: :view do
   subject(:html) do
-    render
+    render template: "layouts/application", formats: [:html]
 
     rendered
   end

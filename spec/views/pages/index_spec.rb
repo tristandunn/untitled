@@ -4,7 +4,7 @@ require "rails_helper"
 
 describe "pages/index.html.erb", type: :view do
   subject(:html) do
-    render
+    render template: "pages/index", formats: [:html]
 
     rendered
   end
