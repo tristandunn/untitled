@@ -2,27 +2,23 @@
   "name": "untitled",
   "private": true,
   "scripts": {
+    "build": "node config/esbuild.config.js",
     "lint": "eslint app config spec/javascripts babel.config.js",
     "lint:css": "stylelint app/assets/stylesheets/**/*.css",
-    "test": "NODE_ENV=test NODE_PATH=app/assets/javascripts mocha --config spec/javascripts/.mocharc.json spec/javascripts",
-    "test:coverage": "NODE_ENV=test NODE_PATH=app/assets/javascripts nyc mocha --config spec/javascripts/.mocharc.json spec/javascripts"
+    "test": "NODE_ENV=test NODE_PATH=app/javascript mocha --config spec/javascripts/.mocharc.json spec/javascripts",
+    "test:coverage": "NODE_ENV=test NODE_PATH=app/javascript nyc mocha --config spec/javascripts/.mocharc.json spec/javascripts"
   },
   "dependencies": {
-    "@babel/preset-env": "7.16.7",
     "@hotwired/stimulus": "3.0.1",
-    "@hotwired/stimulus-webpack-helpers": "1.0.1",
     "@hotwired/turbo-rails": "7.1.0",
     "@rails/actioncable": "7.0.1",
-    "@rails/webpacker": "5.4.3",
-    "glob-all": "3.2.1",
-    "i18n-js": "3.8.0",
-    "prop-types": "15.8.1",
-    "rails-erb-loader": "5.5.2",
-    "resolve-url-loader": "4.0.0",
-    "yaml-loader": "0.6.0"
+    "esbuild": "0.14.10",
+    "esbuild-plugin-yaml": "0.0.1",
+    "i18n-js": "3.8.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.16.5",
+    "@babel/preset-env": "7.16.7",
     "@babel/register": "7.16.7",
     "babel-plugin-istanbul": "6.1.1",
     "chai": "4.3.4",
@@ -34,8 +30,7 @@
     "sinon": "12.0.1",
     "sinon-chai": "3.7.0",
     "stylelint": "14.2.0",
-    "stylelint-config-standard": "24.0.0",
-    "webpack-dev-server": "3.11.2"
+    "stylelint-config-standard": "24.0.0"
   },
   "engines": {
     "node": "16.13.1"

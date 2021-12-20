@@ -5,7 +5,7 @@
 
   <title><%= t("title") %></title>
 
-  <%= stylesheet_link_tag "tailwind" %>
+  <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
 
   <script type="text/javascript">
     window.I18n = {
@@ -13,7 +13,7 @@
       locale        : <%== I18n.locale.to_json %>
     };
   </script>
-  <%= javascript_pack_tag "application" %>
+  <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
 </head>
 <body>
 

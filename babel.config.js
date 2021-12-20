@@ -36,7 +36,6 @@ module.exports = function(api) {
     ].filter(Boolean),
 
     plugins : [
-      "babel-plugin-macros",
       "@babel/plugin-syntax-dynamic-import",
       isTestEnv && "babel-plugin-dynamic-import-node",
       isTestEnv && "babel-plugin-istanbul",
@@ -56,10 +55,6 @@ module.exports = function(api) {
       [
         "@babel/plugin-proposal-private-property-in-object",
         { loose: true }
-      ],
-      [
-        "@babel/plugin-transform-runtime",
-        { helpers: false }
       ],
       [
         "@babel/plugin-transform-regenerator",

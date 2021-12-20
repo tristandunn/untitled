@@ -6,6 +6,7 @@ if ENV["CI"] || ENV["COVERAGE"]
 
   SimpleCov.formatter = SimpleCov::Formatter::Console
   SimpleCov.start("rails") do
+    add_filter(/.*\.rake/)
     coverage_dir "./tmp/cache/coverage"
     enable_coverage :branch
     minimum_coverage line: 100, branch: 100

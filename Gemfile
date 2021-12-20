@@ -6,7 +6,9 @@ source "https://rubygems.org"
 gem "bcrypt",            "3.1.16"
 gem "bootsnap",          "1.9.3", require: false
 gem "hiredis",           "0.6.3"
+gem "hotwire-rails",     "0.1.3"
 gem "jbuilder",          "2.11.5"
+gem "jsbundling-rails",  "1.0.0"
 gem "oj",                "3.13.11"
 gem "pg",                "1.2.3"
 gem "puma",              "5.5.2"
@@ -17,7 +19,6 @@ gem "sprockets-rails",   "3.4.2"
 gem "strong_migrations", "0.7.9"
 gem "tailwindcss-rails", "2.0.4"
 gem "turbo-rails",       "1.0.0"
-gem "webpacker",         "5.4.3"
 
 group :development, :test do
   gem "cacheflow",    "0.1.1"
