@@ -14,6 +14,7 @@ gem "rack-timeout",      "0.6.0"
 gem "rails",             "7.0.1"
 gem "redis",             "4.5.1", require: %w(redis redis/connection/hiredis)
 gem "sprockets-rails",   "3.4.2"
+gem "strong_migrations", "0.7.9"
 gem "tailwindcss-rails", "2.0.4"
 gem "turbo-rails",       "1.0.0"
 gem "webpacker",         "5.4.3"
