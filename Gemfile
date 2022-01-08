@@ -1,20 +1,20 @@
 # frozen_string_literal: true
 
-ruby   "3.0.3"
+ruby   "3.1.0"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.16"
 gem "bootsnap",          "1.9.3", require: false
 gem "hiredis",           "0.6.3"
-gem "jbuilder",          "2.11.4"
-gem "oj",                "3.13.10"
+gem "jbuilder",          "2.11.5"
+gem "oj",                "3.13.11"
 gem "pg",                "1.2.3"
 gem "puma",              "5.5.2"
 gem "rack-timeout",      "0.6.0"
-gem "rails",             "7.0.0"
+gem "rails",             "7.0.1"
 gem "redis",             "4.5.1", require: %w(redis redis/connection/hiredis)
 gem "sprockets-rails",   "3.4.2"
-gem "tailwindcss-rails", "2.0.2"
+gem "tailwindcss-rails", "2.0.4"
 gem "turbo-rails",       "1.0.0"
 gem "webpacker",         "5.4.3"
 
@@ -27,10 +27,10 @@ end
 group :development do
   gem "brakeman",            "5.2.0", require: false
   gem "listen",              "3.7.0"
-  gem "rubocop",             "1.23.0", require: false
-  gem "rubocop-performance", "1.12.0", require: false
-  gem "rubocop-rails",       "2.12.4", require: false
-  gem "rubocop-rspec",       "2.6.0",  require: false
+  gem "rubocop",             "1.24.1", require: false
+  gem "rubocop-performance", "1.13.1", require: false
+  gem "rubocop-rails",       "2.13.0", require: false
+  gem "rubocop-rspec",       "2.7.0",  require: false
   gem "web-console",         "4.2.0"
 end
 
@@ -41,7 +41,7 @@ group :test do
   gem "faker",                    "2.19.0"
   gem "rails-controller-testing", "1.0.5"
   gem "selenium-webdriver",       "4.0.3"
-  gem "shoulda-matchers",         "5.0.0"
+  gem "shoulda-matchers",         "5.1.0"
   gem "simplecov-console",        "0.9.1", require: false
   gem "timecop",                  "0.9.4"
 end
