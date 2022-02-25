@@ -12,7 +12,7 @@
     "@hotwired/stimulus": "3.0.1",
     "@hotwired/turbo-rails": "7.1.1",
     "@rails/actioncable": "7.0.2-2",
-    "esbuild": "0.14.21",
+    "esbuild": "0.14.23",
     "esbuild-plugin-yaml": "0.0.1",
     "i18n-js": "3.8.0"
   },
@@ -24,15 +24,15 @@
     "chai": "4.3.6",
     "eslint": "8.9.0",
     "jsdom": "19.0.0",
-    "mocha": "9.2.0",
+    "mocha": "9.2.1",
     "mocha-yaml-loader": "1.0.3",
     "nyc": "15.1.0",
     "sinon": "13.0.1",
     "sinon-chai": "3.7.0",
-    "stylelint": "14.5.1",
+    "stylelint": "14.5.3",
     "stylelint-config-standard": "25.0.0"
   },
   "engines": {
-    "node": "16.14.0"
+    "node": "17.6.0"
   }
 }

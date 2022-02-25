@@ -1,4 +1,3 @@
-coverage/
-public/packs
-public/packs-test
+app/assets/builds
+coverage
 vendor/bundle

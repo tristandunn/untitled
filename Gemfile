@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ruby   "3.1.0"
+ruby   "3.1.1"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.16"
@@ -8,16 +8,16 @@ gem "bootsnap",          "1.10.3", require: false
 gem "hiredis",           "0.6.3"
 gem "hotwire-rails",     "0.1.3"
 gem "jbuilder",          "2.11.5"
-gem "jsbundling-rails",  "1.0.0"
+gem "jsbundling-rails",  "1.0.1"
 gem "oj",                "3.13.11"
-gem "pg",                "1.3.2"
+gem "pg",                "1.3.3"
 gem "puma",              "5.6.2"
 gem "rack-timeout",      "0.6.0"
 gem "rails",             "7.0.2.2"
 gem "redis",             "4.6.0", require: %w(redis redis/connection/hiredis)
 gem "sprockets-rails",   "3.4.2"
 gem "strong_migrations", "0.8.0"
-gem "tailwindcss-rails", "2.0.5"
+gem "tailwindcss-rails", "2.0.7"
 gem "turbo-rails",       "1.0.1"
 
 group :development, :test do
