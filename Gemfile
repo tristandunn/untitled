@@ -16,7 +16,7 @@ gem "rack-timeout",      "0.6.0"
 gem "rails",             "7.0.2.3"
 gem "redis",             "4.6.0", require: %w(redis redis/connection/hiredis)
 gem "sprockets-rails",   "3.4.2"
-gem "strong_migrations", "0.8.0"
+gem "strong_migrations", "1.0.0"
 gem "tailwindcss-rails", "2.0.8"
 gem "turbo-rails",       "1.0.1"
 
@@ -29,9 +29,9 @@ end
 group :development do
   gem "brakeman",            "5.2.1", require: false
   gem "listen",              "3.7.1"
-  gem "rubocop",             "1.26.0", require: false
+  gem "rubocop",             "1.26.1", require: false
   gem "rubocop-performance", "1.13.3", require: false
-  gem "rubocop-rails",       "2.13.2", require: false
+  gem "rubocop-rails",       "2.14.2", require: false
   gem "rubocop-rspec",       "2.9.0",  require: false
   gem "web-console",         "4.2.0"
 end
