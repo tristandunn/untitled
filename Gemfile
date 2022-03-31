@@ -11,7 +11,7 @@ gem "jbuilder",          "2.11.5"
 gem "jsbundling-rails",  "1.0.2"
 gem "oj",                "3.13.11"
 gem "pg",                "1.3.4"
-gem "puma",              "5.6.2"
+gem "puma",              "5.6.4"
 gem "rack-timeout",      "0.6.0"
 gem "rails",             "7.0.2.3"
 gem "redis",             "4.6.0", require: %w(redis redis/connection/hiredis)
