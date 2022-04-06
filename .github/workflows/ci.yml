@@ -25,31 +25,15 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ steps.ruby-version.outputs.version }}
-      - name: Cache the Ruby dependencies
-        uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-bundle-
-      - name: Install the Ruby dependencies
-        run: |
-          bundle config path vendor/bundle
-          bundle install --jobs 4 --retry 3
+          bundler-cache: true
       - name: Determine the Node version
         id: node-version
         run: echo "::set-output name=version::$(cat package.json | perl -pe '($_)=/"node":\s+"([0-9]+([.][0-9]+)+)"/')"
       - name: Install Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ steps.node-version.outputs.version }}
-      - name: Cache the Node dependencies
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          cache: "yarn"
       - name: Install the Node dependencies
         run: yarn install --pure-lockfile
       - name: Run the Ruby tests
