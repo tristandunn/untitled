@@ -27,9 +27,9 @@ group :development, :test do
 end
 
 group :development do
-  gem "brakeman",            "5.2.1", require: false
+  gem "brakeman",            "5.2.2", require: false
   gem "listen",              "3.7.1"
-  gem "rubocop",             "1.26.1", require: false
+  gem "rubocop",             "1.27.0", require: false
   gem "rubocop-performance", "1.13.3", require: false
   gem "rubocop-rails",       "2.14.2", require: false
   gem "rubocop-rspec",       "2.9.0",  require: false
