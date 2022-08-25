@@ -52,43 +52,6 @@ Or you can run the tests with coverage and lint with a single command.
 bundle exec rake check
 ```
 
-## Deployment
-
-### Heroku
-
-Create an application.
-
-```
-heroku create
-```
-
-Add the Node and Ruby build packs.
-
-```
-heroku buildpacks:add heroku/nodejs
-heroku buildpacks:add heroku/ruby
-```
-
-Add the required Heroku add-ons.
-
-```
-heroku addons:create heroku-postgresql:hobby-dev
-heroku addons:create heroku-redis:hobby-dev
-```
-
-Create production credentials and set the encryption key on Heroku.
-
-```sh
-rails credentials:edit --environment production
-heroku config:set RAILS_MASTER_KEY=$(cat config/credentials/production.key)
-```
-
-Deploy to Heroku.
-
-```
-git push heroku main
-```
-
 ## License
 
 Untitled uses the MIT license. See [LICENSE](LICENSE) for more details.
