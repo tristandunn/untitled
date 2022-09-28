@@ -39,7 +39,7 @@ jobs:
           node-version: ${{ steps.node-version.outputs.version }}
           cache: "yarn"
       - name: Install the Node dependencies
-        run: yarn install --pure-lockfile
+        run: yarn install
       - name: Run the Ruby tests
         env:
           COVERAGE: true

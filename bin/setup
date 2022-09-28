@@ -8,7 +8,7 @@ gem list bundler --installed > /dev/null ||
 bundle check || bundle install
 
 # Install the Node dependencies.
-yarn check || yarn install
+yarn install
 
 # Setup the database.
 ./bin/rails db:setup
