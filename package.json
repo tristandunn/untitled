@@ -2,11 +2,11 @@
   "name": "untitled",
   "private": true,
   "scripts": {
-    "build": "node config/esbuild.config.js",
-    "lint": "eslint app config spec/javascripts babel.config.js",
-    "lint:css": "stylelint app/assets/stylesheets/**/*.css",
-    "test": "NODE_ENV=test NODE_PATH=app/javascript mocha --config spec/javascripts/.mocharc.json spec/javascripts",
-    "test:coverage": "NODE_ENV=test NODE_PATH=app/javascript nyc mocha --config spec/javascripts/.mocharc.json spec/javascripts"
+    "build": "node ./config/esbuild.config.js",
+    "lint": "eslint ./app ./config ./spec/javascripts ./babel.config.js",
+    "lint:css": "stylelint ./app/assets/stylesheets/**/*.css",
+    "test": "NODE_ENV=test NODE_PATH=./app/javascript mocha --config ./spec/javascripts/.mocharc.json ./spec/javascripts",
+    "test:coverage": "NODE_ENV=test NODE_PATH=./app/javascript nyc mocha --config ./spec/javascripts/.mocharc.json ./spec/javascripts"
   },
   "dependencies": {
     "@hotwired/stimulus": "3.1.0",
