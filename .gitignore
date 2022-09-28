@@ -1,5 +1,5 @@
 /app/assets/builds/*
-/config/credentials/production.key
+/config/master.key
 /coverage/
 /log/
 /node_modules/
