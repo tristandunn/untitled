@@ -10,7 +10,11 @@ jobs:
       postgres:
         image: postgres:14-alpine
         ports: ["5432:5432"]
-        options: --health-cmd pg_isready --health-interval 10ms --health-retries 10 --health-timeout 1s
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-retries 10
+          --health-timeout 1s
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
