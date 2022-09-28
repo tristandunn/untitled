@@ -20,6 +20,7 @@ require("esbuild")
   .build({
     bundle      : true,
     entryPoints : ["app/javascript/application.js"],
+    minify      : process.env.NODE_ENV === "production",
     outfile     : "app/assets/builds/application.js",
     plugins     : [yamlPlugin()],
     watch       : watch
