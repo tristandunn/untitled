@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Determine the Ruby version
         id: ruby-version
         run: echo "::set-output name=version::$(cat .ruby-version)"
@@ -50,7 +50,7 @@ jobs:
       - name: Run the JavaScript tests
         run: yarn test:coverage
       - name: Lint the code
-        uses: wearerequired/lint-action@v1
+        uses: wearerequired/lint-action@v2
         with:
           ESLINT: true
           ESLINT_EXTENSIONS: js,jsx
