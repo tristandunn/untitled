@@ -3,7 +3,7 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  build:
+  Ruby:
     runs-on: ubuntu-latest
 
     services:
@@ -47,8 +47,50 @@ jobs:
           POSTGRES_PASSWORD: postgres
           RAILS_ENV: test
         run: bundle exec rails db:setup ruby:test
+
+  JavaScript:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+      - name: Determine the Node version
+        id: node-version
+        run: echo "::set-output name=version::$(cat package.json | perl -pe '($_)=/"node":\s+"([0-9]+([.][0-9]+)+)"/')"
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ steps.node-version.outputs.version }}
+          cache: "yarn"
+      - name: Install the Node dependencies
+        run: yarn install
       - name: Run the JavaScript tests
         run: yarn test:coverage
+
+  Linting:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+      - name: Determine the Ruby version
+        id: ruby-version
+        run: echo "::set-output name=version::$(cat .ruby-version)"
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ steps.ruby-version.outputs.version }}
+          bundler-cache: true
+      - name: Determine the Node version
+        id: node-version
+        run: echo "::set-output name=version::$(cat package.json | perl -pe '($_)=/"node":\s+"([0-9]+([.][0-9]+)+)"/')"
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ steps.node-version.outputs.version }}
+          cache: "yarn"
+      - name: Install the Node dependencies
+        run: yarn install
       - name: Lint the code
         uses: wearerequired/lint-action@v2
         with:
@@ -58,6 +100,13 @@ jobs:
           RUBOCOP: true
           RUBOCOP_COMMAND_PREFIX: bundle exec
           STYLELINT: true
+
+  Vulnerabilities:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
       - name: Scan for vulnerabilities
         uses: devmasx/brakeman-linter-action@v1.0.0
         env:
