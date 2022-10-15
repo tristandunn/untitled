@@ -24,19 +24,19 @@ jobs:
         uses: actions/checkout@v3
       - name: Determine the Ruby version
         id: ruby-version
-        run: echo "::set-output name=version::$(cat .ruby-version)"
+        run: echo "RUBY_VERSION=$(cat .ruby-version)" >> $GITHUB_ENV
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ steps.ruby-version.outputs.version }}
+          ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
       - name: Determine the Node version
         id: node-version
-        run: echo "::set-output name=version::$(cat package.json | perl -pe '($_)=/"node":\s+"([0-9]+([.][0-9]+)+)"/')"
+        run: echo "NODE_VERSION=$(cat package.json | perl -pe '($_)=/"node":\s+"([0-9]+([.][0-9]+)+)"/')" >> $GITHUB_ENV
       - name: Install Node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ steps.node-version.outputs.version }}
+          node-version: ${{ env.NODE_VERSION }}
           cache: "yarn"
       - name: Install the Node dependencies
         run: yarn install
@@ -56,11 +56,11 @@ jobs:
         uses: actions/checkout@v3
       - name: Determine the Node version
         id: node-version
-        run: echo "::set-output name=version::$(cat package.json | perl -pe '($_)=/"node":\s+"([0-9]+([.][0-9]+)+)"/')"
+        run: echo "NODE_VERSION=$(cat package.json | perl -pe '($_)=/"node":\s+"([0-9]+([.][0-9]+)+)"/')" >> $GITHUB_ENV
       - name: Install Node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ steps.node-version.outputs.version }}
+          node-version: ${{ env.NODE_VERSION }}
           cache: "yarn"
       - name: Install the Node dependencies
         run: yarn install
@@ -75,19 +75,19 @@ jobs:
         uses: actions/checkout@v3
       - name: Determine the Ruby version
         id: ruby-version
-        run: echo "::set-output name=version::$(cat .ruby-version)"
+        run: echo "RUBY_VERSION=$(cat .ruby-version)" >> $GITHUB_ENV
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ steps.ruby-version.outputs.version }}
+          ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
       - name: Determine the Node version
         id: node-version
-        run: echo "::set-output name=version::$(cat package.json | perl -pe '($_)=/"node":\s+"([0-9]+([.][0-9]+)+)"/')"
+        run: echo "NODE_VERSION=$(cat package.json | perl -pe '($_)=/"node":\s+"([0-9]+([.][0-9]+)+)"/')" >> $GITHUB_ENV
       - name: Install Node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ steps.node-version.outputs.version }}
+          node-version: ${{ env.NODE_VERSION }}
           cache: "yarn"
       - name: Install the Node dependencies
         run: yarn install
