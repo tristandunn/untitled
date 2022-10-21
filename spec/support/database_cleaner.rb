@@ -8,13 +8,11 @@ RSpec.configure do |config|
   end
 
   config.before do
-    is_rack = Capybara.current_driver == :rack_test
-
-    DatabaseCleaner.strategy = is_rack ? :transaction : :truncation
+    DatabaseCleaner.strategy = Capybara.current_driver == :rack_test ? :transaction : :truncation
     DatabaseCleaner.start
   end
 
-  config.after do
+  config.append_after do
     DatabaseCleaner.clean
   end
 end
