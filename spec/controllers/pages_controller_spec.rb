@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-describe PagesController, "#index", type: :controller do
+describe PagesController, "#index" do
   before do
     get :index
   end

@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-describe ApplicationJob, type: :job do
+describe ApplicationJob do
   subject(:klass) { described_class }
 
   it "inherits from ActiveJob base" do

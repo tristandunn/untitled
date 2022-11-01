@@ -5,7 +5,7 @@ source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.18"
 gem "bootsnap",          "1.13.0", require: false
-gem "hiredis-client",    "0.10.0"
+gem "hiredis-client",    "0.11.0"
 gem "hotwire-rails",     "0.1.3"
 gem "jbuilder",          "2.11.5"
 gem "jsbundling-rails",  "1.0.3"
@@ -16,25 +16,25 @@ gem "rack-timeout",      "0.6.3"
 gem "rails",             "7.0.4"
 gem "redis",             "5.0.5"
 gem "sprockets-rails",   "3.4.2"
-gem "strong_migrations", "1.3.2"
-gem "tailwindcss-rails", "2.0.15"
+gem "strong_migrations", "1.4.0"
+gem "tailwindcss-rails", "2.0.17"
 gem "turbo-rails",       "1.3.2"
 
 group :development, :test do
   gem "cacheflow",    "0.3.0"
   gem "dotenv-rails", "2.8.1"
   gem "pg_query",     "2.1.4"
-  gem "prosopite",    "1.1.4"
+  gem "prosopite",    "1.2.1"
   gem "rspec-rails",  "6.0.1"
 end
 
 group :development do
   gem "brakeman",            "5.3.1", require: false
   gem "listen",              "3.7.1"
-  gem "rubocop",             "1.37.0", require: false
+  gem "rubocop",             "1.38.0", require: false
   gem "rubocop-performance", "1.15.0", require: false
-  gem "rubocop-rails",       "2.16.1", require: false
-  gem "rubocop-rspec",       "2.13.2", require: false
+  gem "rubocop-rails",       "2.17.2", require: false
+  gem "rubocop-rspec",       "2.14.2", require: false
   gem "web-console",         "4.2.0"
 end
 

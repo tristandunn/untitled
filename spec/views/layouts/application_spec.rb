@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-describe "layouts/application.html.erb", type: :view do
+describe "layouts/application.html.erb" do
   subject(:html) do
     render template: "layouts/application", formats: [:html]
 

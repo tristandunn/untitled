@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-describe "Homepage", type: :feature do
+describe "Homepage" do
   before do
     visit "/"
   end
