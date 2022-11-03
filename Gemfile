@@ -9,7 +9,7 @@ gem "hiredis-client",    "0.11.0"
 gem "hotwire-rails",     "0.1.3"
 gem "jbuilder",          "2.11.5"
 gem "jsbundling-rails",  "1.0.3"
-gem "oj",                "3.13.21"
+gem "oj",                "3.13.22"
 gem "pg",                "1.4.4"
 gem "puma",              "5.6.5"
 gem "rack-timeout",      "0.6.3"
@@ -23,8 +23,8 @@ gem "turbo-rails",       "1.3.2"
 group :development, :test do
   gem "cacheflow",    "0.3.0"
   gem "dotenv-rails", "2.8.1"
-  gem "pg_query",     "2.1.4"
-  gem "prosopite",    "1.2.1"
+  gem "pg_query",     "2.2.0"
+  gem "prosopite",    "1.2.2"
   gem "rspec-rails",  "6.0.1"
 end
 
@@ -34,7 +34,7 @@ group :development do
   gem "rubocop",             "1.38.0", require: false
   gem "rubocop-performance", "1.15.0", require: false
   gem "rubocop-rails",       "2.17.2", require: false
-  gem "rubocop-rspec",       "2.14.2", require: false
+  gem "rubocop-rspec",       "2.15.0", require: false
   gem "web-console",         "4.2.0"
 end
 
@@ -42,7 +42,7 @@ group :test do
   gem "capybara",                 "3.37.1"
   gem "database_cleaner",         "2.0.1"
   gem "factory_bot_rails",        "6.2.0"
-  gem "faker",                    "2.23.0"
+  gem "faker",                    "3.0.0"
   gem "rails-controller-testing", "1.0.5"
   gem "selenium-webdriver",       "4.5.0"
   gem "shoulda-matchers",         "5.2.0"
