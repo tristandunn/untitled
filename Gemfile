@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ruby   "3.1.2"
+ruby   "3.1.3"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.18"
@@ -47,5 +47,5 @@ group :test do
   gem "selenium-webdriver",       "4.6.1"
   gem "shoulda-matchers",         "5.2.0"
   gem "simplecov-console",        "0.9.1", require: false
-  gem "timecop",                  "0.9.5"
+  gem "timecop",                  "0.9.6"
 end
