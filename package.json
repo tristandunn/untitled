@@ -14,7 +14,7 @@
     "@hotwired/turbo-rails": "7.2.5",
     "esbuild": "0.17.5",
     "esbuild-plugin-yaml": "0.0.1",
-    "i18n-js": "3.9.2"
+    "i18n-js": "4.2.2"
   },
   "devDependencies": {
     "@babel/core": "7.20.12",

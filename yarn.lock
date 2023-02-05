@@ -2028,6 +2028,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bignumber.js@npm:*":
+  version: 9.1.1
+  resolution: "bignumber.js@npm:9.1.1"
+  checksum: ad243b7e2f9120b112d670bb3d674128f0bd2ca1745b0a6c9df0433bd2c0252c43e6315d944c2ac07b4c639e7496b425e46842773cf89c6a2dcd4f31e5c4b11e
+  languageName: node
+  linkType: hard
+
 "binary-extensions@npm:^2.0.0":
   version: 2.2.0
   resolution: "binary-extensions@npm:2.2.0"
@@ -3496,10 +3503,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18n-js@npm:3.9.2":
-  version: 3.9.2
-  resolution: "i18n-js@npm:3.9.2"
-  checksum: b405ad0861dbd57a8757811dcee791e8526a705d67c4a4353e27c924fa2c3422130fba16a21875bd89be871c86ef82f26212b002ba527c09956ff230c47e5026
+"i18n-js@npm:4.2.2":
+  version: 4.2.2
+  resolution: "i18n-js@npm:4.2.2"
+  dependencies:
+    bignumber.js: "*"
+    lodash: "*"
+  checksum: 288968783c4455caa4f1041e41be521731a04fb0b7e02c4b5fddd7538baa5621ae96ec4ee0f6151d417593a95f502ea5809165880c9ea5d246f228b79c2872ca
   languageName: node
   linkType: hard
 
@@ -4085,6 +4095,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash@npm:*":
+  version: 4.17.21
+  resolution: "lodash@npm:4.17.21"
+  checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
+  languageName: node
+  linkType: hard
+
 "log-symbols@npm:4.1.0":
   version: 4.1.0
   resolution: "log-symbols@npm:4.1.0"
@@ -4352,9 +4369,9 @@ __metadata:
   linkType: hard
 
 "minipass@npm:^4.0.0":
-  version: 4.0.1
-  resolution: "minipass@npm:4.0.1"
-  checksum: 48eb3141cc247b44f738944cbd789aedeed9288ebdb64c7de9b3bf23e9e71d611381bfecf643d877d25f7ca9f3d5ab7b6757ef6f46282086812ac5372b7cd291
+  version: 4.0.2
+  resolution: "minipass@npm:4.0.2"
+  checksum: 2e4f4caaf85a45c01c6042adc43b5111a6113f62e300acf1db3b193ac3ec6e955bc893d6d8a08635598771a55a0f60487dcac59a1ac39557eb524295d4778c9e
   languageName: node
   linkType: hard
 
@@ -5926,7 +5943,7 @@ __metadata:
     esbuild: 0.17.5
     esbuild-plugin-yaml: 0.0.1
     eslint: 8.33.0
-    i18n-js: 3.9.2
+    i18n-js: 4.2.2
     jsdom: 21.1.0
     mocha: 10.2.0
     mocha-yaml-loader: 1.0.3

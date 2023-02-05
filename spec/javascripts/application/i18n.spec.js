@@ -12,14 +12,15 @@ describe("I18n", () => {
   });
 
   it("loads all available translations", () => {
-    const files = fs.readdirSync("./config/locales");
+    const files = fs.readdirSync("./config/locales"),
+          translations = {};
 
     files.forEach((file) => {
-      const translations = YAML.parse(
+      Object.assign(translations, YAML.parse(
         fs.readFileSync(`./config/locales/${file}`).toString()
-      );
-
-      expect(I18n.translations).to.deep.include(translations);
+      ));
     });
+
+    expect(I18n.translations).to.deep.eq(translations);
   });
 });
