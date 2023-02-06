@@ -1,0 +1,31 @@
+services:
+  database:
+    image: postgres:14.9-alpine
+    environment:
+      POSTGRES_DB: untitled
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    ports:
+      - 5432:5432
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  application:
+    platform: linux/x86_64
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: application
+      args:
+        BUNDLE_WITHOUT: test
+        ENVIRONMENT: development
+    ports:
+      - 3000:3000
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@database:5432/untitled
+    depends_on:
+      database:
+        condition: service_healthy

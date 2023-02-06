@@ -1,0 +1,13 @@
+.dockerignore
+.ruby-version
+Dockerfile
+LICENSE
+Procfile
+Procfile.dev
+README.markdown
+docker-compose.yml
+coverage/
+public/assets
+node_modules/
+log/
+tmp/
