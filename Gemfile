@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ruby   "3.2.0"
+ruby   "3.2.1"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.18"
@@ -16,22 +16,22 @@ gem "rails",             "7.0.4.2"
 gem "redis",             "5.0.6"
 gem "sprockets-rails",   "3.4.2"
 gem "strong_migrations", "1.4.2"
-gem "tailwindcss-rails", "2.0.21"
+gem "tailwindcss-rails", "2.0.22"
 gem "turbo-rails",       "1.3.3"
 
 group :development, :test do
   gem "cacheflow",    "0.3.0"
   gem "dotenv-rails", "2.8.1"
   gem "pg_query",     "2.2.1"
-  gem "prosopite",    "1.2.2"
+  gem "prosopite",    "1.3.0"
   gem "rspec-rails",  "6.0.1"
 end
 
 group :development do
   gem "brakeman",            "5.4.0", require: false
   gem "listen",              "3.8.0"
-  gem "rubocop",             "1.44.1", require: false
-  gem "rubocop-performance", "1.15.2", require: false
+  gem "rubocop",             "1.45.1", require: false
+  gem "rubocop-performance", "1.16.0", require: false
   gem "rubocop-rails",       "2.17.4", require: false
   gem "rubocop-rspec",       "2.18.1", require: false
   gem "web-console",         "4.2.0"

@@ -6,14 +6,13 @@
       true,
       {
         "ignoreAtRules": [
-          "tailwind",
           "apply",
-          "variants",
           "responsive",
-          "screen"
+          "screen",
+          "tailwind",
+          "variants"
         ]
       }
-    ],
-    "color-hex-case": "upper"
+    ]
   }
 }
