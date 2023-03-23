@@ -12,11 +12,11 @@ gem "oj",                "3.14.2"
 gem "pg",                "1.4.6"
 gem "puma",              "6.1.1"
 gem "rack-timeout",      "0.6.3"
-gem "rails",             "7.0.4.2"
+gem "rails",             "7.0.4.3"
 gem "redis",             "5.0.6"
 gem "sprockets-rails",   "3.4.2"
-gem "strong_migrations", "1.4.3"
-gem "tailwindcss-rails", "2.0.24"
+gem "strong_migrations", "1.4.4"
+gem "tailwindcss-rails", "2.0.25"
 gem "turbo-rails",       "1.4.0"
 
 group :development, :test do
@@ -30,7 +30,7 @@ end
 group :development do
   gem "brakeman",            "5.4.1", require: false
   gem "listen",              "3.8.0"
-  gem "rubocop",             "1.48.0", require: false
+  gem "rubocop",             "1.48.1", require: false
   gem "rubocop-capybara",    "2.17.1", require: false
   gem "rubocop-performance", "1.16.0", require: false
   gem "rubocop-rails",       "2.18.0", require: false
@@ -40,7 +40,7 @@ end
 
 group :test do
   gem "capybara",                 "3.38.0"
-  gem "database_cleaner",         "2.0.1"
+  gem "database_cleaner",         "2.0.2"
   gem "factory_bot_rails",        "6.2.0"
   gem "faker",                    "3.1.1"
   gem "rails-controller-testing", "1.0.5"
