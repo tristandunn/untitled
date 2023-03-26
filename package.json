@@ -12,7 +12,7 @@
   "dependencies": {
     "@hotwired/stimulus": "3.2.1",
     "@hotwired/turbo-rails": "7.3.0",
-    "esbuild": "0.17.12",
+    "esbuild": "0.17.14",
     "esbuild-plugin-yaml": "0.0.1",
     "i18n-js": "4.2.3",
     "yaml": "2.2.1"
@@ -36,7 +36,7 @@
     "stylelint-config-standard": "31.0.0"
   },
   "engines": {
-    "node": "18.14.0"
+    "node": "18.15.0"
   },
-  "packageManager": "yarn@3.4.1"
+  "packageManager": "yarn@3.5.0"
 }
