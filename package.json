@@ -18,19 +18,19 @@
     "yaml": "2.2.1"
   },
   "devDependencies": {
-    "@babel/core": "7.21.3",
+    "@babel/core": "7.21.4",
     "@babel/eslint-parser": "7.21.3",
-    "@babel/preset-env": "7.20.2",
+    "@babel/preset-env": "7.21.4",
     "@babel/register": "7.21.0",
     "babel-plugin-dynamic-import-node": "2.3.3",
     "babel-plugin-istanbul": "6.1.1",
     "chai": "4.3.7",
-    "eslint": "8.36.0",
+    "eslint": "8.37.0",
     "jsdom": "21.1.1",
     "mocha": "10.2.0",
     "mocha-yaml-loader": "1.0.3",
     "nyc": "15.1.0",
-    "sinon": "15.0.2",
+    "sinon": "15.0.3",
     "sinon-chai": "3.7.0",
     "stylelint": "15.3.0",
     "stylelint-config-standard": "31.0.0"
