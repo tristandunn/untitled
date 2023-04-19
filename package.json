@@ -12,7 +12,7 @@
   "dependencies": {
     "@hotwired/stimulus": "3.2.1",
     "@hotwired/turbo-rails": "7.3.0",
-    "esbuild": "0.17.15",
+    "esbuild": "0.17.17",
     "esbuild-plugin-yaml": "0.0.1",
     "i18n-js": "4.2.3",
     "yaml": "2.2.1"
@@ -25,15 +25,15 @@
     "babel-plugin-dynamic-import-node": "2.3.3",
     "babel-plugin-istanbul": "6.1.1",
     "chai": "4.3.7",
-    "eslint": "8.37.0",
+    "eslint": "8.38.0",
     "jsdom": "21.1.1",
     "mocha": "10.2.0",
     "mocha-yaml-loader": "1.0.3",
     "nyc": "15.1.0",
     "sinon": "15.0.3",
     "sinon-chai": "3.7.0",
-    "stylelint": "15.4.0",
-    "stylelint-config-standard": "32.0.0"
+    "stylelint": "15.5.0",
+    "stylelint-config-standard": "33.0.0"
   },
   "engines": {
     "node": "18.15.0"
