@@ -25,18 +25,18 @@
     "babel-plugin-dynamic-import-node": "2.3.3",
     "babel-plugin-istanbul": "6.1.1",
     "chai": "4.3.7",
-    "eslint": "8.38.0",
+    "eslint": "8.39.0",
     "jsdom": "21.1.1",
     "mocha": "10.2.0",
     "mocha-yaml-loader": "1.0.3",
     "nyc": "15.1.0",
-    "sinon": "15.0.3",
+    "sinon": "15.0.4",
     "sinon-chai": "3.7.0",
     "stylelint": "15.5.0",
     "stylelint-config-standard": "33.0.0"
   },
   "engines": {
-    "node": "18.15.0"
+    "node": "18.16.0"
   },
   "packageManager": "yarn@3.5.0"
 }
