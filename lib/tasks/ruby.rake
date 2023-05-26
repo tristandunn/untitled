@@ -19,3 +19,11 @@ begin
   end
 rescue LoadError # rubocop:disable Lint/SuppressedException
 end
+
+namespace :erb do
+  desc "Run `bundle exec erblint`"
+  task :lint do # rubocop:disable Rails/RakeEnvironment
+    system("bundle exec erblint .") ||
+      exit($CHILD_STATUS.exitstatus)
+  end
+end

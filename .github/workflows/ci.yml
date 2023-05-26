@@ -94,6 +94,8 @@ jobs:
       - name: Lint the code
         uses: wearerequired/lint-action@v2
         with:
+          ERBLINT: true
+          ERBLINT_COMMAND_PREFIX: bundle exec
           ESLINT: true
           ESLINT_EXTENSIONS: js,jsx
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

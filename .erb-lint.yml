@@ -1,0 +1,19 @@
+---
+glob: "**/*.erb"
+exclude:
+  - "**/vendor/**/*"
+  - "**/node_modules/**/*"
+linters:
+  PartialInstanceVariable:
+    enabled: true
+  Rubocop:
+    enabled: true
+    rubocop_config:
+      inherit_from:
+        - .rubocop.yml
+      Layout/InitialIndentation:
+        Enabled: false
+      Layout/TrailingEmptyLines:
+        Enabled: false
+      Style/FrozenStringLiteralComment:
+        Enabled: false
