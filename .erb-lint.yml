@@ -1,8 +1,8 @@
 ---
 glob: "**/*.erb"
 exclude:
-  - "**/vendor/**/*"
   - "**/node_modules/**/*"
+  - "**/vendor/**/*"
 linters:
   PartialInstanceVariable:
     enabled: true
