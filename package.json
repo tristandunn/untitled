@@ -20,23 +20,23 @@
   "devDependencies": {
     "@babel/core": "7.22.1",
     "@babel/eslint-parser": "7.21.8",
-    "@babel/preset-env": "7.22.2",
+    "@babel/preset-env": "7.22.4",
     "@babel/register": "7.21.0",
     "babel-plugin-dynamic-import-node": "2.3.3",
     "babel-plugin-istanbul": "6.1.1",
     "chai": "4.3.7",
-    "eslint": "8.41.0",
+    "eslint": "8.42.0",
     "jsdom": "22.1.0",
     "mocha": "10.2.0",
     "mocha-yaml-loader": "1.0.3",
     "nyc": "15.1.0",
     "sinon": "15.1.0",
     "sinon-chai": "3.7.0",
-    "stylelint": "15.6.2",
+    "stylelint": "15.6.3",
     "stylelint-config-standard": "33.0.0"
   },
   "engines": {
     "node": "18.16.0"
   },
-  "packageManager": "yarn@3.5.1"
+  "packageManager": "yarn@3.6.0"
 }

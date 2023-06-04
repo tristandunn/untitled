@@ -8,9 +8,9 @@ gem "bootsnap",          "1.16.0", require: false
 gem "hotwire-rails",     "0.1.3"
 gem "jbuilder",          "2.11.5"
 gem "jsbundling-rails",  "1.1.1"
-gem "oj",                "3.14.3"
+gem "oj",                "3.15.0"
 gem "pg",                "1.5.3"
-gem "puma",              "6.2.2"
+gem "puma",              "6.3.0"
 gem "rack-timeout",      "0.6.3"
 gem "rails",             "7.0.5"
 gem "redis",             "5.0.6"
@@ -24,14 +24,14 @@ group :development, :test do
   gem "dotenv-rails", "2.8.1"
   gem "pg_query",     "4.2.1"
   gem "prosopite",    "1.3.1"
-  gem "rspec-rails",  "6.0.2"
+  gem "rspec-rails",  "6.0.3"
 end
 
 group :development do
   gem "brakeman",            "6.0.0", require: false
   gem "erb_lint",            "0.4.0", require: false
   gem "listen",              "3.8.0"
-  gem "rubocop",             "1.51.0", require: false
+  gem "rubocop",             "1.52.0", require: false
   gem "rubocop-capybara",    "2.18.0", require: false
   gem "rubocop-factory_bot", "2.23.1", require: false
   gem "rubocop-performance", "1.18.0", require: false
