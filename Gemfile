@@ -23,7 +23,7 @@ group :development, :test do
   gem "cacheflow",    "0.3.1"
   gem "dotenv-rails", "2.8.1"
   gem "pg_query",     "4.2.1"
-  gem "prosopite",    "1.3.1"
+  gem "prosopite",    "1.3.2"
   gem "rspec-rails",  "6.0.3"
 end
 
@@ -41,12 +41,12 @@ group :development do
 end
 
 group :test do
-  gem "capybara",                 "3.39.1"
+  gem "capybara",                 "3.39.2"
   gem "database_cleaner",         "2.0.2"
   gem "factory_bot_rails",        "6.2.0"
   gem "faker",                    "3.2.0"
   gem "rails-controller-testing", "1.0.5"
-  gem "selenium-webdriver",       "4.9.1"
+  gem "selenium-webdriver",       "4.10.0"
   gem "shoulda-matchers",         "5.3.0"
   gem "simplecov-console",        "0.9.1", require: false
   gem "timecop",                  "0.9.6"
