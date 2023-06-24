@@ -3,11 +3,11 @@
 ruby   "3.2.2"
 source "https://rubygems.org"
 
-gem "bcrypt",            "3.1.18"
+gem "bcrypt",            "3.1.19"
 gem "bootsnap",          "1.16.0", require: false
 gem "hotwire-rails",     "0.1.3"
 gem "jbuilder",          "2.11.5"
-gem "jsbundling-rails",  "1.1.1"
+gem "jsbundling-rails",  "1.1.2"
 gem "oj",                "3.15.0"
 gem "pg",                "1.5.3"
 gem "puma",              "6.3.0"
@@ -31,11 +31,11 @@ group :development do
   gem "brakeman",            "6.0.0", require: false
   gem "erb_lint",            "0.4.0", require: false
   gem "listen",              "3.8.0"
-  gem "rubocop",             "1.52.0", require: false
+  gem "rubocop",             "1.53.0", require: false
   gem "rubocop-capybara",    "2.18.0", require: false
   gem "rubocop-factory_bot", "2.23.1", require: false
   gem "rubocop-performance", "1.18.0", require: false
-  gem "rubocop-rails",       "2.19.1", require: false
+  gem "rubocop-rails",       "2.20.2", require: false
   gem "rubocop-rspec",       "2.22.0", require: false
   gem "web-console",         "4.2.0"
 end
