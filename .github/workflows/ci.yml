@@ -22,21 +22,13 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v3
-      - name: Determine the Ruby version
-        id: ruby-version
-        run: echo "RUBY_VERSION=$(cat .ruby-version)" >> $GITHUB_ENV
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
-      - name: Determine the Node version
-        id: node-version
-        run: echo "NODE_VERSION=$(cat package.json | perl -pe '($_)=/"node":\s+"([0-9]+([.][0-9]+)+)"/')" >> $GITHUB_ENV
       - name: Install Node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ env.NODE_VERSION }}
           cache: "yarn"
       - name: Install the Node dependencies
         run: yarn install
@@ -54,13 +46,9 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v3
-      - name: Determine the Node version
-        id: node-version
-        run: echo "NODE_VERSION=$(cat package.json | perl -pe '($_)=/"node":\s+"([0-9]+([.][0-9]+)+)"/')" >> $GITHUB_ENV
       - name: Install Node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ env.NODE_VERSION }}
           cache: "yarn"
       - name: Install the Node dependencies
         run: yarn install
@@ -73,21 +61,13 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v3
-      - name: Determine the Ruby version
-        id: ruby-version
-        run: echo "RUBY_VERSION=$(cat .ruby-version)" >> $GITHUB_ENV
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
-      - name: Determine the Node version
-        id: node-version
-        run: echo "NODE_VERSION=$(cat package.json | perl -pe '($_)=/"node":\s+"([0-9]+([.][0-9]+)+)"/')" >> $GITHUB_ENV
       - name: Install Node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ env.NODE_VERSION }}
           cache: "yarn"
       - name: Install the Node dependencies
         run: yarn install
@@ -109,13 +89,9 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v3
-      - name: Determine the Ruby version
-        id: ruby-version
-        run: echo "RUBY_VERSION=$(cat .ruby-version)" >> $GITHUB_ENV
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
       - name: Scan for vulnerabilities
         run: bundle exec brakeman --format github --no-pager
