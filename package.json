@@ -12,7 +12,7 @@
   "dependencies": {
     "@hotwired/stimulus": "3.2.1",
     "@hotwired/turbo-rails": "7.3.0",
-    "esbuild": "0.18.7",
+    "esbuild": "0.18.10",
     "esbuild-plugin-yaml": "0.0.1",
     "i18n-js": "4.2.3",
     "yaml": "2.3.1"

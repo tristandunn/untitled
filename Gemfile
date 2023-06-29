@@ -12,7 +12,7 @@ gem "oj",                "3.15.0"
 gem "pg",                "1.5.3"
 gem "puma",              "6.3.0"
 gem "rack-timeout",      "0.6.3"
-gem "rails",             "7.0.5"
+gem "rails",             "7.0.6"
 gem "redis",             "5.0.6"
 gem "sprockets-rails",   "3.4.2"
 gem "strong_migrations", "1.4.4"
@@ -31,7 +31,7 @@ group :development do
   gem "brakeman",            "6.0.0", require: false
   gem "erb_lint",            "0.4.0", require: false
   gem "listen",              "3.8.0"
-  gem "rubocop",             "1.53.0", require: false
+  gem "rubocop",             "1.53.1", require: false
   gem "rubocop-capybara",    "2.18.0", require: false
   gem "rubocop-factory_bot", "2.23.1", require: false
   gem "rubocop-performance", "1.18.0", require: false
