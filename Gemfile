@@ -12,10 +12,10 @@ gem "oj",                "3.15.1"
 gem "pg",                "1.5.3"
 gem "puma",              "6.3.0"
 gem "rack-timeout",      "0.6.3"
-gem "rails",             "7.0.6"
+gem "rails",             "7.0.7"
 gem "redis",             "5.0.7"
 gem "sprockets-rails",   "3.4.2"
-gem "strong_migrations", "1.6.0"
+gem "strong_migrations", "1.6.1"
 gem "tailwindcss-rails", "2.0.30"
 gem "turbo-rails",       "1.4.0"
 
@@ -36,7 +36,7 @@ group :development do
   gem "rubocop-factory_bot", "2.23.1", require: false
   gem "rubocop-performance", "1.18.0", require: false
   gem "rubocop-rails",       "2.20.2", require: false
-  gem "rubocop-rspec",       "2.23.1", require: false
+  gem "rubocop-rspec",       "2.23.2", require: false
   gem "web-console",         "4.2.0"
 end
 
