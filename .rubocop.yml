@@ -55,6 +55,9 @@ RSpec/FilePath:
 RSpec/MultipleDescribes:
   Enabled: false
 
+RSpec/SpecFilePathFormat:
+  Enabled: false
+
 Style/Documentation:
   Enabled: false
 
