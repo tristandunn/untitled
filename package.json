@@ -15,7 +15,7 @@
     "esbuild": "0.19.5",
     "esbuild-plugin-yaml": "0.0.1",
     "i18n-js": "4.3.2",
-    "yaml": "2.3.3"
+    "yaml": "2.3.4"
   },
   "devDependencies": {
     "@babel/core": "7.23.2",
@@ -25,12 +25,12 @@
     "babel-plugin-dynamic-import-node": "2.3.3",
     "babel-plugin-istanbul": "6.1.1",
     "chai": "4.3.10",
-    "eslint": "8.51.0",
+    "eslint": "8.53.0",
     "jsdom": "22.1.0",
     "mocha": "10.2.0",
     "mocha-yaml-loader": "1.0.3",
     "nyc": "15.1.0",
-    "sinon": "16.1.1",
+    "sinon": "17.0.1",
     "sinon-chai": "3.7.0",
     "stylelint": "15.11.0",
     "stylelint-config-standard": "34.0.0"
@@ -38,5 +38,5 @@
   "engines": {
     "node": "18.18.2"
   },
-  "packageManager": "yarn@3.6.4"
+  "packageManager": "yarn@4.0.1"
 }
