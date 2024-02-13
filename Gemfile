@@ -4,7 +4,7 @@ ruby   "3.3.0"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.20"
-gem "bootsnap",          "1.17.1", require: false
+gem "bootsnap",          "1.18.3", require: false
 gem "hotwire-rails",     "0.1.3"
 gem "jbuilder",          "2.11.5"
 gem "jsbundling-rails",  "1.3.0"
@@ -13,22 +13,22 @@ gem "pg",                "1.5.4"
 gem "puma",              "6.4.2"
 gem "rack-timeout",      "0.6.3"
 gem "rails",             "7.1.3"
-gem "redis",             "5.0.8"
+gem "redis",             "5.1.0"
 gem "sprockets-rails",   "3.4.2"
 gem "strong_migrations", "1.7.0"
 gem "tailwindcss-rails", "2.3.0"
-gem "turbo-rails",       "1.5.0"
+gem "turbo-rails",       "2.0.2"
 
 group :development, :test do
   gem "cacheflow",    "0.3.2"
-  gem "dotenv-rails", "2.8.1"
+  gem "dotenv-rails", "3.0.0"
   gem "pg_query",     "5.1.0"
   gem "prosopite",    "1.4.2"
   gem "rspec-rails",  "6.1.1"
 end
 
 group :development do
-  gem "brakeman",            "6.1.1", require: false
+  gem "brakeman",            "6.1.2", require: false
   gem "erb_lint",            "0.5.0", require: false
   gem "listen",              "3.8.0"
   gem "rubocop",             "1.60.2", require: false
