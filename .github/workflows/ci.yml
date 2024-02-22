@@ -71,17 +71,14 @@ jobs:
           cache: "yarn"
       - name: Install the Node dependencies
         run: yarn install
-      - name: Lint the code
-        uses: wearerequired/lint-action@v2
-        with:
-          ERBLINT: true
-          ERBLINT_COMMAND_PREFIX: bundle exec
-          ESLINT: true
-          ESLINT_EXTENSIONS: js,jsx
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RUBOCOP: true
-          RUBOCOP_COMMAND_PREFIX: bundle exec
-          STYLELINT: true
+      - name: Lint the ERB
+        run: bundle exec erblint .
+      - name: Lint the Ruby
+        run: bundle exec rubocop --parallel
+      - name: Lint the JavaScript
+        run: yarn lint
+      - name: Lint the CSS
+        run: yarn lint:css
 
   Vulnerabilities:
     runs-on: ubuntu-latest
