@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@hotwired/stimulus": "3.2.2",
-    "@hotwired/turbo-rails": "8.0.2",
-    "esbuild": "0.20.0",
+    "@hotwired/turbo-rails": "8.0.3",
+    "esbuild": "0.20.1",
     "esbuild-plugin-yaml": "0.0.1",
     "i18n-js": "4.3.2",
     "yaml": "2.3.4"
