@@ -24,7 +24,7 @@ group :development, :test do
   gem "dotenv",       "3.1.0"
   gem "pg_query",     "5.1.0"
   gem "prosopite",    "1.4.2"
-  gem "rspec-rails",  "6.1.1"
+  gem "rspec-rails",  "6.1.2"
 end
 
 group :development do
@@ -35,7 +35,7 @@ group :development do
   gem "rubocop-capybara",    "2.20.0", require: false
   gem "rubocop-factory_bot", "2.25.1", require: false
   gem "rubocop-performance", "1.20.2", require: false
-  gem "rubocop-rails",       "2.24.0", require: false
+  gem "rubocop-rails",       "2.24.1", require: false
   gem "rubocop-rspec",       "2.27.1", require: false
 end
 
@@ -43,10 +43,10 @@ group :test do
   gem "capybara",                 "3.40.0"
   gem "database_cleaner",         "2.0.2"
   gem "factory_bot_rails",        "6.4.3"
-  gem "faker",                    "3.2.3"
+  gem "faker",                    "3.3.0"
   gem "rails-controller-testing", "1.0.5"
-  gem "selenium-webdriver",       "4.18.1"
-  gem "shoulda-matchers",         "6.1.0"
+  gem "selenium-webdriver",       "4.19.0"
+  gem "shoulda-matchers",         "6.2.0"
   gem "simplecov-console",        "0.9.1", require: false
   gem "timecop",                  "0.9.8"
 end
