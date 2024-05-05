@@ -8,6 +8,6 @@ const i18n = new I18n(
 );
 
 i18n.defaultLocale = window.I18n.defaultLocale;
-i18n.locale        = window.I18n.locale;
+i18n.locale = window.I18n.locale;
 
 export default i18n;

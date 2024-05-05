@@ -1,21 +1,21 @@
 const { fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content : [
+  "content": [
     "./app/javascript/**/*.js",
     "./app/helpers/**/*.rb",
     "./app/views/**/*"
   ],
 
-  plugins : [
+  "plugins": [
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/typography")
   ],
 
-  theme : {
-    fontFamily : {
-      "sans" : ["Inter var", ...fontFamily.sans]
+  "theme": {
+    "fontFamily": {
+      "sans": ["Inter var", ...fontFamily.sans]
     }
   }
 };

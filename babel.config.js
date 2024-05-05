@@ -1,11 +1,9 @@
-/* eslint-disable complexity */
-
 module.exports = function(api) {
-  let validEnv         = ["development", "test", "production"],
-      currentEnv       = api.env(),
-      isTestEnv        = api.env("test"),
+  let validEnv = ["development", "test", "production"],
+      currentEnv = api.env(),
+      isTestEnv = api.env("test"),
       isDevelopmentEnv = api.env("development"),
-      isProductionEnv  = api.env("production");
+      isProductionEnv = api.env("production");
 
   if (!validEnv.includes(currentEnv)) {
     throw new Error(
@@ -18,47 +16,47 @@ module.exports = function(api) {
   }
 
   return {
-    presets : [
+    "presets": [
       isTestEnv && [
         "@babel/preset-env",
-        { targets: { node: "current" } }
+        { "targets": { "node": "current" } }
       ],
       (isProductionEnv || isDevelopmentEnv) && [
         "@babel/preset-env",
         {
-          corejs             : 3,
-          modules            : false,
-          exclude            : ["transform-typeof-symbol"],
-          useBuiltIns        : "entry",
-          forceAllTransforms : true
+          "corejs": 3,
+          "modules": false,
+          "exclude": ["transform-typeof-symbol"],
+          "useBuiltIns": "entry",
+          "forceAllTransforms": true
         }
       ]
     ].filter(Boolean),
 
-    plugins : [
+    "plugins": [
       "@babel/plugin-syntax-dynamic-import",
       isTestEnv && "babel-plugin-dynamic-import-node",
       isTestEnv && "babel-plugin-istanbul",
       "@babel/plugin-transform-destructuring",
       [
         "@babel/plugin-transform-class-properties",
-        { loose: true }
+        { "loose": true }
       ],
       [
         "@babel/plugin-transform-object-rest-spread",
-        { useBuiltIns: true }
+        { "useBuiltIns": true }
       ],
       [
         "@babel/plugin-transform-private-methods",
-        { loose: true }
+        { "loose": true }
       ],
       [
         "@babel/plugin-transform-private-property-in-object",
-        { loose: true }
+        { "loose": true }
       ],
       [
         "@babel/plugin-transform-regenerator",
-        { async: false }
+        { "async": false }
       ]
     ].filter(Boolean)
   };

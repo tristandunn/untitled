@@ -6,7 +6,7 @@ describe("StimulusController", () => {
     const element = document.createElement("p");
     element.appendChild(document.createTextNode(""));
 
-    (new StimulusController({ scope: { element: element } })).connect();
+    new StimulusController({ "scope": { "element": element } }).connect();
 
     expect(element.innerText).to.eq(I18n.t("pages.stimulus.description"));
   });
