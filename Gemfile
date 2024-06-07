@@ -12,11 +12,11 @@ gem "oj",                "3.16.3"
 gem "pg",                "1.5.6"
 gem "puma",              "6.4.2"
 gem "rack-timeout",      "0.7.0"
-gem "rails",             "7.1.3.3"
+gem "rails",             "7.1.3.4"
 gem "redis",             "5.2.0"
-gem "sprockets-rails",   "3.4.2"
+gem "sprockets-rails",   "3.5.1"
 gem "strong_migrations", "1.8.0"
-gem "tailwindcss-rails", "2.6.0"
+gem "tailwindcss-rails", "2.6.1"
 gem "turbo-rails",       "2.0.5"
 
 group :development, :test do
@@ -36,7 +36,7 @@ group :development do
   gem "rubocop-factory_bot", "2.25.1", require: false
   gem "rubocop-performance", "1.21.0", require: false
   gem "rubocop-rails",       "2.25.0", require: false
-  gem "rubocop-rspec",       "2.29.2", require: false
+  gem "rubocop-rspec",       "2.31.0", require: false
   gem "rubocop-rspec_rails", "2.28.3", require: false
 end
 
@@ -49,5 +49,5 @@ group :test do
   gem "selenium-webdriver",       "4.21.1"
   gem "shoulda-matchers",         "6.2.0"
   gem "simplecov-console",        "0.9.1", require: false
-  gem "timecop",                  "0.9.8"
+  gem "timecop",                  "0.9.9"
 end
