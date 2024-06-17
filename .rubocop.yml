@@ -50,9 +50,6 @@ RSpec/ExampleLength:
 RSpec/ImplicitSubject:
   EnforcedStyle: single_line_only
 
-RSpec/FilePath:
-  Enabled: false
-
 RSpec/MultipleDescribes:
   Enabled: false
 

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ruby   "3.3.2"
+ruby   "3.3.3"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.20"
@@ -8,7 +8,7 @@ gem "bootsnap",          "1.18.3", require: false
 gem "hotwire-rails",     "0.1.3"
 gem "jbuilder",          "2.12.0"
 gem "jsbundling-rails",  "1.3.0"
-gem "oj",                "3.16.3"
+gem "oj",                "3.16.4"
 gem "pg",                "1.5.6"
 gem "puma",              "6.4.2"
 gem "rack-timeout",      "0.7.0"
@@ -32,12 +32,12 @@ group :development do
   gem "erb_lint",            "0.5.0", require: false
   gem "listen",              "3.9.0"
   gem "rubocop",             "1.64.1", require: false
-  gem "rubocop-capybara",    "2.20.0", require: false
-  gem "rubocop-factory_bot", "2.25.1", require: false
-  gem "rubocop-performance", "1.21.0", require: false
+  gem "rubocop-capybara",    "2.21.0", require: false
+  gem "rubocop-factory_bot", "2.26.1", require: false
+  gem "rubocop-performance", "1.21.1", require: false
   gem "rubocop-rails",       "2.25.0", require: false
-  gem "rubocop-rspec",       "2.31.0", require: false
-  gem "rubocop-rspec_rails", "2.28.3", require: false
+  gem "rubocop-rspec",       "3.0.1",  require: false
+  gem "rubocop-rspec_rails", "2.30.0", require: false
 end
 
 group :test do
@@ -49,5 +49,4 @@ group :test do
   gem "selenium-webdriver",       "4.21.1"
   gem "shoulda-matchers",         "6.2.0"
   gem "simplecov-console",        "0.9.1", require: false
-  gem "timecop",                  "0.9.9"
 end
