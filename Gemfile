@@ -16,8 +16,8 @@ gem "rails",             "7.1.3.4"
 gem "redis",             "5.2.0"
 gem "sprockets-rails",   "3.5.1"
 gem "strong_migrations", "2.0.0"
-gem "tailwindcss-rails", "2.6.1"
-gem "turbo-rails",       "2.0.5"
+gem "tailwindcss-rails", "2.6.3"
+gem "turbo-rails",       "2.0.6"
 
 group :development, :test do
   gem "cacheflow",    "0.3.3"
@@ -36,7 +36,7 @@ group :development do
   gem "rubocop-factory_bot", "2.26.1", require: false
   gem "rubocop-performance", "1.21.1", require: false
   gem "rubocop-rails",       "2.25.1", require: false
-  gem "rubocop-rspec",       "3.0.2",  require: false
+  gem "rubocop-rspec",       "3.0.3",  require: false
   gem "rubocop-rspec_rails", "2.30.0", require: false
 end
 
@@ -44,9 +44,9 @@ group :test do
   gem "capybara",                 "3.40.0"
   gem "database_cleaner",         "2.0.2"
   gem "factory_bot_rails",        "6.4.3"
-  gem "faker",                    "3.4.1"
+  gem "faker",                    "3.4.2"
   gem "rails-controller-testing", "1.0.5"
-  gem "selenium-webdriver",       "4.22.0"
+  gem "selenium-webdriver",       "4.23.0"
   gem "shoulda-matchers",         "6.2.0"
   gem "simplecov-console",        "0.9.1", require: false
 end
