@@ -7,5 +7,5 @@
 # See the ActiveSupport::ParameterFilter documentation for supported notations
 # and behaviors.
 Rails.application.config.filter_parameters += %i(
-  _key certificate crypt otp passw salt secret ssn token
+  _key certificate crypt email otp passw salt secret ssn token
 )

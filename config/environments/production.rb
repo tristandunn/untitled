@@ -29,7 +29,7 @@ Rails.application.configure do
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
 
-  # Do not fallback to assets pipeline if a precompiled asset is missed.
+  # Do not fall back to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
@@ -53,7 +53,10 @@ Rails.application.configure do
   # use secure cookies.
   config.force_ssl = true
 
-  # Log to $stdout by default.
+  # Skip http-to-https redirect for the default health check endpoint.
+  # config.ssl_options = { redirect: { exclude: ->(request) { request.path == "/up" } } }
+
+  # Log to $stdout by default
   config.logger = ActiveSupport::Logger
                   .new($stdout)
                   .tap  { |logger| logger.formatter = Logger::Formatter.new }
@@ -62,7 +65,7 @@ Rails.application.configure do
   # Prepend all log lines with the following tags.
   config.log_tags = [:request_id]
 
-  # Info include generic and useful information about system operation, but
+  # Info includes generic and useful information about system operation, but
   # avoids logging too much information to avoid inadvertent exposure of
   # personally identifiable information (PII). If you want to log everything,
   # set the level to "debug".
