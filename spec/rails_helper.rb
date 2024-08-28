@@ -12,7 +12,7 @@ require "spec_helper"
 require "rails-controller-testing"
 require "rspec/rails"
 
-Dir[Rails.root.join("spec/support/**/*.rb")].each do |file|
+Rails.root.glob("spec/support/**/*.rb").each do |file|
   require file
 end
 
