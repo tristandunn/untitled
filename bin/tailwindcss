@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+if [ "$NODE_ENV" = "production" ]; then
+  MINIFY="--minify"
+fi
+
+node_modules/.bin/tailwindcss \
+  --config config/tailwind.config.js \
+  --input app/assets/stylesheets/application.tailwind.css \
+  --output app/assets/builds/tailwind.css \
+  "$MINIFY" \
+  "$@"
