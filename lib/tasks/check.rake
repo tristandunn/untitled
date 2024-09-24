@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-desc "Check the code"
-task check: ["check:coverage"]
-
 namespace :check do
   desc "Check the code, without coverage"
   task code: %i(
