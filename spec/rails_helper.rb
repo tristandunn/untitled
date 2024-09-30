@@ -2,13 +2,13 @@
 
 ENV["RAILS_ENV"] ||= "test"
 
-require File.expand_path("../config/environment", __dir__)
+require "spec_helper"
+require_relative "../config/environment"
 
 if Rails.env.production?
   abort "The Rails environment is running in production mode!"
 end
 
-require "spec_helper"
 require "rails-controller-testing"
 require "rspec/rails"
 
@@ -21,11 +21,18 @@ end
 begin
   ActiveRecord::Migration.maintain_test_schema!
 rescue ActiveRecord::PendingMigrationError => error
-  puts error.to_s.strip
-  exit 1
+  abort error.to_s.strip
 end
 
 RSpec.configure do |config|
+  # If you're not using ActiveRecord, or you'd prefer not to run each of your
+  # examples within a transaction, remove the following line or assign false
+  # instead of true.
+  config.use_transactional_fixtures = true
+
+  # You can uncomment this line to turn off ActiveRecord support entirely.
+  # config.use_active_record = false
+
   # RSpec Rails can automatically mix in different behaviours to your tests
   # based on their file location, for example enabling you to call `get` and
   # `post` in specs under `spec/controllers`.
@@ -38,7 +45,7 @@ RSpec.configure do |config|
   #     end
   #
   # The different available types are documented in the features, such as in
-  # https://relishapp.com/rspec/rspec-rails/docs
+  # https://rspec.info/features/7-0/rspec-rails
   config.infer_spec_type_from_file_location!
 
   # Filter lines from Rails gems in backtraces.

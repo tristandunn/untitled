@@ -6,22 +6,27 @@ source "https://rubygems.org"
 gem "bcrypt",            "3.1.20"
 gem "bootsnap",          "1.18.4", require: false
 gem "hotwire-rails",     "0.1.3"
+gem "importmap-rails",   "2.0.3"
 gem "jbuilder",          "2.13.0"
+gem "kamal",             "2.2.2", require: false
+gem "litestream",        "0.11.2"
 gem "oj",                "3.16.6"
-gem "pg",                "1.5.8"
-gem "propshaft",         "1.0.0"
+gem "propshaft",         "1.1.0"
 gem "puma",              "6.4.3"
 gem "rack-timeout",      "0.7.0"
-gem "rails",             "7.2.1"
+gem "rails",             "8.0.0.beta1"
 gem "redis",             "5.3.0"
-gem "strong_migrations", "2.0.0"
+gem "solid_cable",       "3.0.2"
+gem "solid_cache",       "1.0.6"
+gem "solid_queue",       "1.0.0"
+gem "sqlite3",           "2.1.0"
+gem "stimulus-rails",    "1.3.4"
+gem "tailwindcss-rails", "2.7.9"
+gem "thruster",          "0.1.8", require: false
 gem "turbo-rails",       "2.0.10"
 
 group :development, :test do
-  gem "cacheflow",    "0.3.3"
-  gem "dotenv",       "3.1.4"
-  gem "prosopite",    "1.4.2"
-  gem "rspec-rails",  "7.0.1"
+  gem "rspec-rails", "7.0.1"
 end
 
 group :development do
@@ -35,7 +40,7 @@ group :development do
   gem "rubocop-performance", "1.22.1", require: false
   gem "rubocop-rails",       "2.26.2", require: false
   gem "rubocop-rake",        "0.6.0",  require: false
-  gem "rubocop-rspec",       "3.0.5",  require: false
+  gem "rubocop-rspec",       "3.1.0",  require: false
   gem "rubocop-rspec_rails", "2.30.0", require: false
   gem "web-console",         "4.2.1"
 end
