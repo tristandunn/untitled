@@ -1,0 +1,13 @@
+proxy:
+  host: untitled.tristandunn.com
+
+env:
+  secret:
+    - LITESTREAM_ACCESS_KEY_ID
+    - LITESTREAM_REPLICA_HOST
+    - LITESTREAM_SECRET_ACCESS_KEY
+    - RAILS_MASTER_KEY
+  clear:
+    # Run the Litestream replication process inside the web server's Puma
+    # process to backup the database.
+    LITESTREAM_IN_PUMA: true

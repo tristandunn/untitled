@@ -1,17 +1,11 @@
-const chai = require("chai"),
-      sinon = require("sinon"),
-      sinonChai = require("sinon-chai"),
-      { JSDOM } = require("jsdom");
+import * as chai from "chai";
+import sinon from "sinon";
+import sinonChai from "sinon-chai";
+import { JSDOM } from "jsdom";
 
 chai.use(sinonChai);
 
+global.expect = chai.expect;
+global.sinon = sinon.createSandbox();
 global.window = new JSDOM("", { "pretendToBeVisual": true }).window;
 global.document = global.window.document;
-global.expect = chai.expect;
-global.navigator = { "userAgent": "node.js" };
-global.sinon = sinon.createSandbox();
-
-global.window.I18n = {
-  "defaultLocale": "en",
-  "locale": "en"
-};

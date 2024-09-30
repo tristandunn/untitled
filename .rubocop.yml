@@ -8,9 +8,11 @@ require:
   - rubocop-rspec_rails
 
 AllCops:
-  CacheRootDirectory: "tmp/rubocop_cache"
+  CacheRootDirectory: "tmp/cache"
   Exclude:
-    - "db/schema.rb"
+    - "bin/bundle"
+    - "bin/kamal"
+    - "db/*schema.rb"
     - "node_modules/**/*"
     - "vendor/**/*"
   NewCops: enable
@@ -19,12 +21,6 @@ Layout/HashAlignment:
   EnforcedColonStyle: table
   EnforcedHashRocketStyle: table
 
-Metrics/BlockLength:
-  Exclude:
-    - config/environments/*.rb
-    - config/routes.rb
-    - spec/**/*.rb
-
 Naming/RescuedExceptionsVariableName:
   Enabled: true
   PreferredName: error
@@ -32,21 +28,10 @@ Naming/RescuedExceptionsVariableName:
 Rails:
   Enabled: true
 
-Rails/SkipsModelValidations:
+Rails/ApplicationController:
   Enabled: true
-  ForbiddenMethods:
-    - decrement!
-    - decrement_counter
-    - increment!
-    - increment_counter
-    - toggle!
-    - update_all
-    - update_attribute
-    - update_column
-    - update_columns
-
-RSpec/ExampleLength:
-  Max: 10
+  Exclude:
+    - app/controllers/health_controller.rb
 
 RSpec/ImplicitSubject:
   EnforcedStyle: single_line_only
@@ -72,7 +57,14 @@ Style/ExpandPathArguments:
   Exclude:
     - bin/*
 
+Style/HashSyntax:
+  Enabled: true
+  EnforcedShorthandSyntax: never
+
 Style/IfUnlessModifier:
+  Enabled: false
+
+Style/GuardClause:
   Enabled: false
 
 Style/PercentLiteralDelimiters:
