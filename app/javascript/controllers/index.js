@@ -1,4 +1,4 @@
-import { application } from "./application";
-import StimulusController from "./stimulus_controller";
+import { application } from "controllers/application";
+import { eagerLoadControllersFrom } from "@hotwired/stimulus-loading";
 
-application.register("stimulus", StimulusController);
+eagerLoadControllersFrom("controllers", application);

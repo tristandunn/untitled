@@ -18,9 +18,9 @@ suppress(LoadError) do
 end
 
 namespace :erb do
-  desc "Run `bundle exec erblint`"
+  desc "Run `bundle exec erb_lint`"
   task :lint do # rubocop:disable Rails/RakeEnvironment
-    system("bundle exec erblint .") ||
+    system("bundle exec erb_lint .") ||
       exit($CHILD_STATUS.exitstatus)
   end
 end
