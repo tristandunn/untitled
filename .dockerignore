@@ -1,0 +1,86 @@
+# See https://docs.docker.com/engine/reference/builder/#dockerignore-file for
+# more about ignoring files.
+
+# Ignore bundler configuration.
+/.bundle/
+
+# Ignore Docker-related files.
+/.dockerignore
+/Dockerfile*
+
+# Ignore all environment files.
+/.env*
+
+# Ignore git directory and files.
+/.git/
+/.gitattributes
+/.gitignore
+
+# Ignore GitHub files.
+/.github/
+
+# Ignore Ruby-related files.
+/.rubocop.yml
+/.ruby-lsp/
+
+# Ignore any asset builds.
+/app/assets/builds/*
+!/app/assets/builds/.keep
+
+# Ignore binary files.
+bin/brakeman
+bin/dev
+bin/mocha
+bin/rubocop
+bin/setup
+
+# Ignore all default key files.
+/config/master.key
+/config/credentials/*.key
+
+# Ignore Kamal related files.
+/.kamal/
+
+# Ignore development Rake tasks.
+lib/tasks/check.rake
+lib/tasks/css.rake
+lib/tasks/javascript.rake
+lib/tasks/ruby.rake
+
+# Ignore all logs and temporary files.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore any development and test files.
+/node_modules/
+/spec/
+/.yarn/
+.erb_lint.yml
+.stylelintignore
+.stylelintrc.json
+.tool-versions
+.yarnrc.yml
+Procfile.dev
+README.md
+eslint.config.cjs
+package.json
+yarn.lock
+
+# Ignore any pre-compiled assets.
+/public/assets/
+
+# Ignore any SQLite databases.
+/storage/*
+!/storage/.keep
+
+# Ignore PID files.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Ignore storage for uploaded files in development.
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep

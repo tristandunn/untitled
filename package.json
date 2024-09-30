@@ -1,46 +1,31 @@
 {
   "name": "untitled",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "node config/esbuild.config.js",
-    "build:css": "bin/tailwindcss",
-    "lint": "eslint app config spec/javascripts *js",
+    "fix:css": "rustywind --custom-regex '@apply ([_a-zA.-Z0-9-:\\[\\] ]+);' --write ./app/assets/stylesheets/**/*",
+    "fix:html": "rustywind --write app/views",
+    "lint": "eslint app/javascript config spec/javascripts",
     "lint:css": "stylelint app/assets/stylesheets/**/*.css",
     "outdated": "yarn upgrade-interactive",
-    "test": "NODE_ENV=test NODE_PATH=./app/javascript mocha --config ./spec/javascripts/.mocharc.json ./spec/javascripts",
-    "test:coverage": "NODE_ENV=test NODE_PATH=./app/javascript nyc mocha --config ./spec/javascripts/.mocharc.json ./spec/javascripts"
-  },
-  "dependencies": {
-    "@hotwired/stimulus": "3.2.2",
-    "@hotwired/turbo-rails": "8.0.12",
-    "@tailwindcss/forms": "0.5.9",
-    "esbuild": "0.24.0",
-    "esbuild-plugin-yaml": "0.0.1",
-    "i18n-js": "4.5.0",
-    "tailwindcss": "3.4.14",
-    "yaml": "2.6.0"
+    "test": "bin/mocha spec/javascripts",
+    "test:coverage": "c8 --100 --clean --report-dir tmp/ --reporter text-summary --skip-full bin/mocha spec/javascripts"
   },
   "devDependencies": {
-    "@babel/core": "7.26.0",
-    "@babel/eslint-parser": "7.25.9",
-    "@babel/preset-env": "7.26.0",
-    "@babel/register": "7.25.9",
-    "@stylistic/eslint-plugin-js": "2.10.0",
-    "babel-plugin-dynamic-import-node": "2.3.3",
-    "babel-plugin-istanbul": "7.0.0",
-    "chai": "4.5.0",
-    "eslint": "9.13.0",
+    "@hotwired/stimulus": "3.2.2",
+    "@stylistic/eslint-plugin-js": "2.10.1",
+    "c8": "10.1.2",
+    "chai": "5.1.2",
+    "eslint": "9.14.0",
     "jsdom": "25.0.1",
     "mocha": "10.8.2",
-    "mocha-yaml-loader": "1.0.3",
-    "nyc": "17.1.0",
-    "sinon": "18.0.1",
-    "sinon-chai": "3.7.0",
+    "sinon": "19.0.2",
+    "sinon-chai": "4.0.0",
     "stylelint": "16.10.0",
     "stylelint-config-standard": "36.0.1"
   },
   "engines": {
-    "node": "20.17.0"
+    "node": "22.11.0"
   },
-  "packageManager": "yarn@4.5.0"
+  "packageManager": "yarn@4.5.1"
 }

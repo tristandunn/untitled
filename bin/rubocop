@@ -5,8 +5,7 @@
 require "rubygems"
 require "bundler/setup"
 
-# Explicit configuration increases performance slightly while avoiding
-# configuration confusion.
+# Explicit configuration increases performance slightly.
 ARGV.unshift("--config", File.expand_path("../.rubocop.yml", __dir__))
 
 load Gem.bin_path("rubocop", "rubocop")
