@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="en-US" class="text-gray-900 antialiased">
+<html lang="en-US" class="antialiased text-gray-900">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
   <title><%= t("title") %></title>
 
-  <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
 
-  <script type="text/javascript">
-    window.I18n = {
-      defaultLocale : <%== I18n.default_locale.to_json %>,
-      locale        : <%== I18n.locale.to_json %>
-    };
-  </script>
-  <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  <%= javascript_importmap_tags %>
 </head>
 <body>
 

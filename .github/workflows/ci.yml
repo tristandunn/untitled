@@ -1,44 +1,28 @@
 name: CI
 
-on: [push, pull_request]
+on: # yamllint disable-line rule:truthy
+  pull_request:
+  workflow_call:
 
 jobs:
   Ruby:
     runs-on: ubuntu-latest
 
-    services:
-      postgres:
-        image: postgres:16-alpine
-        ports: ["5432:5432"]
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-retries 10
-          --health-timeout 1s
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
+
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-      - name: Install Node
-        uses: actions/setup-node@v4
-        with:
-          cache: "yarn"
-      - name: Install the Node dependencies
-        run: yarn install
+
       - name: Run the Ruby tests
         env:
           COVERAGE: true
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
           RAILS_ENV: test
-        run: bundle exec rails db:setup ruby:test
+          SE_AVOID_STATS: true
+        run: bin/rails db:setup ruby:test
 
   JavaScript:
     runs-on: ubuntu-latest
@@ -46,12 +30,19 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
+
+      - name: Enable the Corepack tool
+        run: corepack enable
+
       - name: Install Node
         uses: actions/setup-node@v4
         with:
           cache: "yarn"
+          node-version-file: ".tool-versions"
+
       - name: Install the Node dependencies
         run: yarn install
+
       - name: Run the JavaScript tests
         run: yarn test:coverage
 
@@ -61,24 +52,52 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
+
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+
+      - name: Enable the Corepack tool
+        run: corepack enable
+
       - name: Install Node
         uses: actions/setup-node@v4
         with:
           cache: "yarn"
+          node-version-file: ".tool-versions"
+
       - name: Install the Node dependencies
         run: yarn install
+
       - name: Lint the ERB
         run: bundle exec erblint .
+
       - name: Lint the Ruby
-        run: bundle exec rubocop --parallel
+        run: bin/rubocop --format github --parallel
+
       - name: Lint the JavaScript
         run: yarn lint
+
       - name: Lint the CSS
         run: yarn lint:css
+
+  Docker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build the image
+        uses: docker/build-push-action@v6
+        with:
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          push: false
 
   Vulnerabilities:
     runs-on: ubuntu-latest
@@ -86,9 +105,14 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
+
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+
       - name: Scan for vulnerabilities
-        run: bundle exec brakeman --format github --no-pager
+        run: bin/brakeman --format github --no-pager
+
+      - name: Scan for vulnerabilities in JavaScript dependencies
+        run: bin/importmap audit
