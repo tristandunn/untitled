@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "active_support/core_ext/integer/time"
+require "./lib/middleware/backdoor"
 
 Rails.application.configure do
   # While tests run files are not watched, reloading is not necessary.
@@ -41,4 +42,7 @@ Rails.application.configure do
   # Raise error when a before_action's only/except options reference
   # missing actions.
   config.action_controller.raise_on_missing_callback_actions = true
+
+  # Add the authentication backdoor middleware.
+  config.middleware.use(Middleware::Backdoor)
 end

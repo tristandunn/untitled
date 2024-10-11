@@ -10,5 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 0) do
+ActiveRecord::Schema[8.1].define(version: 2024_10_11_213946) do
+  create_table "accounts", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "email", limit: 255, null: false
+    t.string "password_digest", limit: 60, null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_accounts_on_email", unique: true
+  end
 end
