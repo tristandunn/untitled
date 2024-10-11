@@ -28,6 +28,9 @@ Naming/RescuedExceptionsVariableName:
 Rails:
   Enabled: true
 
+RSpec/ExampleLength:
+  Max: 10
+
 RSpec/ImplicitSubject:
   EnforcedStyle: single_line_only
 
@@ -57,6 +60,10 @@ Style/IfUnlessModifier:
 
 Style/GuardClause:
   Enabled: false
+
+Style/HashSyntax:
+  Enabled: true
+  EnforcedShorthandSyntax: never
 
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:
