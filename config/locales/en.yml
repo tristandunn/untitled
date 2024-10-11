@@ -1,7 +1,43 @@
 en:
+  accounts:
+    new:
+      header: "Create an Account"
+      placeholder: "you@example.com"
+      submit: "Create Your Account"
+
+  activemodel:
+    attributes:
+      account_form:
+        email: "E-mail Address"
+        password: "Password"
+      session_form:
+        email: "E-mail Address"
+        password: "Password"
+    errors:
+      models:
+        session_form:
+          attributes:
+            email:
+              unknown: "is invalid or password is incorrect"
+
+  activerecord:
+    attributes:
+      account:
+        email: "E-mail Address"
+        password: "Password"
+
   title: "Untitled"
 
   pages:
     index:
       description: "A base Rails application with Turbo and Stimulus."
+      existing_account: "Already have an account?"
       new_account: "Create an Account"
+      sign_in: "Sign In"
+      sign_out: "Sign Out"
+
+  sessions:
+    new:
+      header: "Welcome back!"
+      placeholder: "you@example.com"
+      submit: "Sign In"

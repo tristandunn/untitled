@@ -9,6 +9,12 @@ describe "pages/index.html.erb" do
     rendered
   end
 
+  before do
+    without_partial_double_verification do
+      allow(view).to receive(:signed_in?).and_return(false)
+    end
+  end
+
   it "renders the header" do
     expect(html).to have_css("h1", text: t("title"))
   end
@@ -17,7 +23,37 @@ describe "pages/index.html.erb" do
     expect(html).to have_css("p", text: t("pages.index.description"))
   end
 
-  it "renders the new account link" do
-    expect(html).to have_link(t("pages.index.new_account"), href: "#")
+  it "links to the new account path" do
+    expect(html).to have_css(%(a[href="#{new_account_path}"]),
+                             text: t("pages.index.new_account"))
+  end
+
+  it "links to the new session path" do
+    expect(html).to have_css(%(a[href="#{new_sessions_path}"]),
+                             text: t("pages.index.sign_in"))
+  end
+
+  context "when signed in" do
+    before do
+      without_partial_double_verification do
+        allow(view).to receive(:signed_in?).and_return(true)
+      end
+    end
+
+    it "renders a sign out button" do
+      expect(html).to have_css(
+        %(form[action="#{sessions_path}"][method="post"] button[type="submit"])
+      )
+    end
+
+    it "does not link to the new account path" do
+      expect(html).to have_no_css(%(a[href="#{new_account_path}"]),
+                                  text: t("pages.index.new_account"))
+    end
+
+    it "does not link to the new session path" do
+      expect(html).to have_no_css(%(a[href="#{new_sessions_path}"]),
+                                  text: t("pages.index.sign_in"))
+    end
   end
 end

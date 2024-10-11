@@ -5,7 +5,17 @@
 
   <p><%= t(".description") %></p>
 
-  <p>
-    <%= link_to t(".new_account"), "#", class: "block w-1/4 py-4 mx-auto mt-6 text-sm font-semibold text-white bg-green-600 rounded-lg hover:bg-green-500 md:mt-12 md:text-xl hidden", data: { controller: "homepage" } %>
-  </p>
+  <% if signed_in? %>
+    <%= form_tag sessions_path, class: "mt-8", method: :delete do %>
+      <button type="submit" class="block mx-auto text-sm text-gray-600 cursor-pointer hover:underline">
+        <%= t(".sign_out") %>
+      </button>
+    <% end %>
+  <% else %>
+    <p>
+      <%= link_to t(".new_account"), new_account_path, class: "block w-1/4 py-4 mx-auto mt-6 text-sm font-semibold text-white bg-green-600 rounded-lg hover:bg-green-500 md:mt-12 md:text-xl", data: { controller: "homepage" } %>
+    </p>
+
+    <p class="mt-4 text-sm text-gray-600"><%= t(".existing_account") %> <%= link_to t(".sign_in"), new_sessions_path, class: "underline" %>.</p>
+  <% end %>
 </main>
