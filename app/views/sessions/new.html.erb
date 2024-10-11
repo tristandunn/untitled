@@ -1,0 +1,27 @@
+<%# locals: () %>
+<main class="flex flex-col justify-center py-12 px-6 min-h-full lg:px-8">
+  <div class="self-center py-12 px-8 mx-auto w-full max-w-lg">
+    <div class="mb-12 text-center">
+      <h1 class="text-3xl font-bold text-gray-700"><%= t(".header") %></h1>
+    </div>
+
+    <%= form_for @form, url: sessions_path, data: { turbo: false }, html: { class: "highlight-errors" } do |form| %>
+      <div>
+        <%= form.label :email, class: "block mb-1 text-sm font-medium text-gray-800" %>
+        <%= form.email_field :email, autocomplete: "email", autofocus: true, class: "w-full text-gray-800 border-gray-400 rounded focus:ring-2 focus:ring-green-200 focus:border-green-300", maxlength: Account::MAXIMUM_EMAIL_LENGTH, placeholder: t(".placeholder"), required: true %>
+        <% if @form.errors[:email].present? %>
+          <p class="mt-2 text-xs text-red-700"><%= SessionForm.human_attribute_name(:email).humanize %> <%= @form.errors[:email].first %>.</p>
+        <% end %>
+      </div>
+
+      <div class="mt-6">
+        <%= form.label :password, class: "block mb-1 text-sm font-medium text-gray-800" %>
+        <%= form.password_field :password, autocomplete: "current-password", class: "w-full text-gray-800 border-gray-400 rounded focus:ring-2 focus:ring-green-200 focus:border-green-300", minlength: Account::MINIMUM_PASSWORD_LENGTH, required: true %>
+      </div>
+
+      <button class="block p-4 mx-auto mt-6 w-4/5 text-lg font-semibold text-center text-white bg-green-600 rounded-lg hover:bg-green-500 focus:outline-none focus:shadow-green-200" type="submit">
+        <%= t(".submit") %>
+      </button>
+    <% end %>
+  </div>
+</main>
