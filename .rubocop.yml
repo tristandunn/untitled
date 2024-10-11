@@ -44,6 +44,9 @@ Rails/ApplicationController:
   Exclude:
     - app/controllers/health_controller.rb
 
+RSpec/ExampleLength:
+  Max: 10
+
 RSpec/ImplicitSubject:
   EnforcedStyle: single_line_only
 
@@ -68,15 +71,15 @@ Style/ExpandPathArguments:
   Exclude:
     - bin/*
 
-Style/HashSyntax:
-  Enabled: true
-  EnforcedShorthandSyntax: never
-
 Style/IfUnlessModifier:
   Enabled: false
 
 Style/GuardClause:
   Enabled: false
+
+Style/HashSyntax:
+  Enabled: true
+  EnforcedShorthandSyntax: never
 
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:
