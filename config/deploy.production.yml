@@ -1,12 +1,14 @@
+# Customize the domain for the production deployment.
 proxy:
   host: untitled.tristandunn.com
 
+# Inject ENV variables into containers for Litestream.
 env:
   secret:
     - LITESTREAM_ACCESS_KEY_ID
     - LITESTREAM_REPLICA_HOST
     - LITESTREAM_SECRET_ACCESS_KEY
-    - RAILS_MASTER_KEY
+    - SECRET_KEY_BASE
   clear:
     # Run the Litestream replication process inside the web server's Puma
     # process to backup the database.
