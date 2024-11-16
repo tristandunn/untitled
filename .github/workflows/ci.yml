@@ -71,7 +71,7 @@ jobs:
         run: yarn install
 
       - name: Lint the ERB
-        run: bundle exec erblint .
+        run: bin/rake erb:lint
 
       - name: Lint the Ruby
         run: bin/rubocop --format github --parallel
