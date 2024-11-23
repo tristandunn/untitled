@@ -330,15 +330,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin-js@npm:2.10.1":
-  version: 2.10.1
-  resolution: "@stylistic/eslint-plugin-js@npm:2.10.1"
+"@stylistic/eslint-plugin-js@npm:2.11.0":
+  version: 2.11.0
+  resolution: "@stylistic/eslint-plugin-js@npm:2.11.0"
   dependencies:
     eslint-visitor-keys: "npm:^4.2.0"
     espree: "npm:^10.3.0"
   peerDependencies:
     eslint: ">=8.40.0"
-  checksum: 10c0/512176afd7f43957c1a7f2512b9416bfb1a57aa086128d65c9b96a7088c7fc6c2061325d6210328205472e0cb00f4f83d12eefccf65c5b4dfe388eed59c2fb6e
+  checksum: 10c0/b8b8d19b89ccec51fee7f394be5a7f3551919e6141e1751bfe7a2f0f279919c576dc266d75290f062c2e65024841abb6c9cbdc3a0233503bd02b366e5371b61c
   languageName: node
   linkType: hard
 
@@ -778,13 +778,13 @@ __metadata:
   linkType: hard
 
 "cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.5":
-  version: 7.0.5
-  resolution: "cross-spawn@npm:7.0.5"
+  version: 7.0.6
+  resolution: "cross-spawn@npm:7.0.6"
   dependencies:
     path-key: "npm:^3.1.0"
     shebang-command: "npm:^2.0.0"
     which: "npm:^2.0.1"
-  checksum: 10c0/aa82ce7ac0814a27e6f2b738c5a7cf1fa21a3558a1e42df449fc96541ba3ba731e4d3ecffa4435348808a86212f287c6f20a1ee551ef1ff95d01cfec5f434944
+  checksum: 10c0/053ea8b2135caff68a9e81470e845613e374e7309a47731e81639de3eaeb90c3d01af0e0b44d2ab9d50b43467223b88567dfeb3262db942dc063b9976718ffc1
   languageName: node
   linkType: hard
 
@@ -1224,9 +1224,9 @@ __metadata:
   linkType: hard
 
 "flatted@npm:^3.2.9, flatted@npm:^3.3.1":
-  version: 3.3.1
-  resolution: "flatted@npm:3.3.1"
-  checksum: 10c0/324166b125ee07d4ca9bcf3a5f98d915d5db4f39d711fba640a3178b959919aae1f7cfd8aabcfef5826ed8aa8a2aa14cc85b2d7d18ff638ddf4ae3df39573eaf
+  version: 3.3.2
+  resolution: "flatted@npm:3.3.2"
+  checksum: 10c0/24cc735e74d593b6c767fe04f2ef369abe15b62f6906158079b9874bdb3ee5ae7110bb75042e70cd3f99d409d766f357caf78d5ecee9780206f5fdc5edbad334
   languageName: node
   linkType: hard
 
@@ -2860,21 +2860,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tldts-core@npm:^6.1.61":
-  version: 6.1.61
-  resolution: "tldts-core@npm:6.1.61"
-  checksum: 10c0/4596569079488af159ebf5db5d15dee4773314b01c8e3ce7c05dbe149b7670d715ac41fb9d34b7c6333e382fbeb7c9c0314be995176c0a357977936fd1225903
+"tldts-core@npm:^6.1.63":
+  version: 6.1.63
+  resolution: "tldts-core@npm:6.1.63"
+  checksum: 10c0/2e3d040b2142e7e63eaa46499c508475315ceb88080635e7fe5c4aa90d3618c8957af8fb7341b1c21be744962d631928775583f3505018f83635ee265c3f159f
   languageName: node
   linkType: hard
 
 "tldts@npm:^6.1.32":
-  version: 6.1.61
-  resolution: "tldts@npm:6.1.61"
+  version: 6.1.63
+  resolution: "tldts@npm:6.1.63"
   dependencies:
-    tldts-core: "npm:^6.1.61"
+    tldts-core: "npm:^6.1.63"
   bin:
     tldts: bin/cli.js
-  checksum: 10c0/6c9b43b5842f5fc79201b86a904c96ce26d96ad746e8227db15cb27cb8271b434e99ac71f7ee782cc1c72fb530e3e8a7b8c463685b7cb418924bf95a32fec000
+  checksum: 10c0/d9642599258e80b0b1543e470ee06830bc38c7d4d3dbd84569daef407122600392af2869471baed6f45fdac93038487d89986219c472dc38324018c27fdf788a
   languageName: node
   linkType: hard
 
@@ -2951,7 +2951,7 @@ __metadata:
   resolution: "untitled@workspace:."
   dependencies:
     "@hotwired/stimulus": "npm:3.2.2"
-    "@stylistic/eslint-plugin-js": "npm:2.10.1"
+    "@stylistic/eslint-plugin-js": "npm:2.11.0"
     c8: "npm:10.1.2"
     chai: "npm:5.1.2"
     eslint: "npm:9.15.0"
