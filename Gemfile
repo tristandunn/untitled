@@ -19,7 +19,7 @@ gem "redis",             "5.3.0"
 gem "solid_cable",       "3.0.2"
 gem "solid_cache",       "1.0.6"
 gem "solid_queue",       "1.0.2"
-gem "sqlite3",           "2.3.0"
+gem "sqlite3",           "2.3.1"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "3.0.0"
 gem "thruster",          "0.1.9", require: false
@@ -34,7 +34,7 @@ group :development do
   gem "erb_lint",            "0.7.0", require: false
   gem "listen",              "3.9.0"
   gem "rack-mini-profiler",  "3.3.1"
-  gem "rubocop",             "1.68.0", require: false
+  gem "rubocop",             "1.69.0", require: false
   gem "rubocop-capybara",    "2.21.0", require: false
   gem "rubocop-factory_bot", "2.26.1", require: false
   gem "rubocop-performance", "1.23.0", require: false
@@ -52,7 +52,7 @@ group :test do
   gem "factory_bot_rails",        "6.4.4"
   gem "faker",                    "3.5.1"
   gem "rails-controller-testing", "1.0.5"
-  gem "selenium-webdriver",       "4.26.0"
+  gem "selenium-webdriver",       "4.27.0"
   gem "shoulda-matchers",         "6.4.0"
   gem "simplecov-console",        "0.9.2", require: false
 end
