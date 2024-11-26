@@ -21,7 +21,7 @@
     "mocha": "10.8.2",
     "sinon": "19.0.2",
     "sinon-chai": "4.0.0",
-    "stylelint": "16.10.0",
+    "stylelint": "16.11.0",
     "stylelint-config-standard": "36.0.1"
   },
   "engines": {
