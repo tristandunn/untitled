@@ -1,5 +1,5 @@
 # Name of your application. Used to uniquely configure containers.
-service: untitled
+service: untitled-staging
 
 # Name of the container image.
 image: tristandunn/untitled
