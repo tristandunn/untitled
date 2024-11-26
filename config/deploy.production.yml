@@ -1,3 +1,6 @@
+# Name of your application. Used to uniquely configure containers.
+service: untitled-production
+
 # Customize the domain for the production deployment.
 proxy:
   host: untitled.tristandunn.com
