@@ -12,6 +12,11 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+# Ignore Terraform files that may contain credentials.
+/config/terraform/.terraform*
+/config/terraform/terraform.tfstate*
+/config/terraform/terraform.tfvars
+
 # Ignore all logs and temporary files.
 /log/*
 /tmp/*
