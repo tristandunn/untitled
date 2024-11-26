@@ -41,6 +41,9 @@ bin/setup
 # Ignore Kamal related files.
 /.kamal/
 
+# Ignore Terraform related files.
+/config/terraform/*
+
 # Ignore development Rake tasks.
 lib/tasks/check.rake
 lib/tasks/css.rake

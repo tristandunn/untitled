@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+terraform -chdir=config/terraform $@
