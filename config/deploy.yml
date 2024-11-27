@@ -7,7 +7,7 @@ image: tristandunn/untitled
 # Deploy to these servers.
 servers:
   web:
-    - 64.225.50.8
+    - 45.55.255.86
   # job:
   #   hosts:
   #     - 192.168.0.1
