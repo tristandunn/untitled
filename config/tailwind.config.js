@@ -1,5 +1,3 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
-
 module.exports = {
   "content": [
     "./app/helpers/**/*.rb",
@@ -7,14 +5,6 @@ module.exports = {
     "./app/views/**/*.{erb,html}",
     "./public/*.html"
   ],
-
-  "theme": {
-    "extend": {
-      "fontFamily": {
-        "sans": ["Inter var", ...fontFamily.sans]
-      }
-    }
-  },
 
   "plugins": [
     require("@tailwindcss/forms"),
