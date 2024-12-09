@@ -19,7 +19,7 @@ gem "redis",             "5.3.0"
 gem "solid_cable",       "3.0.2"
 gem "solid_cache",       "1.0.6"
 gem "solid_queue",       "1.0.2"
-gem "sqlite3",           "2.3.1"
+gem "sqlite3",           "2.4.1"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "3.0.0"
 gem "thruster",          "0.1.9", require: false
