@@ -13,19 +13,19 @@
   },
   "devDependencies": {
     "@hotwired/stimulus": "3.2.2",
-    "@stylistic/eslint-plugin-js": "2.11.0",
+    "@stylistic/eslint-plugin-js": "2.12.0",
     "c8": "10.1.2",
     "chai": "5.1.2",
     "eslint": "9.16.0",
     "jsdom": "25.0.1",
-    "mocha": "11.0.1",
+    "mocha": "11.0.2",
     "sinon": "19.0.2",
     "sinon-chai": "4.0.0",
     "stylelint": "16.11.0",
     "stylelint-config-standard": "36.0.1"
   },
   "engines": {
-    "node": "22.11.0"
+    "node": "22.12.0"
   },
-  "packageManager": "yarn@4.5.1"
+  "packageManager": "yarn@4.5.3"
 }
