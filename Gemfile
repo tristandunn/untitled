@@ -8,13 +8,13 @@ gem "bootsnap",          "1.18.4", require: false
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.0.3"
 gem "jbuilder",          "2.13.0"
-gem "kamal",             "2.3.0", require: false
+gem "kamal",             "2.4.0", require: false
 gem "litestream",        "0.12.0"
 gem "oj",                "3.16.7"
 gem "propshaft",         "1.1.0"
 gem "puma",              "6.5.0"
 gem "rack-timeout",      "0.7.0"
-gem "rails",             "8.0.0"
+gem "rails",             "8.0.1"
 gem "redis",             "5.3.0"
 gem "solid_cable",       "3.0.4"
 gem "solid_cache",       "1.0.6"
@@ -34,13 +34,13 @@ group :development do
   gem "erb_lint",            "0.7.0", require: false
   gem "listen",              "3.9.0"
   gem "rack-mini-profiler",  "3.3.1"
-  gem "rubocop",             "1.69.1", require: false
+  gem "rubocop",             "1.69.2", require: false
   gem "rubocop-capybara",    "2.21.0", require: false
   gem "rubocop-factory_bot", "2.26.1", require: false
   gem "rubocop-performance", "1.23.0", require: false
   gem "rubocop-rails",       "2.27.0", require: false
   gem "rubocop-rake",        "0.6.0",  require: false
-  gem "rubocop-rspec",       "3.2.0",  require: false
+  gem "rubocop-rspec",       "3.3.0",  require: false
   gem "rubocop-rspec_rails", "2.30.0", require: false
   gem "web-console",         "4.2.1"
 end
