@@ -2009,9 +2009,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mocha@npm:11.0.2":
-  version: 11.0.2
-  resolution: "mocha@npm:11.0.2"
+"mocha@npm:11.0.1":
+  version: 11.0.1
+  resolution: "mocha@npm:11.0.1"
   dependencies:
     ansi-colors: "npm:^4.1.3"
     browser-stdout: "npm:^1.3.1"
@@ -2036,7 +2036,7 @@ __metadata:
   bin:
     _mocha: bin/_mocha
     mocha: bin/mocha.js
-  checksum: 10c0/3d4b775eb02080fc9e32872c3958cf60fa690ee9fe59af78a365788d0c7ae44d8f42101b75dcf062a08cbf0b4902d73293f1a81b96949f8aaed82df71380100d
+  checksum: 10c0/b290a308c318efca84304e907b5d5f4cb047ee8e27eac401c56a00251f944cac9f9af9a379e5952b82e05446a08654ed06c6fea9c55447c5fe2330673f616ff3
   languageName: node
   linkType: hard
 
@@ -2880,7 +2880,7 @@ __metadata:
     chai: "npm:5.1.2"
     eslint: "npm:9.17.0"
     jsdom: "npm:25.0.1"
-    mocha: "npm:11.0.2"
+    mocha: "npm:11.0.1"
     sinon: "npm:19.0.2"
     sinon-chai: "npm:4.0.0"
     stylelint: "npm:16.12.0"
