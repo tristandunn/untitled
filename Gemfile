@@ -6,7 +6,7 @@ source "https://rubygems.org"
 gem "bcrypt",            "3.1.20"
 gem "bootsnap",          "1.18.4", require: false
 gem "hotwire-rails",     "0.1.3"
-gem "importmap-rails",   "2.0.3"
+gem "importmap-rails",   "2.1.0"
 gem "jbuilder",          "2.13.0"
 gem "kamal",             "2.4.0", require: false
 gem "litestream",        "0.12.0"
