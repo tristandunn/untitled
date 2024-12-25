@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-ruby   "3.3.6"
+ruby   "3.4.1"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.20"
 gem "bootsnap",          "1.18.4", require: false
 gem "hotwire-rails",     "0.1.3"
-gem "importmap-rails",   "2.0.3"
+gem "importmap-rails",   "2.1.0"
 gem "jbuilder",          "2.13.0"
 gem "kamal",             "2.4.0", require: false
 gem "litestream",        "0.12.0"
@@ -17,8 +17,8 @@ gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.0.1"
 gem "solid_cable",       "3.0.5"
 gem "solid_cache",       "1.0.6"
-gem "solid_queue",       "1.1.0"
-gem "sqlite3",           "2.4.1"
+gem "solid_queue",       "1.1.1"
+gem "sqlite3",           "2.5.0"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "3.0.0"
 gem "thruster",          "0.1.9", require: false
@@ -37,7 +37,7 @@ group :development do
   gem "rubocop-capybara",    "2.21.0", require: false
   gem "rubocop-factory_bot", "2.26.1", require: false
   gem "rubocop-performance", "1.23.0", require: false
-  gem "rubocop-rails",       "2.27.0", require: false
+  gem "rubocop-rails",       "2.28.0", require: false
   gem "rubocop-rake",        "0.6.0",  require: false
   gem "rubocop-rspec",       "3.3.0",  require: false
   gem "rubocop-rspec_rails", "2.30.0", require: false
