@@ -20,7 +20,7 @@ gem "solid_queue",       "1.1.2"
 gem "sqlite3",           "2.5.0"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "3.1.0"
-gem "thruster",          "0.1.9", require: false
+gem "thruster",          "0.1.10", require: false
 gem "turbo-rails",       "2.0.11"
 
 group :development, :test do
@@ -28,14 +28,14 @@ group :development, :test do
 end
 
 group :development do
-  gem "brakeman",            "6.2.2", require: false
-  gem "erb_lint",            "0.7.0", require: false
+  gem "brakeman",            "7.0.0", require: false
+  gem "erb_lint",            "0.8.0", require: false
   gem "listen",              "3.9.0"
   gem "rack-mini-profiler",  "3.3.1"
   gem "rubocop",             "1.69.2", require: false
   gem "rubocop-capybara",    "2.21.0", require: false
   gem "rubocop-factory_bot", "2.26.1", require: false
-  gem "rubocop-performance", "1.23.0", require: false
+  gem "rubocop-performance", "1.23.1", require: false
   gem "rubocop-rails",       "2.28.0", require: false
   gem "rubocop-rake",        "0.6.0",  require: false
   gem "rubocop-rspec",       "3.3.0",  require: false
