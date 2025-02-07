@@ -15,7 +15,7 @@ A base Rails application to kickstart new projects.
 * [Kamal][] for deployments in [staging](config/deploy.yml) and
   [production](config/deploy.production.yml), with
   [customizable health checks](app/controllers/health_controller.rb).
-* CSS using Tailwind CSS [configuration](config/tailwind.config.js).
+* CSS using [Tailwind CSS](app/assets/tailwind/application.css).
 
 ## Development
 
