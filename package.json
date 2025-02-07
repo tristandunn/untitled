@@ -3,14 +3,18 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "fix:css": "rustywind --custom-regex '@apply ([_a-zA.-Z0-9-:\\[\\] ]+);' --write ./app/assets/stylesheets/**/*",
+    "fix:css": "rustywind --custom-regex '@apply ([_a-zA.-Z0-9-:\\[\\] ]+);' --write ./app/assets/tailwind/**/*",
     "fix:html": "rustywind --write app/views",
-    "lint": "eslint app/javascript config spec/javascripts",
-    "lint:css": "stylelint app/assets/stylesheets/**/*.css",
+    "lint": "eslint app/javascript spec/javascripts",
+    "lint:css": "stylelint app/assets/tailwind/**/*.css",
     "outdated": "yarn upgrade-interactive",
     "test": "bin/mocha spec/javascripts",
     "test:coverage": "c8 --100 --clean --report-dir tmp/ --reporter text-summary --skip-full bin/mocha spec/javascripts"
   },
+  "engines": {
+    "node": "22.12.0"
+  },
+  "packageManager": "yarn@4.6.0",
   "devDependencies": {
     "@hotwired/stimulus": "3.2.2",
     "@stylistic/eslint-plugin-js": "3.0.1",
@@ -23,9 +27,5 @@
     "sinon-chai": "4.0.0",
     "stylelint": "16.14.1",
     "stylelint-config-standard": "37.0.0"
-  },
-  "engines": {
-    "node": "22.12.0"
-  },
-  "packageManager": "yarn@4.6.0"
+  }
 }
