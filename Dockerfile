@@ -1,5 +1,5 @@
 # Accept optional arguments.
-ARG RUBY_VERSION="3.4.1-alpine3.21"
+ARG RUBY_VERSION="3.4.2-alpine3.21"
 
 # Create a base image.
 FROM ruby:$RUBY_VERSION AS base
@@ -16,7 +16,7 @@ WORKDIR /rails
 
 # Install dependency requirements.
 RUN apk -U upgrade \
-  && apk add --no-cache bash gcompat jemalloc libxml2-dev libxslt-dev sqlite tzdata
+  && apk add --no-cache bash gcompat jemalloc libxml2-dev libxslt-dev sqlite tzdata yaml-dev
 
 # Create a builder image for Ruby.
 FROM base AS build
