@@ -32,13 +32,13 @@ group :development do
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.9.0"
   gem "rack-mini-profiler",  "3.3.1"
-  gem "rubocop",             "1.72.1", require: false
+  gem "rubocop",             "1.72.2", require: false
   gem "rubocop-capybara",    "2.21.0", require: false
   gem "rubocop-factory_bot", "2.26.1", require: false
   gem "rubocop-performance", "1.24.0", require: false
-  gem "rubocop-rails",       "2.30.0", require: false
-  gem "rubocop-rake",        "0.7.0",  require: false
-  gem "rubocop-rspec",       "3.4.0",  require: false
+  gem "rubocop-rails",       "2.30.1", require: false
+  gem "rubocop-rake",        "0.7.1",  require: false
+  gem "rubocop-rspec",       "3.5.0",  require: false
   gem "rubocop-rspec_rails", "2.30.0", require: false
   gem "web-console",         "4.2.1"
 end
@@ -52,5 +52,5 @@ group :test do
   gem "rails-controller-testing", "1.0.5"
   gem "selenium-webdriver",       "4.28.0"
   gem "shoulda-matchers",         "6.4.0"
-  gem "simplecov-console",        "0.9.2", require: false
+  gem "simplecov-console",        "0.9.3", require: false
 end
