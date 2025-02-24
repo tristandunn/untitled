@@ -1,7 +1,7 @@
-const js = require("@eslint/js"),
-      stylistic = require("@stylistic/eslint-plugin-js");
+import js from "@eslint/js";
+import stylistic from "@stylistic/eslint-plugin-js";
 
-module.exports = [
+export default [
   {
     "files": ["**/*.js"],
     "ignores": [
