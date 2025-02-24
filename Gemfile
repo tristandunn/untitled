@@ -17,7 +17,7 @@ gem "rails",             "8.0.1"
 gem "solid_cable",       "3.0.7"
 gem "solid_cache",       "1.0.7"
 gem "solid_queue",       "1.1.3"
-gem "sqlite3",           "2.5.0"
+gem "sqlite3",           "2.6.0"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.0.0"
 gem "thruster",          "0.1.11", require: false
