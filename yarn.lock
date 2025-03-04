@@ -293,7 +293,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@keyv/serialize@npm:^1.0.2":
+"@keyv/serialize@npm:^1.0.3":
   version: 1.0.3
   resolution: "@keyv/serialize@npm:1.0.3"
   dependencies:
@@ -394,15 +394,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin-js@npm:4.1.0":
-  version: 4.1.0
-  resolution: "@stylistic/eslint-plugin-js@npm:4.1.0"
+"@stylistic/eslint-plugin-js@npm:4.2.0":
+  version: 4.2.0
+  resolution: "@stylistic/eslint-plugin-js@npm:4.2.0"
   dependencies:
     eslint-visitor-keys: "npm:^4.2.0"
     espree: "npm:^10.3.0"
   peerDependencies:
     eslint: ">=9.0.0"
-  checksum: 10c0/704a9e4ab218cb7a26cb1c13b24e5e454c7b1053b771feb1a1c0f3e4d87418a040e9ee8ea894596d6d32dd00235c602a086e753724bd59f593ea10ef623867b8
+  checksum: 10c0/5e5a21a60c818fc9f745b12fab252a1188e4d98d7008a81dbaf5a8e106558ac757c4c56e2a4b982bd97249132a31f577a991383f77b4912b8b26723d57654256
   languageName: node
   linkType: hard
 
@@ -684,13 +684,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cacheable@npm:^1.8.8":
-  version: 1.8.8
-  resolution: "cacheable@npm:1.8.8"
+"cacheable@npm:^1.8.9":
+  version: 1.8.9
+  resolution: "cacheable@npm:1.8.9"
   dependencies:
-    hookified: "npm:^1.7.0"
-    keyv: "npm:^5.2.3"
-  checksum: 10c0/24e0f93782015be75b1ec9fe3fb151b2921f61c282091b873f78a0efeb141e95a21d8aa5f4c6bd99a8acb0b485deb5801aa32b4ecf4b666efa7446739368588b
+    hookified: "npm:^1.7.1"
+    keyv: "npm:^5.3.1"
+  checksum: 10c0/355ed0b9a312542176bf98b8d0582f8882163b7831baea3fdc6ba78d7a698e15abc3818ec049b79ad969de0f50771148bb99a616c5632c809ef7fc40f266397d
   languageName: node
   linkType: hard
 
@@ -1276,11 +1276,11 @@ __metadata:
   linkType: hard
 
 "file-entry-cache@npm:^10.0.6":
-  version: 10.0.6
-  resolution: "file-entry-cache@npm:10.0.6"
+  version: 10.0.7
+  resolution: "file-entry-cache@npm:10.0.7"
   dependencies:
-    flat-cache: "npm:^6.1.6"
-  checksum: 10c0/4e7226a5dbe7b5130c848c5fd3a352bb16e4ddb1de10cb4b3ea8375f6ab6085ed10da4db2db8119c61fc7e56fc59a40eeb837a4ae1a3a7c8357a17e69004f113
+    flat-cache: "npm:^6.1.7"
+  checksum: 10c0/b56ea1b6f3f0faf7954667c1991d8ff50901c53cd37c775b72d18d6fa5641bbf0e2cddb84b9d10f900a6ad3d1432f1525405a966b113d7512d9d8f820f1bb7a4
   languageName: node
   linkType: hard
 
@@ -1322,14 +1322,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flat-cache@npm:^6.1.6":
-  version: 6.1.6
-  resolution: "flat-cache@npm:6.1.6"
+"flat-cache@npm:^6.1.7":
+  version: 6.1.7
+  resolution: "flat-cache@npm:6.1.7"
   dependencies:
-    cacheable: "npm:^1.8.8"
-    flatted: "npm:^3.3.2"
-    hookified: "npm:^1.7.0"
-  checksum: 10c0/2aeba555b61d32d7f0803e6b6b3ba959610cdc0e5b591ed0f80a3ad70c4e80e81afb6853c495cafdcbc3a02386d76a1522babcf04e50c4a1e81df2decfd02e9f
+    cacheable: "npm:^1.8.9"
+    flatted: "npm:^3.3.3"
+    hookified: "npm:^1.7.1"
+  checksum: 10c0/37bf101b35483e2df3f2fbee46e549d8e6ebd932fb4969a800dc595a13bd239b7dfe804a8f565518b39bec78d827344afa21d66849f1f12ca8f13901411f2b9d
   languageName: node
   linkType: hard
 
@@ -1342,7 +1342,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flatted@npm:^3.2.9, flatted@npm:^3.3.2":
+"flatted@npm:^3.2.9, flatted@npm:^3.3.3":
   version: 3.3.3
   resolution: "flatted@npm:3.3.3"
   checksum: 10c0/e957a1c6b0254aa15b8cce8533e24165abd98fadc98575db082b786b5da1b7d72062b81bfdcd1da2f4d46b6ed93bec2434e62333e9b4261d79ef2e75a10dd538
@@ -1578,7 +1578,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hookified@npm:^1.7.0":
+"hookified@npm:^1.7.1":
   version: 1.7.1
   resolution: "hookified@npm:1.7.1"
   checksum: 10c0/779cb2f912d19f9cf00ec081d2fb07068553093e8cfaab7fb536b45a04b5743ac836e7fd4d09f1473f82c105338aa2539a104e5fb28e55f4ec1ce0be28ea9acc
@@ -1938,12 +1938,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"keyv@npm:^5.2.3":
-  version: 5.2.3
-  resolution: "keyv@npm:5.2.3"
+"keyv@npm:^5.3.1":
+  version: 5.3.1
+  resolution: "keyv@npm:5.3.1"
   dependencies:
-    "@keyv/serialize": "npm:^1.0.2"
-  checksum: 10c0/76b87dd2c21a4c1c5c05e9ff3b85670beab98f153429aaa9aee544b72b65411a7d80d96c29f3fef3e9dcebb672c8268e7209d6f80beb5da939b4e019722948b4
+    "@keyv/serialize": "npm:^1.0.3"
+  checksum: 10c0/d5ffe3d2d547a50a5e1189d5acbc0480821c22c025082851a8eeb26667d789f3f7b7ee7beb933660d98c239f7e7c403c652a511693670a78a73f06cd411e04fa
   languageName: node
   linkType: hard
 
@@ -2347,9 +2347,9 @@ __metadata:
   linkType: hard
 
 "nwsapi@npm:^2.2.16":
-  version: 2.2.16
-  resolution: "nwsapi@npm:2.2.16"
-  checksum: 10c0/0aa0637f4d51043d0183d994e08336bae996b03b42984381bf09ebdf3ff4909c018eda6b2a8aba0a08f3ea8303db8a0dad0608b38dc0bff15fd87017286ae21a
+  version: 2.2.18
+  resolution: "nwsapi@npm:2.2.18"
+  checksum: 10c0/fb64761f02d838a1964ef3f15f324779ae5b735c878843ed6592b07d85652928f8f34458605fee0ff379514bf5ffa5afeef5dc8290bfb0959a854069e2af300b
   languageName: node
   linkType: hard
 
@@ -3009,21 +3009,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tldts-core@npm:^6.1.79":
-  version: 6.1.79
-  resolution: "tldts-core@npm:6.1.79"
-  checksum: 10c0/01554b7e7481bf7f62f0bd1be79bfcd52ca2cc099c0af0d0db4cdbc88cb1a1eb118ff8878fff93b758b148b185447d752cccdecfdec75f97ceddb5ec5c900e8f
+"tldts-core@npm:^6.1.82":
+  version: 6.1.82
+  resolution: "tldts-core@npm:6.1.82"
+  checksum: 10c0/bdbefb17837d7d85b79a44824feafad3d12fbbfbe4f0a89d9618765b18e880d4c7ebe9e87258a2a0e85deec23adbcaaa5f4240129d8017f896b0cda0c32ae6e4
   languageName: node
   linkType: hard
 
 "tldts@npm:^6.1.32":
-  version: 6.1.79
-  resolution: "tldts@npm:6.1.79"
+  version: 6.1.82
+  resolution: "tldts@npm:6.1.82"
   dependencies:
-    tldts-core: "npm:^6.1.79"
+    tldts-core: "npm:^6.1.82"
   bin:
     tldts: bin/cli.js
-  checksum: 10c0/c4de29f5c041f1b7293b916e2d758c8879e389264ac0fbe20d52bd07bb3550afba871b76c93167ecc4c2cd3232b635f31b75b9764d543f2c6941c794ef2fa96d
+  checksum: 10c0/e01dd47de5a1e5ca7ffe33d9e18cfd608e93ef45cf1f80f3fced1cea192d07a840664ded894b590551ebcaaf8a583a68a4b23bc0645b5885508b57010a9316af
   languageName: node
   linkType: hard
 
@@ -3100,7 +3100,7 @@ __metadata:
   resolution: "untitled@workspace:."
   dependencies:
     "@hotwired/stimulus": "npm:3.2.2"
-    "@stylistic/eslint-plugin-js": "npm:4.1.0"
+    "@stylistic/eslint-plugin-js": "npm:4.2.0"
     c8: "npm:10.1.3"
     chai: "npm:5.2.0"
     eslint: "npm:9.21.0"
