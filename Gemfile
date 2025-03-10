@@ -34,7 +34,7 @@ group :development do
   gem "rack-mini-profiler",  "3.3.1"
   gem "rubocop",             "1.73.1", require: false
   gem "rubocop-capybara",    "2.21.0", require: false
-  gem "rubocop-factory_bot", "2.26.1", require: false
+  gem "rubocop-factory_bot", "2.27.0", require: false
   gem "rubocop-performance", "1.24.0", require: false
   gem "rubocop-rails",       "2.30.3", require: false
   gem "rubocop-rake",        "0.7.1",  require: false
