@@ -50,7 +50,7 @@ group :test do
   gem "factory_bot_rails",        "6.4.4"
   gem "faker",                    "3.5.1"
   gem "rails-controller-testing", "1.0.5"
-  gem "selenium-webdriver",       "4.29.1"
+  gem "selenium-webdriver",       "4.30.1"
   gem "shoulda-matchers",         "6.4.0"
   gem "simplecov-console",        "0.9.3", require: false
 end
