@@ -19,7 +19,7 @@ gem "solid_cache",       "1.0.7"
 gem "solid_queue",       "1.1.4"
 gem "sqlite3",           "2.6.0"
 gem "stimulus-rails",    "1.3.4"
-gem "tailwindcss-rails", "4.2.1"
+gem "tailwindcss-rails", "4.2.2"
 gem "thruster",          "0.1.12", require: false
 gem "turbo-rails",       "2.0.13"
 
