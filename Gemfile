@@ -32,7 +32,7 @@ group :development do
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.9.0"
   gem "rack-mini-profiler",  "3.3.1"
-  gem "rubocop",             "1.75.3", require: false
+  gem "rubocop",             "1.75.4", require: false
   gem "rubocop-capybara",    "2.22.1", require: false
   gem "rubocop-factory_bot", "2.27.1", require: false
   gem "rubocop-performance", "1.25.0", require: false
