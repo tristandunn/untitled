@@ -51,6 +51,6 @@ group :test do
   gem "faker",                    "3.5.1"
   gem "rails-controller-testing", "1.0.5"
   gem "selenium-webdriver",       "4.31.0"
-  gem "shoulda-matchers",         "6.4.0"
+  gem "shoulda-matchers",         "6.5.0"
   gem "simplecov-console",        "0.9.3", require: false
 end
