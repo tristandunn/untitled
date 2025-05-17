@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-ruby   "3.4.3"
+ruby   "3.4.4"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.20"
-gem "bootsnap",          "1.18.4", require: false
+gem "bootsnap",          "1.18.6", require: false
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.1.0"
 gem "jbuilder",          "2.13.0"
-gem "kamal",             "2.5.3", require: false
+gem "kamal",             "2.6.1", require: false
 gem "litestream",        "0.12.0"
 gem "propshaft",         "1.1.0"
 gem "puma",              "6.6.0"
@@ -32,11 +32,11 @@ group :development do
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.9.0"
   gem "rack-mini-profiler",  "3.3.1"
-  gem "rubocop",             "1.75.5", require: false
+  gem "rubocop",             "1.75.6", require: false
   gem "rubocop-capybara",    "2.22.1", require: false
   gem "rubocop-factory_bot", "2.27.1", require: false
   gem "rubocop-performance", "1.25.0", require: false
-  gem "rubocop-rails",       "2.31.0", require: false
+  gem "rubocop-rails",       "2.32.0", require: false
   gem "rubocop-rake",        "0.7.1",  require: false
   gem "rubocop-rspec",       "3.6.0",  require: false
   gem "rubocop-rspec_rails", "2.31.0", require: false
