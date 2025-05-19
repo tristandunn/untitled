@@ -17,6 +17,8 @@ jobs:
       group: cd-production
     env:
       DESTINATION: production
+    permissions:
+      packages: write
 
     steps:
       - name: Checkout the code
@@ -50,3 +52,10 @@ jobs:
         shell: bash
         if: ${{ cancelled() || failure() }}
         run: bin/kamal lock release --destination=$DESTINATION
+
+      - name: Clean up old images
+        uses: dataaxiom/ghcr-cleanup-action@v1
+        with:
+          keep-n-tagged: 5
+          keep-n-untagged: 5
+          delete-orphaned-images: true
