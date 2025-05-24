@@ -6,15 +6,15 @@ __metadata:
   cacheKey: 10c0
 
 "@asamuzakjp/css-color@npm:^3.1.2":
-  version: 3.1.7
-  resolution: "@asamuzakjp/css-color@npm:3.1.7"
+  version: 3.2.0
+  resolution: "@asamuzakjp/css-color@npm:3.2.0"
   dependencies:
     "@csstools/css-calc": "npm:^2.1.3"
     "@csstools/css-color-parser": "npm:^3.0.9"
     "@csstools/css-parser-algorithms": "npm:^3.0.4"
     "@csstools/css-tokenizer": "npm:^3.0.3"
     lru-cache: "npm:^10.4.3"
-  checksum: 10c0/ac70af38c9b9d972941fe9dbed5221118077bc8f217617edbd534d9c7c281fd2c4023d0f0daa349d57b895cb73430d67d509b722226294bad2910a81d9439e91
+  checksum: 10c0/a4bf1c831751b1fae46b437e37e8a38c0b5bd58d23230157ae210bd1e905fe509b89b7c243e63d1522d852668a6292ed730a160e21342772b4e5b7b8ea14c092
   languageName: node
   linkType: hard
 
@@ -1719,16 +1719,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^5.1.6":
-  version: 5.1.6
-  resolution: "minimatch@npm:5.1.6"
-  dependencies:
-    brace-expansion: "npm:^2.0.1"
-  checksum: 10c0/3defdfd230914f22a8da203747c42ee3c405c39d4d37ffda284dac5e45b7e1f6c49aa8be606509002898e73091ff2a3bbfc59c2c6c71d4660609f63aa92f98e3
-  languageName: node
-  linkType: hard
-
-"minimatch@npm:^9.0.4":
+"minimatch@npm:^9.0.4, minimatch@npm:^9.0.5":
   version: 9.0.5
   resolution: "minimatch@npm:9.0.5"
   dependencies:
@@ -1744,9 +1735,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mocha@npm:11.4.0":
-  version: 11.4.0
-  resolution: "mocha@npm:11.4.0"
+"mocha@npm:11.5.0":
+  version: 11.5.0
+  resolution: "mocha@npm:11.5.0"
   dependencies:
     browser-stdout: "npm:^1.3.1"
     chokidar: "npm:^4.0.1"
@@ -1758,7 +1749,7 @@ __metadata:
     he: "npm:^1.2.0"
     js-yaml: "npm:^4.1.0"
     log-symbols: "npm:^4.1.0"
-    minimatch: "npm:^5.1.6"
+    minimatch: "npm:^9.0.5"
     ms: "npm:^2.1.3"
     picocolors: "npm:^1.1.1"
     serialize-javascript: "npm:^6.0.2"
@@ -1771,7 +1762,7 @@ __metadata:
   bin:
     _mocha: bin/_mocha
     mocha: bin/mocha.js
-  checksum: 10c0/f5c11d1037b2556e586f3f896c7fff7502ee62a6a8cd8d8de396e091195cda73817f4e6e16987ac4b1b5c6d24aebe892eb9ffdbc0c500ae0b0daad987f467609
+  checksum: 10c0/c8ffb6328e2073a344ef9c4a340a4babf267d02464283b12c1a7ffc8e2ee8db0816162b937a9fd1b1d3db7e5d2aaa04a44baf37672f8db566e919cd21d77f7b1
   languageName: node
   linkType: hard
 
@@ -2436,7 +2427,7 @@ __metadata:
     chai: "npm:5.2.0"
     eslint: "npm:9.27.0"
     jsdom: "npm:26.1.0"
-    mocha: "npm:11.4.0"
+    mocha: "npm:11.5.0"
     sinon: "npm:20.0.0"
     sinon-chai: "npm:4.0.0"
     stylelint: "npm:16.19.1"
