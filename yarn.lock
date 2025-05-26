@@ -363,15 +363,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin-js@npm:4.2.0":
-  version: 4.2.0
-  resolution: "@stylistic/eslint-plugin-js@npm:4.2.0"
+"@stylistic/eslint-plugin-js@npm:4.4.0":
+  version: 4.4.0
+  resolution: "@stylistic/eslint-plugin-js@npm:4.4.0"
   dependencies:
     eslint-visitor-keys: "npm:^4.2.0"
     espree: "npm:^10.3.0"
   peerDependencies:
     eslint: ">=9.0.0"
-  checksum: 10c0/5e5a21a60c818fc9f745b12fab252a1188e4d98d7008a81dbaf5a8e106558ac757c4c56e2a4b982bd97249132a31f577a991383f77b4912b8b26723d57654256
+  checksum: 10c0/9b24696656877869e22a1f5467321401103660caebdc81752408f6284d0937e0bca4cc3baf8e5a7c6136e44039a7d5e7435834e6426424b5027d76bcaf47210a
   languageName: node
   linkType: hard
 
@@ -2422,7 +2422,7 @@ __metadata:
   resolution: "untitled@workspace:."
   dependencies:
     "@hotwired/stimulus": "npm:3.2.2"
-    "@stylistic/eslint-plugin-js": "npm:4.2.0"
+    "@stylistic/eslint-plugin-js": "npm:4.4.0"
     c8: "npm:10.1.3"
     chai: "npm:5.2.0"
     eslint: "npm:9.27.0"
