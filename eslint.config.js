@@ -1,5 +1,5 @@
 import js from "@eslint/js";
-import stylistic from "@stylistic/eslint-plugin-js";
+import stylistic from "@stylistic/eslint-plugin";
 
 export default [
   {
@@ -22,7 +22,7 @@ export default [
       }
     },
     "plugins": {
-      "@stylistic/js": stylistic
+      "@stylistic": stylistic
     },
     "rules": {
       ...js.configs.recommended.rules,
@@ -31,10 +31,10 @@ export default [
       "arrow-body-style": ["error", "always"],
       "no-magic-numbers": ["error", { "ignore": [0, 1] }],
 
-      "@stylistic/js/array-element-newline": ["error", "consistent"],
-      "@stylistic/js/function-call-argument-newline": ["error", "consistent"],
-      "@stylistic/js/function-paren-newline": ["error", "consistent"],
-      "@stylistic/js/indent": [
+      "@stylistic/array-element-newline": ["error", "consistent"],
+      "@stylistic/function-call-argument-newline": ["error", "consistent"],
+      "@stylistic/function-paren-newline": ["error", "consistent"],
+      "@stylistic/indent": [
         "error",
         2, /* eslint no-magic-numbers: 0 */
         {
@@ -45,10 +45,10 @@ export default [
           }
         }
       ],
-      "@stylistic/js/lines-around-comment": ["error", { "allowClassStart": true }],
-      "@stylistic/js/object-curly-spacing": ["error", "always"],
-      "@stylistic/js/padded-blocks": "off",
-      "@stylistic/js/space-before-function-paren": "off"
+      "@stylistic/lines-around-comment": ["error", { "allowClassStart": true }],
+      "@stylistic/object-curly-spacing": ["error", "always"],
+      "@stylistic/padded-blocks": "off",
+      "@stylistic/space-before-function-paren": "off"
     }
   },
   {
