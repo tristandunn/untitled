@@ -9,7 +9,7 @@ gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.1.0"
 gem "jbuilder",          "2.13.0"
 gem "kamal",             "2.6.1", require: false
-gem "litestream",        "0.12.0"
+gem "litestream",        "0.13.0"
 gem "propshaft",         "1.1.0"
 gem "puma",              "6.6.0"
 gem "rack-timeout",      "0.7.0"
@@ -17,7 +17,7 @@ gem "rails",             "8.0.2"
 gem "solid_cable",       "3.0.8"
 gem "solid_cache",       "1.0.7"
 gem "solid_queue",       "1.1.5"
-gem "sqlite3",           "2.6.0"
+gem "sqlite3",           "2.7.0"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.2.3"
 gem "thruster",          "0.1.13", require: false
@@ -32,7 +32,7 @@ group :development do
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.9.0"
   gem "rack-mini-profiler",  "3.3.1"
-  gem "rubocop",             "1.75.8", require: false
+  gem "rubocop",             "1.76.1", require: false
   gem "rubocop-capybara",    "2.22.1", require: false
   gem "rubocop-factory_bot", "2.27.1", require: false
   gem "rubocop-performance", "1.25.0", require: false
