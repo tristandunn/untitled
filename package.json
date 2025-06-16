@@ -23,7 +23,7 @@
     "eslint": "9.28.0",
     "jsdom": "26.1.0",
     "mocha": "11.6.0",
-    "sinon": "20.0.0",
+    "sinon": "21.0.0",
     "sinon-chai": "4.0.0",
     "stylelint": "16.20.0",
     "stylelint-config-standard": "38.0.0"
