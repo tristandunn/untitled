@@ -17,9 +17,9 @@ gem "rails",             "8.0.2"
 gem "solid_cable",       "3.0.11"
 gem "solid_cache",       "1.0.7"
 gem "solid_queue",       "1.1.5"
-gem "sqlite3",           "2.7.1"
+gem "sqlite3",           "2.7.2"
 gem "stimulus-rails",    "1.3.4"
-gem "tailwindcss-rails", "4.2.3"
+gem "tailwindcss-rails", "4.3.0"
 gem "thruster",          "0.1.14", require: false
 gem "turbo-rails",       "2.0.16"
 
@@ -32,7 +32,7 @@ group :development do
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.9.0"
   gem "rack-mini-profiler",  "4.0.0"
-  gem "rubocop",             "1.77.0", require: false
+  gem "rubocop",             "1.78.0", require: false
   gem "rubocop-capybara",    "2.22.1", require: false
   gem "rubocop-factory_bot", "2.27.1", require: false
   gem "rubocop-performance", "1.25.0", require: false
