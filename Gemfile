@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ruby   "3.4.4"
+ruby   "3.4.5"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.20"
@@ -10,13 +10,13 @@ gem "importmap-rails",   "2.1.0"
 gem "jbuilder",          "2.13.0"
 gem "kamal",             "2.7.0", require: false
 gem "litestream",        "0.14.0"
-gem "propshaft",         "1.1.0"
+gem "propshaft",         "1.2.0"
 gem "puma",              "6.6.0"
 gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.0.2"
 gem "solid_cable",       "3.0.11"
 gem "solid_cache",       "1.0.7"
-gem "solid_queue",       "1.1.5"
+gem "solid_queue",       "1.2.0"
 gem "sqlite3",           "2.7.2"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.3.0"

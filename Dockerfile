@@ -1,5 +1,5 @@
 # Accept optional arguments.
-ARG RUBY_VERSION="3.4.4-alpine3.21"
+ARG RUBY_VERSION="3.4.5-alpine3.22"
 
 # Create a base image.
 FROM ruby:$RUBY_VERSION AS base
@@ -37,13 +37,13 @@ RUN bundle install
 RUN rm -rf ~/.bundle/ "${BUNDLE_PATH}"/ruby/*/cache "${BUNDLE_PATH}"/ruby/*/bundler/gems/*/.git
 
 # Precompile the Bootsnap cache for the dependencies.
-RUN bundle exec bootsnap precompile --gemfile
+RUN bundle exec bootsnap precompile --gemfile --jobs 0
 
 # Copy the application into Docker.
 COPY . .
 
 # Precompile the Bootsnap cache for the application.
-RUN bundle exec bootsnap precompile app/ lib/
+RUN bundle exec bootsnap precompile  --jobs 0 app/ lib/
 
 # Compile the assets without requiring the secret RAILS_MASTER_KEY.
 RUN SECRET_KEY_BASE_DUMMY=1 bundle exec rails assets:precompile
