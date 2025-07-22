@@ -10,7 +10,7 @@ gem "importmap-rails",   "2.1.0"
 gem "jbuilder",          "2.13.0"
 gem "kamal",             "2.7.0", require: false
 gem "litestream",        "0.14.0"
-gem "propshaft",         "1.2.0"
+gem "propshaft",         "1.2.1"
 gem "puma",              "6.6.0"
 gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.0.2"
