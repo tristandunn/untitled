@@ -26,7 +26,7 @@ export default [
     },
     "rules": {
       ...js.configs.recommended.rules,
-      ...stylistic.configs["all-flat"].rules,
+      ...stylistic.configs["all"].rules,
 
       "arrow-body-style": ["error", "always"],
       "no-magic-numbers": ["error", { "ignore": [0, 1] }],

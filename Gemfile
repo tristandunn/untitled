@@ -10,14 +10,14 @@ gem "importmap-rails",   "2.1.0"
 gem "jbuilder",          "2.13.0"
 gem "kamal",             "2.7.0", require: false
 gem "litestream",        "0.14.0"
-gem "propshaft",         "1.2.0"
+gem "propshaft",         "1.2.1"
 gem "puma",              "6.6.0"
 gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.0.2"
 gem "solid_cable",       "3.0.11"
 gem "solid_cache",       "1.0.7"
 gem "solid_queue",       "1.2.0"
-gem "sqlite3",           "2.7.2"
+gem "sqlite3",           "2.7.3"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.3.0"
 gem "thruster",          "0.1.14", require: false
@@ -28,7 +28,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "brakeman",            "7.0.2", require: false
+  gem "brakeman",            "7.1.0", require: false
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.9.0"
   gem "rack-mini-profiler",  "4.0.0"
