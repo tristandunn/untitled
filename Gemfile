@@ -6,7 +6,7 @@ source "https://rubygems.org"
 gem "bcrypt",            "3.1.20"
 gem "bootsnap",          "1.18.6", require: false
 gem "hotwire-rails",     "0.1.3"
-gem "importmap-rails",   "2.1.0"
+gem "importmap-rails",   "2.2.0"
 gem "jbuilder",          "2.13.0"
 gem "kamal",             "2.7.0", require: false
 gem "litestream",        "0.14.0"
@@ -16,7 +16,7 @@ gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.0.2"
 gem "solid_cable",       "3.0.11"
 gem "solid_cache",       "1.0.7"
-gem "solid_queue",       "1.2.0"
+gem "solid_queue",       "1.2.1"
 gem "sqlite3",           "2.7.3"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.3.0"
@@ -52,5 +52,5 @@ group :test do
   gem "rails-controller-testing", "1.0.5"
   gem "selenium-webdriver",       "4.34.0"
   gem "shoulda-matchers",         "6.5.0"
-  gem "simplecov-console",        "0.9.3", require: false
+  gem "simplecov-console",        "0.9.4", require: false
 end
