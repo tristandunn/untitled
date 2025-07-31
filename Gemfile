@@ -6,12 +6,12 @@ source "https://rubygems.org"
 gem "bcrypt",            "3.1.20"
 gem "bootsnap",          "1.18.6", require: false
 gem "hotwire-rails",     "0.1.3"
-gem "importmap-rails",   "2.2.0"
+gem "importmap-rails",   "2.2.2"
 gem "jbuilder",          "2.13.0"
 gem "kamal",             "2.7.0", require: false
 gem "litestream",        "0.14.0"
 gem "propshaft",         "1.2.1"
-gem "puma",              "6.6.0"
+gem "puma",              "6.6.1"
 gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.0.2"
 gem "solid_cable",       "3.0.11"
@@ -31,8 +31,8 @@ group :development do
   gem "brakeman",            "7.1.0", require: false
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.9.0"
-  gem "rack-mini-profiler",  "4.0.0"
-  gem "rubocop",             "1.79.0", require: false
+  gem "rack-mini-profiler",  "4.0.1"
+  gem "rubocop",             "1.79.1", require: false
   gem "rubocop-capybara",    "2.22.1", require: false
   gem "rubocop-factory_bot", "2.27.1", require: false
   gem "rubocop-performance", "1.25.0", require: false
