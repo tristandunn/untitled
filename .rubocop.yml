@@ -22,6 +22,11 @@ Layout/HashAlignment:
   EnforcedColonStyle: table
   EnforcedHashRocketStyle: table
 
+Metrics/MethodLength:
+  Enabled: true
+  Exclude:
+    - db/migrate/*
+
 Naming/RescuedExceptionsVariableName:
   Enabled: true
   PreferredName: error

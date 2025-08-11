@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
@@ -29,7 +29,7 @@ jobs:
 
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Enable the Corepack tool
         run: corepack enable
@@ -51,7 +51,7 @@ jobs:
 
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
@@ -104,7 +104,7 @@ jobs:
 
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
