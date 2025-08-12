@@ -3,5 +3,5 @@ en:
 
   pages:
     index:
-      description: "A base Rails application with Turbo and Stimlus."
+      description: "A base Rails application with Turbo and Stimulus."
       new_account: "Create an Account"
