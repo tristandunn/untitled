@@ -35,9 +35,8 @@ jobs:
         run: corepack enable
 
       - name: Install Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          cache: "yarn"
           node-version-file: ".tool-versions"
 
       - name: Install the Node dependencies
@@ -62,9 +61,8 @@ jobs:
         run: corepack enable
 
       - name: Install Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          cache: "yarn"
           node-version-file: ".tool-versions"
 
       - name: Install the Node dependencies
