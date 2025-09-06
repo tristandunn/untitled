@@ -13,7 +13,7 @@ gem "litestream",        "0.14.0"
 gem "propshaft",         "1.2.1"
 gem "puma",              "7.0.3"
 gem "rack-timeout",      "0.7.0"
-gem "rails",             "8.0.2.1"
+gem "rails",             "8.1.0.beta1"
 gem "solid_cable",       "3.0.12"
 gem "solid_cache",       "1.0.7"
 gem "solid_queue",       "1.2.1"
@@ -29,6 +29,7 @@ end
 
 group :development do
   gem "brakeman",            "7.1.0", require: false
+  gem "bundler-audit",       "0.9.2", require: false
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.9.0"
   gem "rack-mini-profiler",  "4.0.1"
