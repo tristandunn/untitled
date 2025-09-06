@@ -11,7 +11,7 @@ gem "jbuilder",          "2.14.1"
 gem "kamal",             "2.7.0", require: false
 gem "litestream",        "0.14.0"
 gem "propshaft",         "1.2.1"
-gem "puma",              "6.6.1"
+gem "puma",              "7.0.1"
 gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.0.2.1"
 gem "solid_cable",       "3.0.12"
@@ -35,7 +35,7 @@ group :development do
   gem "rubocop",             "1.80.2", require: false
   gem "rubocop-capybara",    "2.22.1", require: false
   gem "rubocop-factory_bot", "2.27.1", require: false
-  gem "rubocop-performance", "1.25.0", require: false
+  gem "rubocop-performance", "1.26.0", require: false
   gem "rubocop-rails",       "2.33.3", require: false
   gem "rubocop-rake",        "0.7.1",  require: false
   gem "rubocop-rspec",       "3.7.0",  require: false
@@ -47,7 +47,7 @@ group :test do
   gem "capybara",                 "3.40.0"
   gem "climate_control",          "1.2.0"
   gem "database_cleaner",         "2.1.0"
-  gem "factory_bot_rails",        "6.5.0"
+  gem "factory_bot_rails",        "6.5.1"
   gem "faker",                    "3.5.2"
   gem "rails-controller-testing", "1.0.5"
   gem "selenium-webdriver",       "4.35.0"

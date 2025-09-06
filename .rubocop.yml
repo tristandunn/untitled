@@ -22,6 +22,11 @@ Layout/HashAlignment:
   EnforcedColonStyle: table
   EnforcedHashRocketStyle: table
 
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - config/environments/*.rb
+
 Metrics/MethodLength:
   Enabled: true
   Exclude:
