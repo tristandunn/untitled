@@ -19,14 +19,14 @@ __metadata:
   linkType: hard
 
 "@asamuzakjp/dom-selector@npm:^6.5.4":
-  version: 6.5.4
-  resolution: "@asamuzakjp/dom-selector@npm:6.5.4"
+  version: 6.5.5
+  resolution: "@asamuzakjp/dom-selector@npm:6.5.5"
   dependencies:
     "@asamuzakjp/nwsapi": "npm:^2.3.9"
     bidi-js: "npm:^1.0.3"
     css-tree: "npm:^3.1.0"
     is-potential-custom-element-name: "npm:^1.0.1"
-  checksum: 10c0/aeb032b0f7832c891d5f9900b381fe0c7187343eb46a353f07ffbaac2d222bb80ac7504006e7e1b4c45af9e640fd093e14f951870a146d3ad80fd67670c9a115
+  checksum: 10c0/d058b891d1092f6f3f9639e22933141bb17e5d35fec938a75cfd3de18ee95cec69edc15521656af4d56b2d29739a19bc37b12e0102179a77c60d8046c8c8c8b2
   languageName: node
   linkType: hard
 
@@ -59,6 +59,35 @@ __metadata:
   version: 1.0.2
   resolution: "@bcoe/v8-coverage@npm:1.0.2"
   checksum: 10c0/1eb1dc93cc17fb7abdcef21a6e7b867d6aa99a7ec88ec8207402b23d9083ab22a8011213f04b2cf26d535f1d22dc26139b7929e6c2134c254bd1e14ba5e678c3
+  languageName: node
+  linkType: hard
+
+"@cacheable/memoize@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@cacheable/memoize@npm:2.0.1"
+  dependencies:
+    "@cacheable/utils": "npm:^2.0.1"
+  checksum: 10c0/40ab683429132654b95edc1229c175c45045c239d647bffa75165ae572cd8da0ee9852dfb7c6baca4e8ecc0e3005c2555222ae02add8206d4a227106b1c5fc8d
+  languageName: node
+  linkType: hard
+
+"@cacheable/memory@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@cacheable/memory@npm:2.0.1"
+  dependencies:
+    "@cacheable/memoize": "npm:^2.0.1"
+    "@cacheable/utils": "npm:^2.0.1"
+    "@keyv/bigmap": "npm:^1.0.0"
+    hookified: "npm:^1.12.0"
+    keyv: "npm:^5.5.1"
+  checksum: 10c0/dde1caf7fe66febe8dc9d32ac4eaee48b6b1e690881adfaf3c41188a00892a20514cd7847e33a64bad09c4c5d6e1377eb8e373b02b4b9fb5fa27e6a67297c625
+  languageName: node
+  linkType: hard
+
+"@cacheable/utils@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@cacheable/utils@npm:2.0.1"
+  checksum: 10c0/63806cca7f60add1f7bd4acee279c723760322316661a9fc6deab9ba7c03569e6cbe744d88159d4e72c1f6d296bba53b53c396d01d52294d45c9fed04c416ca4
   languageName: node
   linkType: hard
 
@@ -309,6 +338,15 @@ __metadata:
     "@jridgewell/resolve-uri": "npm:^3.1.0"
     "@jridgewell/sourcemap-codec": "npm:^1.4.14"
   checksum: 10c0/4b30ec8cd56c5fd9a661f088230af01e0c1a3888d11ffb6b47639700f71225be21d1f7e168048d6d4f9449207b978a235c07c8f15c07705685d16dc06280e9d9
+  languageName: node
+  linkType: hard
+
+"@keyv/bigmap@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "@keyv/bigmap@npm:1.0.1"
+  dependencies:
+    hookified: "npm:^1.12.0"
+  checksum: 10c0/10d135ed6fa30de1fbaa48e0a5c0b627566f402eed806c68a23e6299513a08e004786c7ea6a3c84e5058ebfe0eb0e3ea9eff79bd57ffbe66caf57753f69eef72
   languageName: node
   linkType: hard
 
@@ -609,13 +647,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cacheable@npm:^1.10.4":
-  version: 1.10.4
-  resolution: "cacheable@npm:1.10.4"
+"cacheable@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "cacheable@npm:2.0.1"
   dependencies:
-    hookified: "npm:^1.11.0"
-    keyv: "npm:^5.5.0"
-  checksum: 10c0/80690b084cba1c52bf46ca4a8452bd192d0d37896a53899608908a553968711dbe78db144d99912b629952f6f03af5aaebe5958d503d3609c1bfe37cc5b899cc
+    "@cacheable/memoize": "npm:^2.0.1"
+    "@cacheable/memory": "npm:^2.0.1"
+    "@cacheable/utils": "npm:^2.0.1"
+    hookified: "npm:^1.12.0"
+    keyv: "npm:^5.5.1"
+  checksum: 10c0/c4c16af5997850531a02b0efa150d3a06fff9560eca15a16e4042038a63487e967f00f5f1b63310523877b2ac4038e732faf0e707a5ff5d10cb861c01ed67ca8
   languageName: node
   linkType: hard
 
@@ -1111,13 +1152,13 @@ __metadata:
   linkType: hard
 
 "flat-cache@npm:^6.1.13":
-  version: 6.1.13
-  resolution: "flat-cache@npm:6.1.13"
+  version: 6.1.14
+  resolution: "flat-cache@npm:6.1.14"
   dependencies:
-    cacheable: "npm:^1.10.4"
+    cacheable: "npm:^2.0.1"
     flatted: "npm:^3.3.3"
-    hookified: "npm:^1.11.0"
-  checksum: 10c0/30e96c67323910685a112fb4adc0f101152c3f29e50a425b1cad6693c25c7de8c998d2ec62979660231b955d083b8e0397b5b0e5859286fcc9fccd55e8f63b9d
+    hookified: "npm:^1.12.0"
+  checksum: 10c0/e17eda47414b4742bc557650788f18255068621afb66b23dfc6a47b3ef3e6c366ede7329e71406bf331ef6f4a3b243040803eb175560b4ceb204779066ba6e92
   languageName: node
   linkType: hard
 
@@ -1252,10 +1293,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hookified@npm:^1.11.0":
-  version: 1.12.0
-  resolution: "hookified@npm:1.12.0"
-  checksum: 10c0/2487cf6a26563e745971cd5fc96ceae10da9182ff30d5e057dd7100dbb93806d7bea11f2a80a09af0cc4a53feff65bc64a6fe568360ce86428ca1f1221ae0446
+"hookified@npm:^1.12.0":
+  version: 1.12.1
+  resolution: "hookified@npm:1.12.1"
+  checksum: 10c0/fe8d74ee49d1f79677dcdff7606eeb731f7a7dc59f61ec2141a11e3bb94ff6532f870649b900fa9f68568f410c504a338d8732e4d1abe61b426e645c37862e50
   languageName: node
   linkType: hard
 
@@ -1557,12 +1598,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"keyv@npm:^5.5.0":
-  version: 5.5.1
-  resolution: "keyv@npm:5.5.1"
+"keyv@npm:^5.5.1":
+  version: 5.5.2
+  resolution: "keyv@npm:5.5.2"
   dependencies:
     "@keyv/serialize": "npm:^1.1.1"
-  checksum: 10c0/cbfaa4345dd285c99547417e7d5aabf06205f368e78b6e1b6d6eb04182b6b9aac373ae4b7da0ea78cafd1062643be2a364d47eb41881516871aa43930cc08ce7
+  checksum: 10c0/b0a224210e8bbc4a5913535aa7cc8552809dc81ad67311cc78a2ccfe5485b82b23b8e28ea3a1202e8352c18dd2a0b12b49cda5bb933958d2dcf88042db54c9d0
   languageName: node
   linkType: hard
 
@@ -2359,12 +2400,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tr46@npm:^5.1.1":
-  version: 5.1.1
-  resolution: "tr46@npm:5.1.1"
+"tr46@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "tr46@npm:6.0.0"
   dependencies:
     punycode: "npm:^2.3.1"
-  checksum: 10c0/ae270e194d52ec67ebd695c1a42876e0f19b96e4aca2ab464ab1d9d17dc3acd3e18764f5034c93897db73421563be27c70c98359c4501136a497e46deda5d5ec
+  checksum: 10c0/83130df2f649228aa91c17754b66248030a3af34911d713b5ea417066fa338aa4bc8668d06bd98aa21a2210f43fc0a3db8b9099e7747fb5830e40e39a6a1058e
   languageName: node
   linkType: hard
 
@@ -2469,12 +2510,12 @@ __metadata:
   linkType: hard
 
 "whatwg-url@npm:^15.0.0":
-  version: 15.0.0
-  resolution: "whatwg-url@npm:15.0.0"
+  version: 15.1.0
+  resolution: "whatwg-url@npm:15.1.0"
   dependencies:
-    tr46: "npm:^5.1.1"
+    tr46: "npm:^6.0.0"
     webidl-conversions: "npm:^8.0.0"
-  checksum: 10c0/7b4f633fcd8fea6d588fb5694a9c4631382b41d31270e1fb3b755923f2c267d456ea1c7122124689e430b6a4e73c7e43e0731f833b33bfedcfffa2a7b4efbfc0
+  checksum: 10c0/40c49b47044787c87486aaaa5b504da122820661c45ae20ab466c62595ed03c64be7c10c1d180d028949a393cd455db14144966a68359cd37fe6417e3426d128
   languageName: node
   linkType: hard
 

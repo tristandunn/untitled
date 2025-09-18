@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ruby   "3.4.5"
+ruby   "3.4.6"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.20"
