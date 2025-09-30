@@ -288,7 +288,7 @@ GEM
       date
       stringio
     public_suffix (6.0.2)
-    puma (7.0.3)
+    puma (7.0.4)
       nio4r (~> 2.0)
     raabro (1.4.0)
     racc (1.8.1)
@@ -539,7 +539,7 @@ DEPENDENCIES
   listen (= 3.9.0)
   litestream (= 0.14.0)
   propshaft (= 1.2.1)
-  puma (= 7.0.3)
+  puma (= 7.0.4)
   rack-mini-profiler (= 4.0.1)
   rack-timeout (= 0.7.0)
   rails (= 8.0.2.1)
