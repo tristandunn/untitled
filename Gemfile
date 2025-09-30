@@ -21,7 +21,7 @@ gem "sqlite3",           "2.7.4"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.3.0"
 gem "thruster",          "0.1.15", require: false
-gem "turbo-rails",       "2.0.16"
+gem "turbo-rails",       "2.0.17"
 
 group :development, :test do
   gem "rspec-rails", "8.0.2"
