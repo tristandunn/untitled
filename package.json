@@ -12,9 +12,9 @@
     "test:coverage": "c8 --100 --clean --report-dir tmp/ --reporter text-summary --skip-full bin/mocha spec/javascripts"
   },
   "engines": {
-    "node": "24.8.0"
+    "node": "24.9.0"
   },
-  "packageManager": "yarn@4.10.2",
+  "packageManager": "yarn@4.10.3",
   "devDependencies": {
     "@hotwired/stimulus": "3.2.2",
     "@stylistic/eslint-plugin": "5.4.0",

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ruby   "3.4.6"
+ruby   "3.4.7"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.20"
@@ -15,7 +15,7 @@ gem "puma",              "7.0.4"
 gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.0.3"
 gem "solid_cable",       "3.0.12"
-gem "solid_cache",       "1.0.7"
+gem "solid_cache",       "1.0.8"
 gem "solid_queue",       "1.2.1"
 gem "sqlite3",           "2.7.4"
 gem "stimulus-rails",    "1.3.4"
