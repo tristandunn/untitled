@@ -1,5 +1,5 @@
 # Accept optional arguments.
-ARG RUBY_VERSION="3.4.6-alpine3.22"
+ARG RUBY_VERSION="3.4.7-alpine3.22"
 
 # Create a base image.
 FROM ruby:$RUBY_VERSION AS base
