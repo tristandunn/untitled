@@ -8,7 +8,7 @@ gem "bootsnap",          "1.18.6", require: false
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.2.2"
 gem "jbuilder",          "2.14.1"
-gem "kamal",             "2.8.1", require: false
+gem "kamal",             "2.8.2", require: false
 gem "litestream",        "0.14.0"
 gem "propshaft",         "1.3.1"
 gem "puma",              "7.1.0"
