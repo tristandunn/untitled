@@ -17,7 +17,7 @@ gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.1.1"
 gem "solid_cable",       "3.0.12"
 gem "solid_cache",       "1.0.8"
-gem "solid_queue",       "1.2.3"
+gem "solid_queue",       "1.2.4"
 gem "sqlite3",           "2.7.4"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.4.0"
@@ -33,7 +33,7 @@ group :development do
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.9.0"
   gem "rack-mini-profiler",  "4.0.1"
-  gem "rubocop",             "1.81.6", require: false
+  gem "rubocop",             "1.81.7", require: false
   gem "rubocop-capybara",    "2.22.1", require: false
   gem "rubocop-factory_bot", "2.27.1", require: false
   gem "rubocop-performance", "1.26.1", require: false
@@ -52,6 +52,6 @@ group :test do
   gem "faker",                    "3.5.2"
   gem "rails-controller-testing", "1.0.5"
   gem "selenium-webdriver",       "4.38.0"
-  gem "shoulda-matchers",         "6.5.0"
+  gem "shoulda-matchers",         "7.0.1"
   gem "simplecov-console",        "0.9.4", require: false
 end
