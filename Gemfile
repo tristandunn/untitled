@@ -16,9 +16,9 @@ gem "puma",              "7.1.0"
 gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.1.1"
 gem "solid_cable",       "3.0.12"
-gem "solid_cache",       "1.0.8"
+gem "solid_cache",       "1.0.9"
 gem "solid_queue",       "1.2.4"
-gem "sqlite3",           "2.7.4"
+gem "sqlite3",           "2.8.0"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.4.0"
 gem "thruster",          "0.1.16", require: false
@@ -29,7 +29,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "brakeman",            "7.1.0", require: false
+  gem "brakeman",            "7.1.1", require: false
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.9.0"
   gem "rack-mini-profiler",  "4.0.1"
