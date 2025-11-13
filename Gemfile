@@ -16,7 +16,7 @@ gem "puma",              "7.1.0"
 gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.1.1"
 gem "solid_cable",       "3.0.12"
-gem "solid_cache",       "1.0.9"
+gem "solid_cache",       "1.0.10"
 gem "solid_queue",       "1.2.4"
 gem "sqlite3",           "2.8.0"
 gem "stimulus-rails",    "1.3.4"
@@ -35,12 +35,12 @@ group :development do
   gem "rack-mini-profiler",  "4.0.1"
   gem "rubocop",             "1.81.7", require: false
   gem "rubocop-capybara",    "2.22.1", require: false
-  gem "rubocop-factory_bot", "2.27.1", require: false
+  gem "rubocop-factory_bot", "2.28.0", require: false
   gem "rubocop-performance", "1.26.1", require: false
   gem "rubocop-rails",       "2.33.4", require: false
   gem "rubocop-rake",        "0.7.1",  require: false
-  gem "rubocop-rspec",       "3.7.0",  require: false
-  gem "rubocop-rspec_rails", "2.31.0", require: false
+  gem "rubocop-rspec",       "3.8.0",  require: false
+  gem "rubocop-rspec_rails", "2.32.0", require: false
   gem "web-console",         "4.2.1"
 end
 
