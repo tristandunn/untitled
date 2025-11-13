@@ -5,7 +5,7 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@acemir/cssom@npm:^0.9.19":
+"@acemir/cssom@npm:^0.9.23":
   version: 0.9.23
   resolution: "@acemir/cssom@npm:0.9.23"
   checksum: 10c0/a71a7b09ca7bff4b783221bc1eaaea57e57dbf40af219c1f55a764bceed1ba90ed6e7d37e95ff14a61c95a6276b665fe8926c7a0c698dacb9a972b1e60653aa1
@@ -25,7 +25,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@asamuzakjp/dom-selector@npm:^6.7.3":
+"@asamuzakjp/dom-selector@npm:^6.7.4":
   version: 6.7.4
   resolution: "@asamuzakjp/dom-selector@npm:6.7.4"
   dependencies:
@@ -140,9 +140,9 @@ __metadata:
   linkType: hard
 
 "@csstools/css-syntax-patches-for-csstree@npm:^1.0.14":
-  version: 1.0.15
-  resolution: "@csstools/css-syntax-patches-for-csstree@npm:1.0.15"
-  checksum: 10c0/67949c5a09b8144ae5e87334c1698add2e1e2cfee4e4b43396905c7fbb74bdf759ca0300ba909f8946b3111036a8c863903fa46f1a880992b248306d6cd8b126
+  version: 1.0.16
+  resolution: "@csstools/css-syntax-patches-for-csstree@npm:1.0.16"
+  checksum: 10c0/56ffc0f34317aef5a3ef9ec15ef1a994a25140f985211385719d6e2d385bcaf262d395c991869cf3d0590680fdfa9459d47fa3106803ad5f458c51355bce963a
   languageName: node
   linkType: hard
 
@@ -468,9 +468,9 @@ __metadata:
   linkType: hard
 
 "@typescript-eslint/types@npm:^8.46.1":
-  version: 8.46.3
-  resolution: "@typescript-eslint/types@npm:8.46.3"
-  checksum: 10c0/6a6ccefbd086e6c38172fe14d04ba27c1c34755af7c25e752547c42d978b91bf6b97da56a5e63d098fbd679b4a5076c4dd4be6c947fd39b4c5feea5fed6deeb6
+  version: 8.46.4
+  resolution: "@typescript-eslint/types@npm:8.46.4"
+  checksum: 10c0/b92166dd9b6d8e4cf0a6a90354b6e94af8542d8ab341aed3955990e6599db7a583af638e22909a1417e41fd8a0ef5861c5ba12ad84b307c27d26f3e0c5e2020f
   languageName: node
   linkType: hard
 
@@ -686,10 +686,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chai@npm:6.2.0":
-  version: 6.2.0
-  resolution: "chai@npm:6.2.0"
-  checksum: 10c0/a4b7d7f5907187e09f1847afa838d6d1608adc7d822031b7900813c4ed5d9702911ac2468bf290676f22fddb3d727b1be90b57c1d0a69b902534ee29cdc6ff8a
+"chai@npm:6.2.1":
+  version: 6.2.1
+  resolution: "chai@npm:6.2.1"
+  checksum: 10c0/0c2d84392d7c6d44ca5d14d94204f1760e22af68b83d1f4278b5c4d301dabfc0242da70954dd86b1eda01e438f42950de6cf9d569df2103678538e4014abe50b
   languageName: node
   linkType: hard
 
@@ -814,7 +814,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cssstyle@npm:^5.3.2":
+"cssstyle@npm:^5.3.3":
   version: 5.3.3
   resolution: "cssstyle@npm:5.3.3"
   dependencies:
@@ -1304,10 +1304,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hookified@npm:^1.12.0, hookified@npm:^1.12.2":
-  version: 1.12.2
-  resolution: "hookified@npm:1.12.2"
-  checksum: 10c0/e28e2702d354d45bfdf5ccccc98e8e96ac2f7f37bd2efc556cd030cf10c014e3749c08a1e2a6f185ec31d7fe273179f7ac8eb5c2f0d047b5ebd13fa953169181
+"hookified@npm:^1.12.0, hookified@npm:^1.12.2, hookified@npm:^1.13.0":
+  version: 1.13.0
+  resolution: "hookified@npm:1.13.0"
+  checksum: 10c0/26718a60385ab95f20173323c175a23b06efcc1fac613c51714c9c38038c7395ed52d3bea660840c8362d92dc38022ae4469c2a531728f6116f4df53f70505e7
   languageName: node
   linkType: hard
 
@@ -1529,23 +1529,23 @@ __metadata:
   linkType: hard
 
 "js-yaml@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "js-yaml@npm:4.1.0"
+  version: 4.1.1
+  resolution: "js-yaml@npm:4.1.1"
   dependencies:
     argparse: "npm:^2.0.1"
   bin:
     js-yaml: bin/js-yaml.js
-  checksum: 10c0/184a24b4eaacfce40ad9074c64fd42ac83cf74d8c8cd137718d456ced75051229e5061b8633c3366b8aada17945a7a356b337828c19da92b51ae62126575018f
+  checksum: 10c0/561c7d7088c40a9bb53cc75becbfb1df6ae49b34b5e6e5a81744b14ae8667ec564ad2527709d1a6e7d5e5fa6d483aa0f373a50ad98d42fde368ec4a190d4fae7
   languageName: node
   linkType: hard
 
-"jsdom@npm:27.1.0":
-  version: 27.1.0
-  resolution: "jsdom@npm:27.1.0"
+"jsdom@npm:27.2.0":
+  version: 27.2.0
+  resolution: "jsdom@npm:27.2.0"
   dependencies:
-    "@acemir/cssom": "npm:^0.9.19"
-    "@asamuzakjp/dom-selector": "npm:^6.7.3"
-    cssstyle: "npm:^5.3.2"
+    "@acemir/cssom": "npm:^0.9.23"
+    "@asamuzakjp/dom-selector": "npm:^6.7.4"
+    cssstyle: "npm:^5.3.3"
     data-urls: "npm:^6.0.0"
     decimal.js: "npm:^10.6.0"
     html-encoding-sniffer: "npm:^4.0.0"
@@ -1568,7 +1568,7 @@ __metadata:
   peerDependenciesMeta:
     canvas:
       optional: true
-  checksum: 10c0/b3da39ab7c858df28a2300362924925327f5bff5727371523b99cac7f51bc2891c4b8516205c9acbd34430819f7e69f7790a2092a965359ed65d8111b3a79507
+  checksum: 10c0/52d847e1aef099071d66d1d9aedcdd2f15e7ea781da9cfb41dc0d4caf741c5870c346396f8d1182d611427ae47a53f69a6f16410c698950e5809d3fed5a1672d
   languageName: node
   linkType: hard
 
@@ -1617,11 +1617,11 @@ __metadata:
   linkType: hard
 
 "keyv@npm:^5.5.3":
-  version: 5.5.3
-  resolution: "keyv@npm:5.5.3"
+  version: 5.5.4
+  resolution: "keyv@npm:5.5.4"
   dependencies:
     "@keyv/serialize": "npm:^1.1.1"
-  checksum: 10c0/6890ed8a76e6b16034ceda89a4a7dc9cd1ebd05bf0ee1f7f3d3fe37ac3e4a6196d710ab2fef3d47cf8c394b61104b3bfcab17f23cc6e0dc2dcbe36483a43f84d
+  checksum: 10c0/8dad7f61022c6348c4c691a19468b7c238198252edbd3cc08277d95253c137af7ce5ffd763b6ffded4a75cbe03dc3134f1adcd3dd26c5767c2c9c254e3b39001
   languageName: node
   linkType: hard
 
@@ -2017,11 +2017,11 @@ __metadata:
   linkType: hard
 
 "qified@npm:^0.5.0":
-  version: 0.5.1
-  resolution: "qified@npm:0.5.1"
+  version: 0.5.2
+  resolution: "qified@npm:0.5.2"
   dependencies:
-    hookified: "npm:^1.12.2"
-  checksum: 10c0/924b6a7c7cbdc97cb0985ec8560e3a21b2a263165da16a277ca1850f57105fd3a015f01271363b1cc525af69f53cf2a52d3a65c09fb4f4a035cfba74f98a076c
+    hookified: "npm:^1.13.0"
+  checksum: 10c0/4234ba1c0d3b14f31752a39f6788b2490cebad57abd1ce0cee0e04d2fe04a234463785d47559d364affe4d1578aad06fa2fd67b87044688708bf56d4a18ce44a
   languageName: node
   linkType: hard
 
@@ -2460,9 +2460,9 @@ __metadata:
     "@hotwired/stimulus": "npm:3.2.2"
     "@stylistic/eslint-plugin": "npm:5.5.0"
     c8: "npm:10.1.3"
-    chai: "npm:6.2.0"
+    chai: "npm:6.2.1"
     eslint: "npm:9.39.1"
-    jsdom: "npm:27.1.0"
+    jsdom: "npm:27.2.0"
     mocha: "npm:11.7.5"
     sinon: "npm:21.0.0"
     sinon-chai: "npm:4.0.1"
