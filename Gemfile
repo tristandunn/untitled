@@ -5,11 +5,11 @@ source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.20"
 gem "bootsnap",          "1.19.0", require: false
-gem "bundler-audit",     "0.9.2",  require: false
+gem "bundler-audit",     "0.9.3",  require: false
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.2.2"
 gem "jbuilder",          "2.14.1"
-gem "kamal",             "2.8.2", require: false
+gem "kamal",             "2.9.0", require: false
 gem "litestream",        "0.14.0"
 gem "propshaft",         "1.3.1"
 gem "puma",              "7.1.0"
@@ -18,7 +18,7 @@ gem "rails",             "8.1.1"
 gem "solid_cable",       "3.0.12"
 gem "solid_cache",       "1.0.10"
 gem "solid_queue",       "1.2.4"
-gem "sqlite3",           "2.8.0"
+gem "sqlite3",           "2.8.1"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.4.0"
 gem "thruster",          "0.1.16", require: false
@@ -37,7 +37,7 @@ group :development do
   gem "rubocop-capybara",    "2.22.1", require: false
   gem "rubocop-factory_bot", "2.28.0", require: false
   gem "rubocop-performance", "1.26.1", require: false
-  gem "rubocop-rails",       "2.34.1", require: false
+  gem "rubocop-rails",       "2.34.2", require: false
   gem "rubocop-rake",        "0.7.1",  require: false
   gem "rubocop-rspec",       "3.8.0",  require: false
   gem "rubocop-rspec_rails", "2.32.0", require: false
