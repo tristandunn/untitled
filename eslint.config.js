@@ -13,8 +13,6 @@ export default [
     "languageOptions": {
       "globals": {
         "document": "readonly",
-        "module": "readonly",
-        "require": "readonly",
         "window": "readonly"
       },
       "parserOptions": {
@@ -36,7 +34,7 @@ export default [
       "@stylistic/function-paren-newline": ["error", "consistent"],
       "@stylistic/indent": [
         "error",
-        2, /* eslint no-magic-numbers: 0 */
+        2,
         {
           "VariableDeclarator": {
             "const": 3,
