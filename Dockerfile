@@ -33,7 +33,7 @@ RUN gem install bundler -v $(tail -n1 Gemfile.lock)
 # Install the Ruby dependencies.
 RUN bundle install
 
-# Clean up dependnecy caches.
+# Clean up dependency caches.
 RUN rm -rf ~/.bundle/ "${BUNDLE_PATH}"/ruby/*/cache "${BUNDLE_PATH}"/ruby/*/bundler/gems/*/.git
 
 # Precompile the Bootsnap cache for the dependencies.
