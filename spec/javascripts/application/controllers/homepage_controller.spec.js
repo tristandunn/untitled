@@ -1,6 +1,6 @@
 import StimulusController from "@app/controllers/homepage_controller.js";
 
-describe("StimulusController", () => {
+describe("HomepageController", () => {
   it("renders the application description", () => {
     const element = document.createElement("p");
     element.classList.add("hidden");
