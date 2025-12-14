@@ -1,20 +1,18 @@
 <%# locals: () %>
 <!DOCTYPE html>
+
 <html lang="en-US" class="antialiased text-gray-900">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-  <title><%= t("title") %></title>
+    <title><%= t("title") %></title>
 
-  <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
 
-  <%= javascript_importmap_tags %>
-</head>
-<body>
+    <%= javascript_importmap_tags %>
+  </head>
 
-<%= yield %>
-
-</body>
+  <body><%= yield %></body>
 </html>

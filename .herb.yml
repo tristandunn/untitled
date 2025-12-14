@@ -1,0 +1,10 @@
+linter:
+  enabled: true
+
+formatter:
+  enabled: true
+  indentWidth: 2
+  maxLineLength: 100
+  rewriter:
+    pre:
+      - tailwind-class-sorter

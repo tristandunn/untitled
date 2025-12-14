@@ -71,6 +71,9 @@ jobs:
       - name: Lint the ERB
         run: bin/rake erb:lint
 
+      - name: Lint the ERB (Herb)
+        run: yarn lint:erb
+
       - name: Lint the Ruby
         run: bin/rubocop --format github --parallel
 

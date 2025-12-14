@@ -7,6 +7,7 @@ CI.run do
 
   step "Style: Ruby", "bin/rubocop"
   step "Style: ERB", "bin/rails erb:lint"
+  step "Style: ERB (Herb)", "yarn lint:erb"
   step "Style: CSS", "yarn lint:css"
   step "Style: JavaScript", "yarn lint"
 
