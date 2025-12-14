@@ -19,3 +19,5 @@ linters:
         Enabled: false
       Style/FrozenStringLiteralComment:
         Enabled: false
+  SpaceInHtmlTag:
+    enabled: false
