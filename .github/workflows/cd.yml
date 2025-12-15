@@ -34,28 +34,17 @@ jobs:
         with:
             ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Set up Docker Buildx for cache
+      - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-
-      - name: Expose the GitHub Runtime for cache
-        uses: crazy-max/ghaction-github-runtime@v3
 
       - name: Deploy the application
         shell: bash
         env:
           ${{ insert }}: ${{ secrets }}
           DOCKER_BUILDKIT: 1
-          KAMAL_REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
         run: bin/kamal deploy --destination=$DESTINATION
 
       - name: Release the Kamal lock, if needed
         shell: bash
         if: ${{ cancelled() || failure() }}
         run: bin/kamal lock release --destination=$DESTINATION
-
-      - name: Clean up old images
-        uses: dataaxiom/ghcr-cleanup-action@v1
-        with:
-          keep-n-tagged: 5
-          keep-n-untagged: 5
-          delete-orphaned-images: true
