@@ -9,7 +9,7 @@ gem "bundler-audit",     "0.9.3",  require: false
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.2.2"
 gem "jbuilder",          "2.14.1"
-gem "kamal",             "2.9.0", require: false
+gem "kamal",             "2.10.0", require: false
 gem "litestream",        "0.14.0"
 gem "propshaft",         "1.3.1"
 gem "puma",              "7.1.0"
