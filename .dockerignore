@@ -19,6 +19,9 @@
 # Ignore GitHub files.
 /.github/
 
+# Ignore Kamal related files.
+/.kamal/
+
 # Ignore Ruby-related files.
 /.rubocop.yml
 /.ruby-lsp/
@@ -29,17 +32,20 @@
 
 # Ignore binary files.
 bin/brakeman
+bin/bundler-audit
+bin/ci
 bin/dev
 bin/mocha
 bin/rubocop
 bin/setup
+bin/terraform
 
 # Ignore all default key files.
 /config/master.key
 /config/credentials/*.key
 
-# Ignore Kamal related files.
-/.kamal/
+# Ignore CI configuration.
+/config/ci.rb
 
 # Ignore Terraform related files.
 /config/terraform/*
