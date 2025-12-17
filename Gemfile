@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ruby   "3.4.7"
+ruby   "3.4.8"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.20"
@@ -9,7 +9,7 @@ gem "bundler-audit",     "0.9.3",  require: false
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.2.2"
 gem "jbuilder",          "2.14.1"
-gem "kamal",             "2.10.0", require: false
+gem "kamal",             "2.10.1", require: false
 gem "litestream",        "0.14.0"
 gem "propshaft",         "1.3.1"
 gem "puma",              "7.1.0"
@@ -21,7 +21,7 @@ gem "solid_queue",       "1.2.4"
 gem "sqlite3",           "2.8.1"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.4.0"
-gem "thruster",          "0.1.16", require: false
+gem "thruster",          "0.1.17", require: false
 gem "turbo-rails",       "2.0.20"
 
 group :development, :test do
@@ -33,7 +33,7 @@ group :development do
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.9.0"
   gem "rack-mini-profiler",  "4.0.1"
-  gem "rubocop",             "1.81.7", require: false
+  gem "rubocop",             "1.82.0", require: false
   gem "rubocop-capybara",    "2.22.1", require: false
   gem "rubocop-factory_bot", "2.28.0", require: false
   gem "rubocop-performance", "1.26.1", require: false
