@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-ruby   "3.4.8"
+ruby   "4.0.0"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.20"
-gem "bootsnap",          "1.20.0", require: false
+gem "bootsnap",          "1.20.1", require: false
 gem "bundler-audit",     "0.9.3",  require: false
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.2.2"
@@ -29,11 +29,11 @@ group :development, :test do
 end
 
 group :development do
-  gem "brakeman",            "7.1.1", require: false
+  gem "brakeman",            "7.1.2", require: false
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.9.0"
   gem "rack-mini-profiler",  "4.0.1"
-  gem "rubocop",             "1.82.0", require: false
+  gem "rubocop",             "1.82.1", require: false
   gem "rubocop-capybara",    "2.22.1", require: false
   gem "rubocop-factory_bot", "2.28.0", require: false
   gem "rubocop-performance", "1.26.1", require: false
