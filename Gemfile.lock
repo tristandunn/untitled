@@ -142,6 +142,7 @@ GEM
       railties (>= 6.1.0)
     faker (3.5.3)
       i18n (>= 1.8.11, < 2)
+    ffi (1.17.3)
     ffi (1.17.3-aarch64-linux-gnu)
     ffi (1.17.3-aarch64-linux-musl)
     ffi (1.17.3-arm-linux-gnu)
@@ -207,6 +208,13 @@ GEM
       railties (>= 7.0)
       sqlite3
     litestream (0.14.0-arm64-darwin)
+      actionpack (>= 7.0)
+      actionview (>= 7.0)
+      activejob (>= 7.0)
+      activesupport (>= 7.0)
+      railties (>= 7.0)
+      sqlite3
+    litestream (0.14.0-arm64-linux)
       actionpack (>= 7.0)
       actionview (>= 7.0)
       activejob (>= 7.0)
@@ -452,6 +460,8 @@ GEM
       fugit (~> 1.11)
       railties (>= 7.1)
       thor (>= 1.3.1)
+    sqlite3 (2.9.0)
+      mini_portile2 (~> 2.8.0)
     sqlite3 (2.9.0-aarch64-linux-gnu)
     sqlite3 (2.9.0-aarch64-linux-musl)
     sqlite3 (2.9.0-arm-linux-gnu)
@@ -524,6 +534,8 @@ PLATFORMS
   arm-linux-gnu
   arm-linux-musl
   arm64-darwin
+  arm64-linux
+  ruby
   x86-linux
   x86-linux-gnu
   x86-linux-musl
@@ -624,6 +636,7 @@ CHECKSUMS
   factory_bot (6.5.6) sha256=12beb373214dccc086a7a63763d6718c49769d5606f0501e0a4442676917e077
   factory_bot_rails (6.5.1) sha256=d3cc4851eae4dea8a665ec4a4516895045e710554d2b5ac9e68b94d351bc6d68
   faker (3.5.3) sha256=b961482dc0bb15ccb9a98ea7878b925669e9ae8f5e59b607da540b768137d765
+  ffi (1.17.3) sha256=0e9f39f7bb3934f77ad6feab49662be77e87eedcdeb2a3f5c0234c2938563d4c
   ffi (1.17.3-aarch64-linux-gnu) sha256=28ad573df26560f0aedd8a90c3371279a0b2bd0b4e834b16a2baa10bd7a97068
   ffi (1.17.3-aarch64-linux-musl) sha256=020b33b76775b1abacc3b7d86b287cef3251f66d747092deec592c7f5df764b2
   ffi (1.17.3-arm-linux-gnu) sha256=5bd4cea83b68b5ec0037f99c57d5ce2dd5aa438f35decc5ef68a7d085c785668
@@ -650,6 +663,7 @@ CHECKSUMS
   litestream (0.14.0) sha256=4698881d02ab88306eae79e47fab4881c0a4424899ff5c768606c9cf5dafedf6
   litestream (0.14.0-aarch64-linux) sha256=bcf9199a665e673e27f929a0941011e50fb8ebf441d9754247686b514fba60d5
   litestream (0.14.0-arm64-darwin) sha256=507bbb7ee99b3398304c5ef4a9bae835761359ffc72850f25708477805313d07
+  litestream (0.14.0-arm64-linux) sha256=83687291a93103c62be32297d07f0b4e304be9ea034e28a940f138747c43ca8b
   litestream (0.14.0-x86_64-darwin) sha256=cbb35be1e28c6158517492cda9d2a70d575c1a0ac9cd8e602fabd4f67567900d
   litestream (0.14.0-x86_64-linux) sha256=2844734b6d8e5c6009baf8d138d6f18367f770e9e4390fb70763433db587bed6
   logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
@@ -736,6 +750,7 @@ CHECKSUMS
   solid_cable (3.0.12) sha256=a168a54731a455d5627af48d8441ea3b554b8c1f6e6cd6074109de493e6b0460
   solid_cache (1.0.10) sha256=bc05a2fb3ac78a6f43cbb5946679cf9db67dd30d22939ededc385cb93e120d41
   solid_queue (1.2.4) sha256=bb60f9552a969ac377d87601b0ff6a088f5e6f20b0cbbe3844a59d022cac0e4b
+  sqlite3 (2.9.0) sha256=ece9c00b32ec5f550d3a4a35c41ea8d738563589f090b9dfd0d510b7ae5f296c
   sqlite3 (2.9.0-aarch64-linux-gnu) sha256=cfe1e0216f46d7483839719bf827129151e6c680317b99d7b8fc1597a3e13473
   sqlite3 (2.9.0-aarch64-linux-musl) sha256=56a35cb2d70779afc2ac191baf2c2148242285ecfed72f9b021218c5c4917913
   sqlite3 (2.9.0-arm-linux-gnu) sha256=a19a21504b0d7c8c825fbbf37b358ae316b6bd0d0134c619874060b2eef05435
