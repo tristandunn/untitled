@@ -3,7 +3,7 @@
 ruby   "4.0.0"
 source "https://rubygems.org"
 
-gem "bcrypt",            "3.1.20"
+gem "bcrypt",            "3.1.21"
 gem "bootsnap",          "1.20.1", require: false
 gem "bundler-audit",     "0.9.3",  require: false
 gem "hotwire-rails",     "0.1.3"
