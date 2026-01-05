@@ -3,7 +3,7 @@
 ruby   "4.0.0"
 source "https://rubygems.org"
 
-gem "bcrypt",            "3.1.20"
+gem "bcrypt",            "3.1.21"
 gem "bootsnap",          "1.20.1", require: false
 gem "bundler-audit",     "0.9.3",  require: false
 gem "hotwire-rails",     "0.1.3"
@@ -37,7 +37,7 @@ group :development do
   gem "rubocop-capybara",    "2.22.1", require: false
   gem "rubocop-factory_bot", "2.28.0", require: false
   gem "rubocop-performance", "1.26.1", require: false
-  gem "rubocop-rails",       "2.34.2", require: false
+  gem "rubocop-rails",       "2.34.3", require: false
   gem "rubocop-rake",        "0.7.1",  require: false
   gem "rubocop-rspec",       "3.8.0",  require: false
   gem "rubocop-rspec_rails", "2.32.0", require: false
