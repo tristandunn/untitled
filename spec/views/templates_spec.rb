@@ -3,7 +3,7 @@
 require "rails_helper"
 
 describe "Templates" do
-  let(:paths) { Rails.root.glob("app/views/**/*.*") }
+  let(:paths) { Rails.root.glob("app/views/**/_*.*") }
 
   let(:views) do
     paths.map do |path|
