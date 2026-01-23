@@ -30,7 +30,7 @@ class HealthController < ActionController::Base
   #
   # @return [Symbol] Either :ok or :service_unavailable based on the results.
   def status
-    if results.values.all?(&:present?)
+    if results.values.all?
       :ok
     else
       :service_unavailable
