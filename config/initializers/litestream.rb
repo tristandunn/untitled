@@ -4,7 +4,7 @@
 # will be available as environment variables, e.g. config.replica_bucket
 # becomes LITESTREAM_REPLICA_BUCKET. This allows you to configure Litestream
 # using Rails encrypted credentials, or some other mechanism where the values
-# are only avaialble at runtime.
+# are only available at runtime.
 
 Rails.application.configure do
   # An example of using Rails encrypted credentials to configure Litestream.
@@ -19,7 +19,7 @@ Rails.application.configure do
   # And so you should set your `replica_bucket` to:
   #   myapp.fra1.digitaloceanspaces.com
   #
-  # Litestream supports Azure Blog Storage, Backblaze B2, DigitalOcean Spaces,
+  # Litestream supports Azure Blob Storage, Backblaze B2, DigitalOcean Spaces,
   # Scaleway Object Storage, Google Cloud Storage, Linode Object Storage, and
   # any SFTP server.
   #
