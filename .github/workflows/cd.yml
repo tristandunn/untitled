@@ -12,6 +12,7 @@ jobs:
 
   Deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     needs: Build
     concurrency:
       group: cd-production
