@@ -4,7 +4,7 @@ ruby   "4.0.1"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.21"
-gem "bootsnap",          "1.22.0", require: false
+gem "bootsnap",          "1.23.0", require: false
 gem "bundler-audit",     "0.9.3",  require: false
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.2.3"
@@ -29,11 +29,11 @@ group :development, :test do
 end
 
 group :development do
-  gem "brakeman",            "8.0.1", require: false
+  gem "brakeman",            "8.0.2", require: false
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.10.0"
   gem "rack-mini-profiler",  "4.0.1"
-  gem "rubocop",             "1.84.1", require: false
+  gem "rubocop",             "1.84.2", require: false
   gem "rubocop-capybara",    "2.22.1", require: false
   gem "rubocop-factory_bot", "2.28.0", require: false
   gem "rubocop-performance", "1.26.1", require: false
