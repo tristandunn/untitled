@@ -18,6 +18,6 @@ describe "pages/index.html.erb" do
   end
 
   it "renders the new account link" do
-    expect(html).to have_link(t("pages.index.new_account"), href: "#")
+    expect(html).to have_link(t("pages.index.new_account"), href: root_path)
   end
 end
