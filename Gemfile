@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ruby   "4.0.1"
+ruby   "4.0.2"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.21"
@@ -18,7 +18,7 @@ gem "rails",             "8.1.2"
 gem "solid_cable",       "3.0.12"
 gem "solid_cache",       "1.0.10"
 gem "solid_queue",       "1.3.2"
-gem "sqlite3",           "2.9.1"
+gem "sqlite3",           "2.9.2"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.4.0"
 gem "thruster",          "0.1.19", require: false
