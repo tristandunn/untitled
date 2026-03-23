@@ -14,7 +14,7 @@ gem "litestream",        "0.14.0"
 gem "propshaft",         "1.3.1"
 gem "puma",              "7.2.0"
 gem "rack-timeout",      "0.7.0"
-gem "rails",             "8.1.2"
+gem "rails",             "8.1.2.1"
 gem "solid_cable",       "3.0.12"
 gem "solid_cache",       "1.0.10"
 gem "solid_queue",       "1.4.0"
@@ -33,7 +33,7 @@ group :development do
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.10.0"
   gem "rack-mini-profiler",  "4.0.1"
-  gem "rubocop",             "1.85.1", require: false
+  gem "rubocop",             "1.86.0", require: false
   gem "rubocop-capybara",    "2.22.1", require: false
   gem "rubocop-factory_bot", "2.28.0", require: false
   gem "rubocop-performance", "1.26.1", require: false
