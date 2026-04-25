@@ -18,8 +18,8 @@
   "packageManager": "yarn@4.13.0",
   "devDependencies": {
     "@eslint/js": "10.0.1",
-    "@herb-tools/formatter": "0.9.7",
-    "@herb-tools/linter": "0.9.7",
+    "@herb-tools/formatter": "0.10.1",
+    "@herb-tools/linter": "0.10.1",
     "@hotwired/stimulus": "3.2.2",
     "@stylistic/eslint-plugin": "5.10.0",
     "c8": "11.0.0",
@@ -28,10 +28,10 @@
     "jsdom": "29.0.2",
     "mocha": "11.7.5",
     "prettier": "3.8.3",
-    "prettier-plugin-tailwindcss": "0.7.2",
+    "prettier-plugin-tailwindcss": "0.7.3",
     "sinon": "21.1.2",
     "sinon-chai": "4.0.1",
-    "stylelint": "17.8.0",
+    "stylelint": "17.9.0",
     "stylelint-config-standard": "40.0.0"
   }
 }
