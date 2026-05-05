@@ -8,11 +8,11 @@ describe "Homepage" do
   end
 
   it "renders the header" do
-    expect(page).to have_content(I18n.t("title"))
+    expect(page).to have_text(I18n.t("title"))
   end
 
   it "renders the description" do
-    expect(page).to have_content(I18n.t("pages.index.description"))
+    expect(page).to have_text(I18n.t("pages.index.description"))
   end
 
   it "renders the the new account link", :js do
