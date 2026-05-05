@@ -4,7 +4,7 @@ ruby   "4.0.2"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.22"
-gem "bootsnap",          "1.23.0", require: false
+gem "bootsnap",          "1.24.2", require: false
 gem "bundler-audit",     "0.9.3",  require: false
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.2.3"
@@ -12,7 +12,7 @@ gem "jbuilder",          "2.14.1"
 gem "kamal",             "2.11.0", require: false
 gem "litestream",        "0.14.0"
 gem "propshaft",         "1.3.2"
-gem "puma",              "8.0.0"
+gem "puma",              "8.0.1"
 gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.1.3"
 gem "solid_cable",       "3.0.12"
@@ -34,7 +34,7 @@ group :development do
   gem "listen",              "3.10.0"
   gem "rack-mini-profiler",  "4.0.1"
   gem "rubocop",             "1.86.1", require: false
-  gem "rubocop-capybara",    "2.22.1", require: false
+  gem "rubocop-capybara",    "2.23.0", require: false
   gem "rubocop-factory_bot", "2.28.0", require: false
   gem "rubocop-performance", "1.26.1", require: false
   gem "rubocop-rails",       "2.34.3", require: false
