@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 if ENV.fetch("CI", ENV.fetch("COVERAGE", false))
+  ENV["DISABLE_BOOTSNAP_COMPILE_CACHE"] = "1"
+
   require "simplecov"
   require "simplecov-console"
 
