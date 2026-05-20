@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ruby   "4.0.4"
+ruby   "4.0.5"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.22"
@@ -37,7 +37,7 @@ group :development do
   gem "rubocop-capybara",    "2.23.0", require: false
   gem "rubocop-factory_bot", "2.28.0", require: false
   gem "rubocop-performance", "1.26.1", require: false
-  gem "rubocop-rails",       "2.35.1", require: false
+  gem "rubocop-rails",       "2.35.2", require: false
   gem "rubocop-rake",        "0.7.1",  require: false
   gem "rubocop-rspec",       "3.9.0",  require: false
   gem "rubocop-rspec_rails", "2.32.0", require: false
