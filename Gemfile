@@ -4,7 +4,7 @@ ruby   "4.0.5"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.22"
-gem "bootsnap",          "1.24.5", require: false
+gem "bootsnap",          "1.24.6", require: false
 gem "bundler-audit",     "0.9.3",  require: false
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.2.3"
@@ -18,9 +18,9 @@ gem "rails",             "8.1.3"
 gem "solid_cable",       "4.0.0"
 gem "solid_cache",       "1.0.10"
 gem "solid_queue",       "1.4.0"
-gem "sqlite3",           "2.9.4"
+gem "sqlite3",           "2.9.5"
 gem "stimulus-rails",    "1.3.4"
-gem "tailwindcss-rails", "4.4.0"
+gem "tailwindcss-rails", "4.5.0"
 gem "thruster",          "0.1.21", require: false
 gem "turbo-rails",       "2.0.23"
 
@@ -29,17 +29,17 @@ group :development, :test do
 end
 
 group :development do
-  gem "brakeman",            "8.0.4", require: false
+  gem "brakeman",            "8.0.5", require: false
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.10.0"
   gem "rack-mini-profiler",  "4.0.1"
-  gem "rubocop",             "1.86.2", require: false
+  gem "rubocop",             "1.88.0", require: false
   gem "rubocop-capybara",    "2.23.0", require: false
   gem "rubocop-factory_bot", "2.28.0", require: false
   gem "rubocop-performance", "1.26.1", require: false
-  gem "rubocop-rails",       "2.35.3", require: false
+  gem "rubocop-rails",       "2.35.4", require: false
   gem "rubocop-rake",        "0.7.1",  require: false
-  gem "rubocop-rspec",       "3.9.0",  require: false
+  gem "rubocop-rspec",       "3.10.2", require: false
   gem "rubocop-rspec_rails", "2.32.0", require: false
   gem "web-console",         "4.3.0"
 end
@@ -51,7 +51,7 @@ group :test do
   gem "factory_bot_rails",        "6.5.1"
   gem "faker",                    "3.8.0"
   gem "rails-controller-testing", "1.0.5"
-  gem "selenium-webdriver",       "4.44.0"
-  gem "shoulda-matchers",         "7.0.1"
+  gem "selenium-webdriver",       "4.45.0"
+  gem "shoulda-matchers",         "8.0.1"
   gem "simplecov-console",        "0.9.5", require: false
 end
