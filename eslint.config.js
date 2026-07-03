@@ -3,13 +3,15 @@ import stylistic from "@stylistic/eslint-plugin";
 
 export default [
   {
-    "files": ["**/*.js"],
     "ignores": [
       "app/assets/builds/**",
       "app/assets/config/manifest.js",
       "node_modules/**",
       "vendor/**"
-    ],
+    ]
+  },
+  {
+    "files": ["**/*.js"],
     "languageOptions": {
       "globals": {
         "document": "readonly",
@@ -27,7 +29,7 @@ export default [
       ...stylistic.configs["all"].rules,
 
       "arrow-body-style": ["error", "always"],
-      "no-magic-numbers": ["error", { "ignore": [0, 1] }],
+      "no-magic-numbers": ["error", { "ignore": [0, 1, 2] }],
 
       "@stylistic/array-element-newline": ["error", "consistent"],
       "@stylistic/function-call-argument-newline": ["error", "consistent"],

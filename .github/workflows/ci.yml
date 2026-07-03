@@ -77,11 +77,14 @@ jobs:
       - name: Lint the ERB (Herb)
         run: yarn lint:erb
 
+      - name: Check the ERB formatting (Herb)
+        run: yarn check:erb
+
       - name: Lint the Ruby
         run: bin/rubocop --format github --parallel
 
       - name: Lint the JavaScript
-        run: yarn lint
+        run: yarn lint:js
 
       - name: Lint the CSS
         run: yarn lint:css
