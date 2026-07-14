@@ -20,20 +20,20 @@
   "packageManager": "yarn@4.17.1",
   "devDependencies": {
     "@eslint/js": "10.0.1",
-    "@herb-tools/formatter": "0.10.1",
-    "@herb-tools/linter": "0.10.1",
+    "@herb-tools/formatter": "0.10.2",
+    "@herb-tools/linter": "0.10.2",
     "@hotwired/stimulus": "3.2.2",
     "@stylistic/eslint-plugin": "5.10.0",
     "c8": "11.0.0",
     "chai": "6.2.2",
-    "eslint": "10.5.0",
+    "eslint": "10.7.0",
     "jsdom": "29.1.1",
     "mocha": "11.7.6",
-    "prettier": "3.8.4",
+    "prettier": "3.9.5",
     "prettier-plugin-tailwindcss": "0.8.0",
     "sinon": "22.0.0",
     "sinon-chai": "4.0.1",
-    "stylelint": "17.13.0",
+    "stylelint": "17.14.0",
     "stylelint-config-standard": "40.0.0"
   }
 }
