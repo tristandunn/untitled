@@ -5,7 +5,6 @@ source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.22"
 gem "bootsnap",          "1.24.6", require: false
-gem "bundler-audit",     "0.9.3",  require: false
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.2.3"
 gem "jbuilder",          "2.15.1"
@@ -30,6 +29,7 @@ end
 
 group :development do
   gem "brakeman",            "8.0.5", require: false
+  gem "bundler-audit",       "0.9.3", require: false
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.10.0"
   gem "rack-mini-profiler",  "4.0.1"
