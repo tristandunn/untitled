@@ -23,6 +23,11 @@ Layout/HashAlignment:
   EnforcedColonStyle: table
   EnforcedHashRocketStyle: table
 
+Metrics/AbcSize:
+  Enabled: true
+  Exclude:
+    - "db/**/*"
+
 Metrics/BlockLength:
   Enabled: true
   Exclude:
@@ -31,7 +36,7 @@ Metrics/BlockLength:
 Metrics/MethodLength:
   Enabled: true
   Exclude:
-    - db/migrate/*
+    - "db/**/*"
 
 Naming/RescuedExceptionsVariableName:
   Enabled: true
