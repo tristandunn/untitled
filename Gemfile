@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ruby   "4.0.7"
+ruby   "4.0.9"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.22"
@@ -33,7 +33,7 @@ group :development do
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.10.1"
   gem "rack-mini-profiler",  "5.0.0"
-  gem "rubocop",             "1.92.0", require: false
+  gem "rubocop",             "1.92.1", require: false
   gem "rubocop-capybara",    "3.1.0", require: false
   gem "rubocop-factory_bot", "2.28.0", require: false
   gem "rubocop-performance", "1.27.0", require: false
