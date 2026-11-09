@@ -112,9 +112,9 @@ __metadata:
   linkType: hard
 
 "@eslint-community/regexpp@npm:^4.12.2":
-  version: 4.12.2
-  resolution: "@eslint-community/regexpp@npm:4.12.2"
-  checksum: 10c0/fddcbc66851b308478d04e302a4d771d6917a0b3740dc351513c0da9ca2eab8a1adf99f5e0aa7ab8b13fa0df005c81adeee7e63a92f3effd7d367a163b721c2d
+  version: 4.12.3
+  resolution: "@eslint-community/regexpp@npm:4.12.3"
+  checksum: 10c0/9b123d7298be2935097a1dc620373b4e9b3861123ba542de86bc4e941428bfb10a0a8dd1ae236b853c5b704f263faf318f8b5e23563b9f70405c7a388fcdf42f
   languageName: node
   linkType: hard
 
@@ -188,153 +188,153 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@herb-tools/analysis@npm:0.11.1":
-  version: 0.11.1
-  resolution: "@herb-tools/analysis@npm:0.11.1"
+"@herb-tools/analysis@npm:0.11.2":
+  version: 0.11.2
+  resolution: "@herb-tools/analysis@npm:0.11.2"
   dependencies:
-    "@herb-tools/core": "npm:0.11.1"
+    "@herb-tools/core": "npm:0.11.2"
     picomatch: "npm:^4.0.7"
     tinyglobby: "npm:^0.2.15"
   peerDependencies:
-    "@herb-tools/core": 0.11.1
-  checksum: 10c0/c304cde8cd9f6143bedaf3ec853dffecb0eec9814cbdd7fa4a11e5c0892c796e050228162ecaec3b2117eb680fc22efc76c3108bb0ecb9ec04b9f317d7befecf
+    "@herb-tools/core": 0.11.2
+  checksum: 10c0/a358ad5a22d8377fabb57bfbb3dc482b76c369f152158cf3cca9ae662d4e6c4f09ba084adbd76b6edc74200ac113c0207dc638591845e79a1f49ae4a26503add
   languageName: node
   linkType: hard
 
-"@herb-tools/client@npm:0.11.1":
-  version: 0.11.1
-  resolution: "@herb-tools/client@npm:0.11.1"
-  checksum: 10c0/fdd57393de61377170a3d2596aed7d549797c4cf3790be7f75dd2ec71a2c4d47d88512956eb1856ae5c06913036db72a71a41abb1fbc94f2a6313fa435efbe3b
+"@herb-tools/client@npm:0.11.2":
+  version: 0.11.2
+  resolution: "@herb-tools/client@npm:0.11.2"
+  checksum: 10c0/a434bd703e46c953184ef9e21bc49c35762759d04aafc8c58e3a45ab4ed7b5be22c09aa6d11fb96de2d82911d4f0e6f02390c25cef330d43f4f7784abe6db3f7
   languageName: node
   linkType: hard
 
-"@herb-tools/config@npm:0.11.1":
-  version: 0.11.1
-  resolution: "@herb-tools/config@npm:0.11.1"
+"@herb-tools/config@npm:0.11.2":
+  version: 0.11.2
+  resolution: "@herb-tools/config@npm:0.11.2"
   dependencies:
-    "@herb-tools/core": "npm:0.11.1"
+    "@herb-tools/core": "npm:0.11.2"
     picomatch: "npm:^4.0.7"
     tinyglobby: "npm:^0.2.16"
     yaml: "npm:^2.9.1"
-  checksum: 10c0/3dd2a3ff451af007ca13ab26680eb6fe999c7326397f7d06fc63aabc5e16efcc8383f78a7fd0746682dc6b3abb17b285fc9dc17e1611b4d82e5e542e7d9cb853
+  checksum: 10c0/ed1f67a732d635a7acc7deb85b8969f224623fd9235c54965759b8ef72dace9c0792e3d90d1a22abbd3ea166d99b69f0f460ab9c90668f63fd8a6769fdebeff1
   languageName: node
   linkType: hard
 
-"@herb-tools/core@npm:0.11.1":
-  version: 0.11.1
-  resolution: "@herb-tools/core@npm:0.11.1"
+"@herb-tools/core@npm:0.11.2":
+  version: 0.11.2
+  resolution: "@herb-tools/core@npm:0.11.2"
   dependencies:
-    "@ruby/prism": "npm:^1.9.0"
-  checksum: 10c0/2a77fc93848fb0e554f1897a6722214affc1f351ab00b3a98d41c6c3b7bf354ee4969bb6322f375b88c58fd907c6f9c835b2872fca304a4f7dbb128c7c45e33e
+    "@ruby/prism": "npm:2.1.0"
+  checksum: 10c0/27eb6f4983d91e318e13a31f1bcb77c0a3e8450b2fe88ca00d77800491d6e47b6336c23506ad65bec50eebd419c0b69cbc9414fd66aab1eaf51ecaa83f72513a
   languageName: node
   linkType: hard
 
-"@herb-tools/formatter@npm:0.11.1":
-  version: 0.11.1
-  resolution: "@herb-tools/formatter@npm:0.11.1"
+"@herb-tools/formatter@npm:0.11.2":
+  version: 0.11.2
+  resolution: "@herb-tools/formatter@npm:0.11.2"
   dependencies:
-    "@herb-tools/config": "npm:0.11.1"
-    "@herb-tools/core": "npm:0.11.1"
-    "@herb-tools/highlighter": "npm:0.11.1"
-    "@herb-tools/node-wasm": "npm:0.11.1"
-    "@herb-tools/printer": "npm:0.11.1"
-    "@herb-tools/rewriter": "npm:0.11.1"
-    "@ruby/prism": "npm:^1.9.0"
+    "@herb-tools/config": "npm:0.11.2"
+    "@herb-tools/core": "npm:0.11.2"
+    "@herb-tools/highlighter": "npm:0.11.2"
+    "@herb-tools/node-wasm": "npm:0.11.2"
+    "@herb-tools/printer": "npm:0.11.2"
+    "@herb-tools/rewriter": "npm:0.11.2"
+    "@ruby/prism": "npm:2.1.0"
     tinyglobby: "npm:^0.2.15"
   bin:
     herb-format: bin/herb-format
-  checksum: 10c0/d68341b58b0236d86c55ba90247c9b585f411fa5872dfc823202f070383915d15f2d1e64ee7e98531620f2938324c20242145899221199996605745248cd9b49
+  checksum: 10c0/83f4cb43f53ec76d1cbe68088a0559b1af67b3027aeeb9c810eca86175b4f53b997e458628eb02f2fd29aec1ca34f896636bcef871564631023bb40c0dafcb70
   languageName: node
   linkType: hard
 
-"@herb-tools/highlighter@npm:0.11.1":
-  version: 0.11.1
-  resolution: "@herb-tools/highlighter@npm:0.11.1"
+"@herb-tools/highlighter@npm:0.11.2":
+  version: 0.11.2
+  resolution: "@herb-tools/highlighter@npm:0.11.2"
   dependencies:
-    "@herb-tools/core": "npm:0.11.1"
-    "@herb-tools/node-wasm": "npm:0.11.1"
+    "@herb-tools/core": "npm:0.11.2"
+    "@herb-tools/node-wasm": "npm:0.11.2"
     ansi_up: "npm:^6.0.6"
   bin:
     herb-highlight: bin/herb-highlight
-  checksum: 10c0/bd478656276d70a85eb773965ace0acfd820af9560049efd2ee805aeec8ffcc513425ae9994cef04f44111a89e23e206dd0c1d09d315b4cdce073026811e93c1
+  checksum: 10c0/272355a2edb706ba700d1a27fecc20a614a8ea66abf64bd9a42ced6ada32d44a22cfb29ce8146b8e3048f0f67c9dfb44e2df5c1741e2216963ac19a3f6ae4509
   languageName: node
   linkType: hard
 
-"@herb-tools/linter@npm:0.11.1":
-  version: 0.11.1
-  resolution: "@herb-tools/linter@npm:0.11.1"
+"@herb-tools/linter@npm:0.11.2":
+  version: 0.11.2
+  resolution: "@herb-tools/linter@npm:0.11.2"
   dependencies:
-    "@herb-tools/analysis": "npm:0.11.1"
-    "@herb-tools/client": "npm:0.11.1"
-    "@herb-tools/config": "npm:0.11.1"
-    "@herb-tools/core": "npm:0.11.1"
-    "@herb-tools/highlighter": "npm:0.11.1"
-    "@herb-tools/node-wasm": "npm:0.11.1"
-    "@herb-tools/printer": "npm:0.11.1"
-    "@herb-tools/rewriter": "npm:0.11.1"
-    "@ruby/prism": "npm:^1.9.0"
+    "@herb-tools/analysis": "npm:0.11.2"
+    "@herb-tools/client": "npm:0.11.2"
+    "@herb-tools/config": "npm:0.11.2"
+    "@herb-tools/core": "npm:0.11.2"
+    "@herb-tools/highlighter": "npm:0.11.2"
+    "@herb-tools/node-wasm": "npm:0.11.2"
+    "@herb-tools/printer": "npm:0.11.2"
+    "@herb-tools/rewriter": "npm:0.11.2"
+    "@ruby/prism": "npm:2.1.0"
     picomatch: "npm:^4.0.7"
     postcss: "npm:^8.5.29"
-    postcss-selector-parser: "npm:^7.1.6"
+    postcss-selector-parser: "npm:^7.1.7"
     tinyglobby: "npm:^0.2.15"
   bin:
     herb-lint: bin/herb-lint
-  checksum: 10c0/8633b522424b5caab80e7dee86728cfcfeb3f98cc29a9bbd852a354823b4be7775ea5382381d893479f73980842f5b8b035f6be0efb0785d1791cc8040ab3e4b
+  checksum: 10c0/79ae1617888bf8d6fc59d34a7c36957ae5eb2ccfa8c567d0e547f1fcdbfdb86dfc2b0ce34d731dc7ac1ac936c7a8efc5b16193dc246e454c957b4259451e37be
   languageName: node
   linkType: hard
 
-"@herb-tools/node-wasm@npm:0.11.1":
-  version: 0.11.1
-  resolution: "@herb-tools/node-wasm@npm:0.11.1"
+"@herb-tools/node-wasm@npm:0.11.2":
+  version: 0.11.2
+  resolution: "@herb-tools/node-wasm@npm:0.11.2"
   dependencies:
-    "@herb-tools/core": "npm:0.11.1"
-    "@ruby/prism": "npm:^1.9.0"
-  checksum: 10c0/05852526fbba4c311cc47123af8c91a463b5d8a41590378b12a82aef06a37744f45c937331d46558a263c2e1edf6fe3f6062ab217db0467f67f96038e5930429
+    "@herb-tools/core": "npm:0.11.2"
+    "@ruby/prism": "npm:2.1.0"
+  checksum: 10c0/f9c6f833479a37db9c38f622114cc70b3ec9f13fdb5aac81ef12d5f5672aaf5f387a9b133a6043bfb9b544924e225c8f6328686b6108792fcfe5477134fb4ab9
   languageName: node
   linkType: hard
 
-"@herb-tools/printer@npm:0.11.1":
-  version: 0.11.1
-  resolution: "@herb-tools/printer@npm:0.11.1"
+"@herb-tools/printer@npm:0.11.2":
+  version: 0.11.2
+  resolution: "@herb-tools/printer@npm:0.11.2"
   dependencies:
-    "@herb-tools/config": "npm:0.11.1"
-    "@herb-tools/core": "npm:0.11.1"
-    "@herb-tools/node-wasm": "npm:0.11.1"
+    "@herb-tools/config": "npm:0.11.2"
+    "@herb-tools/core": "npm:0.11.2"
+    "@herb-tools/node-wasm": "npm:0.11.2"
     tinyglobby: "npm:^0.2.15"
   bin:
     herb-print: bin/herb-print
-  checksum: 10c0/5026c03a0a5760e0642d80f63cf3a84f0c96498c8b3d634d61c85d7d753d4ce66844a411c9efc440499428c517bc2d0f2f8325a7b9ca187000c8b9f22ab4b2e1
+  checksum: 10c0/9edd26b93e3e567516e6b658fe80886d73daa2238898cad0a533be1781bb69b491b2f1fd46db63f22524d64cc3bf2979449bf4b6bbdbd19fe53bf2212e501360
   languageName: node
   linkType: hard
 
-"@herb-tools/rewriter@npm:0.11.1":
-  version: 0.11.1
-  resolution: "@herb-tools/rewriter@npm:0.11.1"
+"@herb-tools/rewriter@npm:0.11.2":
+  version: 0.11.2
+  resolution: "@herb-tools/rewriter@npm:0.11.2"
   dependencies:
-    "@herb-tools/core": "npm:0.11.1"
-    "@herb-tools/printer": "npm:0.11.1"
-    "@herb-tools/tailwind-class-sorter": "npm:0.11.1"
-    "@ruby/prism": "npm:^1.9.0"
+    "@herb-tools/core": "npm:0.11.2"
+    "@herb-tools/printer": "npm:0.11.2"
+    "@herb-tools/tailwind-class-sorter": "npm:0.11.2"
+    "@ruby/prism": "npm:2.1.0"
     tinyglobby: "npm:^0.2.15"
-  checksum: 10c0/975d4f3fbe2ab434875d98f1e8e04c41f37221644dac424034b50dfc7f97293942f35670d52c9a45ac5ff9d1d55e22ca51d9669f4e3e099197eb1d7a51b82653
+  checksum: 10c0/433f28d73e624601b1f8c1b563ac3b2a38556f56118c076f641d44da0294f66508e6a60e63a753e7519fff6ed85b06a27c84cb0fc034c24a8b9b8f92d82401b0
   languageName: node
   linkType: hard
 
-"@herb-tools/tailwind-class-sorter@npm:0.11.1":
-  version: 0.11.1
-  resolution: "@herb-tools/tailwind-class-sorter@npm:0.11.1"
+"@herb-tools/tailwind-class-sorter@npm:0.11.2":
+  version: 0.11.2
+  resolution: "@herb-tools/tailwind-class-sorter@npm:0.11.2"
   dependencies:
     clear-module: "npm:^4.1.3"
     escalade: "npm:^3.2.0"
     jiti: "npm:^2.7.0"
     postcss: "npm:^8.5.29"
-    postcss-import: "npm:^17.0.0"
+    postcss-import: "npm:^17.0.1"
   peerDependencies:
     tailwindcss: ^3.0 || ^4.0
   peerDependenciesMeta:
     tailwindcss:
       optional: true
-  checksum: 10c0/81387add3e211e3f1532640a08b13fc1e7d37d72dbfaa4d4be56363b7ea7ac13aefac27736349f4683e1764bd10ca30dce41c41e02d9b017dd652adcdd0ed021
+  checksum: 10c0/b799281ca17c384b62a6db471b48f3e80668571202f98c821103c53b5689a68c68607ba23fa96a4fd04e16005b65ac39638f62ff7d567f93f328534b0c7ebc51
   languageName: node
   linkType: hard
 
@@ -436,10 +436,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ruby/prism@npm:^1.9.0":
-  version: 1.9.0
-  resolution: "@ruby/prism@npm:1.9.0"
-  checksum: 10c0/c4c83ffff68bf5350a5ae221523a6995ded0ac8bfd46eab4437d0e0e1e9a2cfcb8f760cecb5019cdba9e95f6f9f3c0575c27f108cb9c86e2fa9efbcd8aa84a94
+"@ruby/prism@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@ruby/prism@npm:2.1.0"
+  checksum: 10c0/470f9b575679f6db683f6e00d8f7175a9627cd29b1d26119a20e43f75f384333b26f9f43d89dd74ddcef465f6a27314664e6c84370439a51e868c608eba2bcfa
   languageName: node
   linkType: hard
 
@@ -516,9 +516,9 @@ __metadata:
   linkType: hard
 
 "@typescript-eslint/types@npm:^8.56.0":
-  version: 8.72.1
-  resolution: "@typescript-eslint/types@npm:8.72.1"
-  checksum: 10c0/759f36d27a5b6c4dcdcd035ddec6e39d261cfcab864e641c4a6252d4be6358e53055ad737f1797e6ebb2b64b8cda380a0492acb96d7115e7ed86e6b27ceeddc3
+  version: 8.72.2
+  resolution: "@typescript-eslint/types@npm:8.72.2"
+  checksum: 10c0/283cbfd02033da3790dde8a613f23bbcb21706281393daf256ea798112124e355679d1f5bdd16ee0d3b9730f4d16acd619504b3bfb25c7979f363c0963b3e1b6
   languageName: node
   linkType: hard
 
@@ -553,9 +553,9 @@ __metadata:
   linkType: hard
 
 "ansi-regex@npm:^6.2.2":
-  version: 6.5.0
-  resolution: "ansi-regex@npm:6.5.0"
-  checksum: 10c0/778908f1af800e39f6da2167e515ecef5d7c912fd7e383520dcd80052cf1f8d57b89b6b1f31f58480a5579ab7cc48e401ac194125362d92bdeb8569ac678e3aa
+  version: 6.6.0
+  resolution: "ansi-regex@npm:6.6.0"
+  checksum: 10c0/a151a7bee21f74765c1bbc50cb778ca8d5138e01683b123aa63a5e5f4ae02cb9cff50598bd2ace4429917be7d312ec70a6d140e53030da76597202a018ce9899
   languageName: node
   linkType: hard
 
@@ -705,9 +705,9 @@ __metadata:
   linkType: hard
 
 "colord@npm:^2.10.0":
-  version: 2.10.0
-  resolution: "colord@npm:2.10.0"
-  checksum: 10c0/2f5d1d1759124f593deca17bbbab8a88bdc3ab68bbcc88db76c1192d9a5d575db202badde044bf61789561fa0ed7a9eb895382becad1af27ec65934c216e9e04
+  version: 2.11.0
+  resolution: "colord@npm:2.11.0"
+  checksum: 10c0/01d692758749692a8ead360e89c6e19c39e2c77da2f36cea7404650cba2d6dcdeaefbf3f1fc05c4dcf675b8476b879486eff751d2c3158d390756f82ec711bd9
   languageName: node
   linkType: hard
 
@@ -746,15 +746,6 @@ __metadata:
     mdn-data: "npm:2.27.1"
     source-map-js: "npm:^1.2.1"
   checksum: 10c0/1f65e9ccaa56112a4706d6f003dd43d777f0dbcf848e66fd320f823192533581f8dd58daa906cb80622658332d50284d6be13b87a6ab4556cbbfe9ef535bbf7e
-  languageName: node
-  linkType: hard
-
-"cssesc@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "cssesc@npm:3.0.0"
-  bin:
-    cssesc: bin/cssesc
-  checksum: 10c0/6bcfd898662671be15ae7827120472c5667afb3d7429f1f917737f3bf84c4176003228131b643ae74543f17a394446247df090c597bb9a728cce298606ed0aa7
   languageName: node
   linkType: hard
 
@@ -1093,13 +1084,13 @@ __metadata:
   linkType: hard
 
 "glob@npm:^13.0.0, glob@npm:^13.0.6":
-  version: 13.0.6
-  resolution: "glob@npm:13.0.6"
+  version: 13.0.7
+  resolution: "glob@npm:13.0.7"
   dependencies:
     minimatch: "npm:^10.2.2"
     minipass: "npm:^7.1.3"
     path-scurry: "npm:^2.0.2"
-  checksum: 10c0/269c236f11a9b50357fe7a8c6aadac667e01deb5242b19c84975628f05f4438d8ee1354bb62c5d6c10f37fd59911b54d7799730633a2786660d8c69f1d18120a
+  checksum: 10c0/e32f4b9029a28f2b2d3610a55758fef37aa9c7098a5ba118628a5332eddd5299c7261d09ed9812e35afac117bc5f1f528ea3a8f4df2d941e38e0bc4f169221f8
   languageName: node
   linkType: hard
 
@@ -1514,20 +1505,20 @@ __metadata:
   linkType: hard
 
 "parse5-parser-stream@npm:^8.1.0":
-  version: 8.1.0
-  resolution: "parse5-parser-stream@npm:8.1.0"
+  version: 8.1.1
+  resolution: "parse5-parser-stream@npm:8.1.1"
   dependencies:
-    parse5: "npm:^8.0.0"
-  checksum: 10c0/2a11c600bfd1d6eca25d95bcfa23ca2fe9f58bd3d9147f0e8764e23f191c0d84bc9b05e19d27f22dc89f1c19e7d1b55c182ee128b15516b32c2ffa74ed009a5d
+    parse5: "npm:^8.1.1"
+  checksum: 10c0/a1f55f4b20865913503edfae4442b408bd63c6c8de28d340660d9c57778a5f975db24f2765bf99fd3ad19b551ad58fa93c263b4d2ce3b3c9afa14acae7da63fd
   languageName: node
   linkType: hard
 
-"parse5@npm:^8.0.0, parse5@npm:^8.1.0":
-  version: 8.1.0
-  resolution: "parse5@npm:8.1.0"
+"parse5@npm:^8.1.0, parse5@npm:^8.1.1":
+  version: 8.1.1
+  resolution: "parse5@npm:8.1.1"
   dependencies:
     entities: "npm:^9.0.0"
-  checksum: 10c0/2b00189fbeb73a47422bed831b970502258a44dc53134c0db8e2d3114cec0766fea5346dbb61aff94978c6bf666e5243bc5bcb2279b680f130f8de98cd28ac18
+  checksum: 10c0/b0c248e09baf90ad137ccc3542ecb6d942b6b98e38cd693da20b392d6d440ac4475dbf97fa58eecd01bbaadba39b738d88c6dfce5d8ae2681ef561e0481e69a7
   languageName: node
   linkType: hard
 
@@ -1576,7 +1567,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-import@npm:^17.0.0":
+"postcss-import@npm:^17.0.1":
   version: 17.0.1
   resolution: "postcss-import@npm:17.0.1"
   dependencies:
@@ -1598,13 +1589,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-selector-parser@npm:^7.1.6, postcss-selector-parser@npm:^7.1.7":
-  version: 7.1.7
-  resolution: "postcss-selector-parser@npm:7.1.7"
+"postcss-selector-parser@npm:^7.1.7":
+  version: 7.2.0
+  resolution: "postcss-selector-parser@npm:7.2.0"
   dependencies:
-    cssesc: "npm:^3.0.0"
     util-deprecate: "npm:^1.0.2"
-  checksum: 10c0/94db1cfb838957729dd632a229f86cc631cee98f0418026a8460ba3d24feb47da0a28f295a2ae4be37b548ffa6e61eff0f74fbc2ae309c48a6dd3fe1cb25e396
+  checksum: 10c0/327f32901e952d015f7d1f12c8632700220588959877d9ea5280238ac6153cc7d5d349da0171932cfc417c35fb6108948eef622895db4df73af94d8163421203
   languageName: node
   linkType: hard
 
@@ -1993,11 +1983,11 @@ __metadata:
   linkType: hard
 
 "tough-cookie@npm:^6.0.2":
-  version: 6.0.2
-  resolution: "tough-cookie@npm:6.0.2"
+  version: 6.1.0
+  resolution: "tough-cookie@npm:6.1.0"
   dependencies:
     tldts: "npm:^7.0.5"
-  checksum: 10c0/5ff521a476a3c540821352125a5d481c8d2fe16035de7e0efda4df120f290c95500a0e9b51ea0aa56343955be482e014c30f5ba73e04b93ba138e4e855cb9e89
+  checksum: 10c0/704607363dcf905301048f3412afe17e05c5e8e1c377e6b22ebc96d3d5a7f1727992677ff1c05fa2d411d580ccf9ddbd2ed62c1cab44ef06fdd4026fedc8b896
   languageName: node
   linkType: hard
 
@@ -2045,8 +2035,8 @@ __metadata:
   resolution: "untitled@workspace:."
   dependencies:
     "@eslint/js": "npm:10.0.1"
-    "@herb-tools/formatter": "npm:0.11.1"
-    "@herb-tools/linter": "npm:0.11.1"
+    "@herb-tools/formatter": "npm:0.11.2"
+    "@herb-tools/linter": "npm:0.11.2"
     "@hotwired/stimulus": "npm:3.2.2"
     "@stylistic/eslint-plugin": "npm:5.10.0"
     c8: "npm:12.0.0"
