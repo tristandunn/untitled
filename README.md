@@ -50,7 +50,7 @@ bundle exec rake javascript:lint
 Or you can run the tests with coverage and lint with a single command.
 
 ```
-bundle exec rake check
+bin/ci
 ```
 
 ### Docker
