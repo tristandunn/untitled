@@ -11,7 +11,7 @@ gem "jbuilder",          "2.15.1"
 gem "kamal",             "2.12.0", require: false
 gem "litestream",        "0.16.1"
 gem "propshaft",         "1.3.2"
-gem "puma",              "8.0.2"
+gem "puma",              "8.1.2"
 gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.1.4.1"
 gem "solid_cable",       "4.1.0"
@@ -20,7 +20,7 @@ gem "solid_queue",       "1.7.2"
 gem "sqlite3",           "2.10.2"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.7.0"
-gem "thruster",          "0.1.27", require: false
+gem "thruster",          "0.1.28", require: false
 gem "turbo-rails",       "2.0.23"
 
 group :development, :test do
@@ -33,7 +33,7 @@ group :development do
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.10.1"
   gem "rack-mini-profiler",  "5.0.0"
-  gem "rubocop",             "1.92.2", require: false
+  gem "rubocop",             "1.92.3", require: false
   gem "rubocop-capybara",    "3.1.0", require: false
   gem "rubocop-factory_bot", "2.28.0", require: false
   gem "rubocop-performance", "1.27.0", require: false
@@ -51,7 +51,7 @@ group :test do
   gem "factory_bot_rails",        "6.5.1"
   gem "faker",                    "3.8.0"
   gem "rails-controller-testing", "1.0.5"
-  gem "selenium-webdriver",       "4.52.0"
+  gem "selenium-webdriver",       "4.53.0"
   gem "shoulda-matchers",         "8.0.1"
   gem "simplecov-console",        "0.9.5", require: false
 end
