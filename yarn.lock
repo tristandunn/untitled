@@ -1840,9 +1840,9 @@ __metadata:
   linkType: hard
 
 "source-map-js@npm:^1.2.1, source-map-js@npm:^1.2.2":
-  version: 1.2.3
-  resolution: "source-map-js@npm:1.2.3"
-  checksum: 10c0/4534d29224132720ae252ed96ddb509be3204c0933f4a6b4bf0c838044cc8bb106e0cac801fb7bd7a7dedf16f7c1ec6bd339d10e55cd72aca0218c8a091c1c21
+  version: 1.2.4
+  resolution: "source-map-js@npm:1.2.4"
+  checksum: 10c0/b0fb346b142e89a19fa3299a259d8c0dc66626321634c30df260b2e8a1d4c1e219a6a28e8d10617cc54e7816d94eff5c4edd96e208172e93efc2c6fd75b111c6
   languageName: node
   linkType: hard
 
@@ -1978,21 +1978,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tldts-core@npm:^7.5.4":
-  version: 7.5.4
-  resolution: "tldts-core@npm:7.5.4"
-  checksum: 10c0/94f220cdf3939148350e2e6764252c216aab8a28d3b4589843d71dce4701218ad913a52d6f1ea4c8bb613c68e6c0f195322ee6bd85baf29176a1211c0a4db577
+"tldts-core@npm:^7.5.5":
+  version: 7.5.5
+  resolution: "tldts-core@npm:7.5.5"
+  checksum: 10c0/c6e07c0cc2e4b44f44d421c035fa6e5bfd34a2caf44f1b99d8ec50b7b009c80f1a03d670945090a6d603edaa9cb0d85525eb96c2b9afedc2400f29de9af423b1
   languageName: node
   linkType: hard
 
 "tldts@npm:^7.0.5":
-  version: 7.5.4
-  resolution: "tldts@npm:7.5.4"
+  version: 7.5.5
+  resolution: "tldts@npm:7.5.5"
   dependencies:
-    tldts-core: "npm:^7.5.4"
+    tldts-core: "npm:^7.5.5"
   bin:
     tldts: bin/cli.js
-  checksum: 10c0/61461c5b4caed1fa69d5c5a4e21e2a309f2540ed61ea472fb82b32327adead95ce4aaf42684c1988cd056dd2d318ec3175c488a676fe2eef32e435973b7f9350
+  checksum: 10c0/24877542443721af6722af1cccab7ddfeb5199d3fc65ee22d23fd6e6d5ed746de2754eafb3005c71bab2579ba58b2628ee64b799d2a5a31f5cdce050e79f6f08
   languageName: node
   linkType: hard
 
