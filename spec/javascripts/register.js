@@ -1,4 +1,4 @@
-import { register } from "node:module";
-import { pathToFileURL } from "node:url";
+import { registerHooks } from "node:module";
+import { resolve } from "./helpers/import-resolver.js";
 
-register("./spec/javascripts/helpers/import-resolver.js", pathToFileURL("./"));
+registerHooks({ resolve });
